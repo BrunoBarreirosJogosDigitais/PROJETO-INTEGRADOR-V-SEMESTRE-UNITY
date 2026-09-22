@@ -27,6 +27,10 @@ public class GerenciadorJogo : MonoBehaviour
     public int vidaPlacaMaxima = 900000;
     public int vidaPlaca;
 
+    [Header("Energia e Servidores")]
+    public float geracaoEnergiaPorSegundo = 0f;
+    private float contadorEnergia;
+
     private float contadorEconomia;
     private float contadorAmeaca;
 
@@ -36,6 +40,17 @@ public class GerenciadorJogo : MonoBehaviour
         {
             Destroy(gameObject);
             return;
+        }
+
+        if(geracaoEnergiaPorSegundo > 0f && pontosServidor < pontosServidorMaximos)
+        {
+            contadorEnergia += Time.deltaTime;
+
+            if(contadorEnergia >= 1f)
+            {
+                contadorEnergia = 0f;
+                RecuperarPontosServidor(Mathf.RoundToInt(geracaoEnergiaPorSegundo));
+            }
         }
 
         //Persistencia entre as cenas
@@ -99,6 +114,15 @@ public class GerenciadorJogo : MonoBehaviour
         return true;
     }
 
+    public void AdicionarGeracaoEnergia(float valor)
+    {
+        geracaoEnergiaPorSegundo += Mathf.Max(0f, valor);
+    }
+
+    public void RemoverGeracaoEnergia(float valor)
+    {
+        geracaoEnergiaPorSegundo += Mathf.Max(0f, geracaoEnergiaPorSegundo - valor);
+    }
   
     public void AdicionarDinheiro(float valor)
     {
