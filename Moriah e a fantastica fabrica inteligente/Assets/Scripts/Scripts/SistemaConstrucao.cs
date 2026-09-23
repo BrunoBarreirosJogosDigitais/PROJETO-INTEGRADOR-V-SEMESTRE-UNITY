@@ -1,59 +1,63 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SistemaConstrucao : MonoBehaviour
 {
-    [Header("Referencias")]
-    public Camera cameraPrincipal;
-    public LayerMask camadaChao;
-    public Transform pastaMaquinas;
+    
+    //[Header("Referencias")]
+    //public Camera cameraPrincipal;
+    //public LayerMask camadaChao;
+    //public Transform pastaMaquinas;
+
+    [Header("Configuração do Local")]
+    public Transform pontoDeInstanciacao;
+    public GameObject maquinaInstalada;
 
     [Header("Maquina selecionada")]
-    public DadosMaquina maquinaSelecionada;
-    public GameObject prefabMaquina;
+    //public DadosMaquina maquinaSelecionada;
+    //public GameObject prefabMaquina;
+    public DadosMaquina dadosMaquinaParaEsteLocal;
+    public GameObject prefabMaquinaParaEsteLocal;
 
-    private void Update()
+    private void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0))
+
+        if (GerenciadorJogo.Instancia == null) return;
+        if(GerenciadorJogo.Instancia.estadoAtual != GerenciadorJogo.EstadoJogo.Tycoon3D) return;
+
+        if(maquinaInstalada != null)
         {
-            ConstruirNoLocalDoMouse();
+            Debug.Log("Esta local já possui um constructo ativo");
+            return;
         }
-    }
-    public void SelecionarMaquina(DadosMaquina dados)
-    {
-        maquinaSelecionada = dados;
-    }
 
-    public void SelecionarPrefab(GameObject prefab)
-    {
-        prefabMaquina = prefab;
-    }
-
-    private void ConstruirNoLocalDoMouse()
-    {
-        if (maquinaSelecionada == null || prefabMaquina == null) return;
-
-        Ray raio = cameraPrincipal.ScreenPointToRay(Input.mousePosition);
-
-        if (!Physics.Raycast(raio, out RaycastHit impacto, 500f, camadaChao))
+        if(dadosMaquinaParaEsteLocal == null || prefabMaquinaParaEsteLocal == null)
+        {
+            Debug.LogWarning("Nenhuma máquina foi configurada neste ponto de construção.");
             return;
+        }
 
-        if (!GerenciadorJogo.Instancia.GastarDinheiro(maquinaSelecionada.preco))
-            return;
+        if (!GerenciadorJogo.Instancia.GastarDinheiro(dadosMaquinaParaEsteLocal.preco)) return;
 
-        Transform pasta = pastaMaquinas != null ? pastaMaquinas : transform;
+        Vector3 posicaoSpawn = pontoDeInstanciacao != null ? pontoDeInstanciacao.position : transform.position;
+        Quaternion rotacaoSpawn = pontoDeInstanciacao != null ? pontoDeInstanciacao.rotation : transform.rotation;
 
-        GameObject nova = Instantiate(
-            prefabMaquina,
-            impacto.point,
-            Quaternion.identity,
-            pasta
+        maquinaInstalada = Instantiate(
+                prefabMaquinaParaEsteLocal,
+                posicaoSpawn, rotacaoSpawn,
+                transform
         );
 
-        MaquinaConstruida maquina = nova.GetComponent<MaquinaConstruida>();
+        GerenciadorJogo.Instancia.AdicionarProducao(dadosMaquinaParaEsteLocal.producaoPorSegundo);
+        GerenciadorJogo.Instancia.AdicionarManutencao(dadosMaquinaParaEsteLocal.manutencaoPorSegundo);
 
-        if (maquina != null)
+        MaquinaConstruida maquina = maquinaInstalada.GetComponent<MaquinaConstruida>();
+        if(maquina != null)
         {
-            maquina.Inicializar(maquinaSelecionada);
+            maquina.Inicializar(dadosMaquinaParaEsteLocal);
         }
+
+        Debug.Log("Constructo erguido com sucesso neste local");
     }
+
 }

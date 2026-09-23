@@ -17,4 +17,4 @@ MonoBehaviour:
   preco: 750
   producaoPorSegundo: 15
   manutencaoPorSegundo: 5
-  aumentoAmeaca: 1
+  aumentoAmeaca: 0
