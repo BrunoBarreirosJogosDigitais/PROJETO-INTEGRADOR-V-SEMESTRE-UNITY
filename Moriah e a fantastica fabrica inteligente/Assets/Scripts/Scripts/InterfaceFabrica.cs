@@ -3,11 +3,17 @@ using UnityEngine.UI;
 
 public class InterfaceFabrica : MonoBehaviour
 {
+    [Header("HUD - Tycoon")]
     public Text textoDinheiro;
     public Text textoProducao;
     public Text textoManutencao;
-    public Text textoAmeaca;
-    public Text textoTI;
+    public Slider sliderAmeaca;
+    public Slider sliderTI;
+    public int nivelTIMaximoExemplo = 10;
+
+    [Header("HUD - Tower Defense")]
+    public Text textoPontosServidor;
+    public Text textoVidaPlaca;
 
     private void Update()
     {
@@ -24,10 +30,22 @@ public class InterfaceFabrica : MonoBehaviour
         if (textoManutencao != null)
             textoManutencao.text = "Manutenção: R$ " + jogo.manutencaoPorSegundo.ToString("0") + "/s";
 
-        if (textoAmeaca != null)
-            textoAmeaca.text = "Ameaça: " + jogo.ameacaCibernetica.ToString("0") + "%";
+        if (textoPontosServidor != null)
+            textoPontosServidor.text = "Energia: " + jogo.pontosServidor + " / " + jogo.pontosServidorMaximos;
 
-        if (textoTI != null)
-            textoTI.text = "TI: Nível " + jogo.nivelTI;
+        if (textoVidaPlaca != null)
+            textoVidaPlaca.text = "Placa-Mãe: " + jogo.vidaPlaca + " / " + jogo.vidaPlacaMaxima + "PV";
+
+        if(sliderAmeaca != null)
+        {
+            sliderAmeaca.maxValue = 100f;
+            sliderAmeaca.value = jogo.ameacaCibernetica;
+        }
+
+        if(sliderTI != null)
+        {
+            sliderTI.maxValue = nivelTIMaximoExemplo;
+            sliderTI.value = jogo.nivelTI;
+        }
     }
 }
