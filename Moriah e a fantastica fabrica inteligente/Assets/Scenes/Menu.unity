@@ -798,7 +798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   estadoAtual: 0
-  dinheiroInicial: 1000
+  dinheiroInicial: 2000
   dinheiro: 0
   producaoPorSegundo: 0
   manutencaoPorSegundo: 0
