@@ -1,13 +1,22 @@
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class InterfaceDefesa : MonoBehaviour
 {
-    public TMP_Text textoServidor;
-    public TMP_Text textoVida;
-    public TMP_Text textoOnda;
+
+    [Header("Elementos de Texto (UI)")]
+    public Text textoServidor;
+    public Text textoVida;
+    public Text textoOnda;
+
+    [Header("Painéis de Fim de Jogo")]
     public GameObject painelDerrota;
-    public GameObject painelVitoria;
+    //public GameObject painelVitoria;
+
+    [Header("Configuração de Cenas")]
+    public string nomeCenaFabrica = "Fase";
 
     private void Update()
     {
@@ -25,7 +34,20 @@ public class InterfaceDefesa : MonoBehaviour
                 jogo.vidaPlaca + "/" +
                 jogo.vidaPlacaMaxima;
 
-        if (jogo.vidaPlaca <= 0 && painelDerrota != null)
+        if (jogo.vidaPlaca <= 0 && painelDerrota != null && !painelDerrota.activeSelf)
             painelDerrota.SetActive(true);
+
+    }
+
+    public void VoltarParaFabrica()
+    {
+        if(GerenciadorJogo.Instancia != null)
+        {
+            GerenciadorJogo.Instancia.AlternaModoJogo(GerenciadorJogo.EstadoJogo.Tycoon3D);
+
+            //GerenciadorJogo.Instancia.ReduzirAmeaca(15f);
+        }
+
+        SceneManager.LoadScene(nomeCenaFabrica);
     }
 }
