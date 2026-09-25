@@ -48,6 +48,6 @@ public class InterfaceDefesa : MonoBehaviour
             //GerenciadorJogo.Instancia.ReduzirAmeaca(15f);
         }
 
-        SceneManager.LoadScene(nomeCenaFabrica);
+        SceneManager.UnloadSceneAsync(nomeCenaFabrica);
     }
 }

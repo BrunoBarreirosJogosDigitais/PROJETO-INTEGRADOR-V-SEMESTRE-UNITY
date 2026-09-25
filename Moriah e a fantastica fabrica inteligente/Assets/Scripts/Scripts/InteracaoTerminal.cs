@@ -82,6 +82,6 @@ public class InteracaoTerminal : MonoBehaviour
 
         // Carrega a cena do minigame/defesa
         Debug.Log("Acessando o terminal de defesa cibernética...");
-        SceneManager.LoadScene(cenaDefesa);
+        SceneManager.LoadScene(cenaDefesa, LoadSceneMode.Additive);
     }
 }
