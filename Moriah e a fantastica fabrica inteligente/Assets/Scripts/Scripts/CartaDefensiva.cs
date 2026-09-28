@@ -11,4 +11,7 @@ public class CartaDefensiva : ScriptableObject
     public int vidaBloqueio = 200;
     public float alcance = 3f;
     public float tempoRecarga = 1f;
+
+    [Header("Prefab de Defesa no Mapa")]
+    public GameObject prefabTorreParaInstanciar;
 }
