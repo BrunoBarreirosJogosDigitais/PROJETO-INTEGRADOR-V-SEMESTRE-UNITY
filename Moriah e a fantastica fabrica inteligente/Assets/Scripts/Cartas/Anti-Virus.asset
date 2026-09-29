@@ -19,3 +19,4 @@ MonoBehaviour:
   vidaBloqueio: 150
   alcance: 10
   tempoRecarga: 3
+  prefabTorreParaInstanciar: {fileID: 6963197113602703075, guid: ca1ac0e3a109a6a459217dcd284e9eb2, type: 3}

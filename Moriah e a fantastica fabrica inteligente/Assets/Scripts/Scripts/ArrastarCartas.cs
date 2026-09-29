@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ArrastarCartas : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    [Header("Referência da Carta")]
+    [Header("Referï¿½ncia da Carta")]
     public CartaDefensiva dadosDaCartas;
 
     private RectTransform rectTransform;
@@ -29,13 +29,12 @@ public class ArrastarCartas : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-
-
+        painelPaiOriginal = transform.parent;
         posicaoInicial = rectTransform.anchoredPosition;
 
         transform.SetParent(canvas.transform, true);
 
-        canvasGroup.alpha = 0.6f;
+        canvasGroup.alpha = 0.7f;
         canvasGroup.blocksRaycasts = false;
     }
 
@@ -71,7 +70,7 @@ public class ArrastarCartas : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
             {
                 Instantiate(dadosDaCartas.prefabTorreParaInstanciar, hit.point, Quaternion.identity);
 
-                Debug.Log("Torre " + dadosDaCartas.nomeCarta + "construída com sucesso!");
+                Debug.Log("Torre " + dadosDaCartas.nomeCarta + "construï¿½da com sucesso!");
             }      
         }
     }
