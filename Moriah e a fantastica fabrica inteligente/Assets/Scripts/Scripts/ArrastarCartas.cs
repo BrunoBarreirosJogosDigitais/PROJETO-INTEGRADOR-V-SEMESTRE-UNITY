@@ -59,12 +59,7 @@ public class ArrastarCartas : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
 
         TryInstantiateTower(eventData.position);
 
-        //Retorna obrigatoriamente a torre usando física 2D
-        if(painelPaiOriginal != null)
-        {
-            transform.SetParent(canvas.transform, false);
-            rectTransform.anchoredPosition = posicaoInicial;
-        }     
+        RetornarCartaAoCorredor();
     }
 
     private void TryInstantiateTower(Vector2 screenPosition)
@@ -75,11 +70,10 @@ public class ArrastarCartas : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
             return;
         }
 
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(screenPosition.x, screenPosition.y, -Camera.main.transform.position.z));
-        Vector2 worldPosition2D = new Vector2(worldPosition.x, worldPosition.y);
+        float distanciaAteZZero = -canvas.worldCamera.transform.position.z;
 
-
-        RaycastHit2D hit = Physics2D.Raycast(worldPosition2D, Vector2.zero);
+        Vector3 worldPos = canvas.worldCamera.ScreenToWorldPoint(new Vector3(screenPosition.x, screenPosition.y, distanciaAteZZero));
+        RaycastHit2D hit = Physics2D.Raycast(new Vector2(worldPos.x, worldPos.y), Vector2.zero);
         
         if(hit.collider != null)
         {
@@ -87,9 +81,9 @@ public class ArrastarCartas : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
 
             if (hit.collider.CompareTag("SlotDefesa"))
             {
-                Vector3 posicaoInstanciacao = new Vector3(hit.point.x, hit.point.y, 0f);
-                Instantiate(dadosDaCartas.prefabTorreParaInstanciar, hit.point, Quaternion.identity);
+                Vector3 posicaoInstanciacao = new Vector3(worldPos.x, worldPos.y, 0f);
 
+                Instantiate(dadosDaCartas.prefabTorreParaInstanciar, posicaoInstanciacao, Quaternion.identity);
                 Debug.Log("Torre " + dadosDaCartas.nomeCarta + "constru�da com sucesso!");
             } 
             else
@@ -103,4 +97,13 @@ public class ArrastarCartas : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
         }
     }
 
+    private void RetornarCartaAoCorredor()
+    {
+        if(painelPaiOriginal != null)
+        {
+            transform.SetParent(painelPaiOriginal, false);
+            rectTransform.anchoredPosition = posicaoInicial;
+            rectTransform.localScale = Vector3.one;
+        }
+    }
 }
