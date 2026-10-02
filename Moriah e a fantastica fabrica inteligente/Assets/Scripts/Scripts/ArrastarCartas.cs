@@ -70,6 +70,16 @@ public class ArrastarCartas : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
             return;
         }
 
+        
+        if(GerenciadorJogo.Instancia != null)
+        {
+            if (GerenciadorJogo.Instancia.pontosServidor < dadosDaCartas.custoServidor)
+            {
+                Debug.Log("Pontos de Servidor insuficientes para invocar: " + dadosDaCartas.nomeCarta);
+                return;
+            }
+        }
+
         float distanciaAteZZero = -canvas.worldCamera.transform.position.z;
 
         Vector3 worldPos = canvas.worldCamera.ScreenToWorldPoint(new Vector3(screenPosition.x, screenPosition.y, distanciaAteZZero));
@@ -85,6 +95,13 @@ public class ArrastarCartas : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
 
                 Instantiate(dadosDaCartas.prefabTorreParaInstanciar, posicaoInstanciacao, Quaternion.identity);
                 Debug.Log("Torre " + dadosDaCartas.nomeCarta + "constru�da com sucesso!");
+
+                if(GerenciadorJogo.Instancia != null)
+                {
+                    GerenciadorJogo.Instancia.GastarPontosServidor(dadosDaCartas.custoServidor);
+                }
+
+                Debug.Log("Torre " + dadosDaCartas.nomeCarta + "construída com sucesso!");
             } 
             else
             {

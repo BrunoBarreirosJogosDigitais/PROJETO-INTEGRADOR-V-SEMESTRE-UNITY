@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77aa5f50960d8ee4a86c40545aac91bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 5
+  velocidade: 9
   gravidade: -20
   alturaPulo: 1.2
   cameraPrincipal: {fileID: 223283832}
@@ -1553,7 +1553,7 @@ GameObject:
   - component: {fileID: 507095844}
   - component: {fileID: 507095843}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CanvasTycoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1919,7 +1919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &729249684
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2145,7 +2145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77aa5f50960d8ee4a86c40545aac91bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 5
+  velocidade: 9
   gravidade: -20
   alturaPulo: 1.2
   cameraPrincipal: {fileID: 223283832}
@@ -2845,6 +2845,7 @@ MonoBehaviour:
   cenaDefesa: TerminalTI
   requerAmeacaMinimaparaEntrar: 0
   ameacaMinimaRequerida: 0
+  distanciaInteracao: 2
 --- !u!65 &1222819192
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3960,6 +3961,7 @@ MonoBehaviour:
   cenaDefesa: TerminalTI
   requerAmeacaMinimaparaEntrar: 0
   ameacaMinimaRequerida: 0
+  distanciaInteracao: 2
 --- !u!136 &1695403146
 CapsuleCollider:
   m_ObjectHideFlags: 0

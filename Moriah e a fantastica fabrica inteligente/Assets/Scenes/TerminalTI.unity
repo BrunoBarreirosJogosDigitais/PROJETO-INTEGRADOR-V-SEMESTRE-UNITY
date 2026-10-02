@@ -1944,6 +1944,8 @@ MonoBehaviour:
   textoOnda: {fileID: 0}
   painelDerrota: {fileID: 800808291}
   nomeCenaFabrica: Fase
+  nomeCanvasTycoon: CanvasTycoon
+  nomeCenaTerminal: TerminalTI
 --- !u!4 &1513230577
 Transform:
   m_ObjectHideFlags: 0
@@ -3801,7 +3803,9 @@ MonoBehaviour:
   textoVida: {fileID: 129864979}
   textoOnda: {fileID: 308459446}
   painelDerrota: {fileID: 1632097998}
-  nomeCenaFabrica: TerminalTI
+  nomeCenaFabrica: Fase
+  nomeCanvasTycoon: CanvasTycoon
+  nomeCenaTerminal: TerminalTI
 --- !u!1 &8687173650049921723
 GameObject:
   m_ObjectHideFlags: 0
