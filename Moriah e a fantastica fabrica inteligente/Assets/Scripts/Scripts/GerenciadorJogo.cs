@@ -29,7 +29,7 @@ public class GerenciadorJogo : MonoBehaviour
 
     [Header("Energia e Servidores")]
     public float geracaoEnergiaPorSegundo = 0f;
-    private float contadorEnergia;
+    private float contadorEnergia = 5f;
 
     private float contadorEconomia;
     private float contadorAmeaca;
@@ -40,17 +40,6 @@ public class GerenciadorJogo : MonoBehaviour
         {
             Destroy(gameObject);
             return;
-        }
-
-        if(geracaoEnergiaPorSegundo > 0f && pontosServidor < pontosServidorMaximos)
-        {
-            contadorEnergia += Time.deltaTime;
-
-            if(contadorEnergia >= 1f)
-            {
-                contadorEnergia = 0f;
-                RecuperarPontosServidor(Mathf.RoundToInt(geracaoEnergiaPorSegundo));
-            }
         }
 
         //Persistencia entre as cenas
@@ -69,6 +58,18 @@ public class GerenciadorJogo : MonoBehaviour
         if (estadoAtual == EstadoJogo.Pausado || estadoAtual == EstadoJogo.GameOver ||
             estadoAtual == EstadoJogo.Vitoria)
             return;
+
+        //Regeneração automatica de pontos de servidor
+        if(geracaoEnergiaPorSegundo > 0f && pontosServidor < pontosServidorMaximos)
+        {
+            contadorEnergia += Time.deltaTime;
+
+            if(contadorEnergia >= 1f)
+            {
+                contadorEnergia = 0f;
+                RecuperarPontosServidor(Mathf.RoundToInt(geracaoEnergiaPorSegundo));
+            }
+        }
 
         //O dinheiro passivo do protagonista irá se incrementar gradativamente
         contadorEconomia += Time.deltaTime;
