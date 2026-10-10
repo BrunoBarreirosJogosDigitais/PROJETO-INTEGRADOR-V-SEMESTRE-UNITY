@@ -800,7 +800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   estadoAtual: 0
-  dinheiroInicial: 2000
+  dinheiroInicial: 0
   dinheiro: 0
   producaoPorSegundo: 0
   manutencaoPorSegundo: 0

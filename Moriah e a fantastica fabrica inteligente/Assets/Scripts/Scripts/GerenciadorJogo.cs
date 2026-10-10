@@ -78,7 +78,10 @@ public class GerenciadorJogo : MonoBehaviour
         if (contadorEconomia >= 1f)
         {
             contadorEconomia = 0f;
-            float lucro = producaoPorSegundo - manutencaoPorSegundo;
+
+            float rendaBasePassiva = 100f;
+
+            float lucro = (producaoPorSegundo - manutencaoPorSegundo) + rendaBasePassiva;
             dinheiro += Mathf.Max(0f, lucro);
 
             VerificarCondicaoVitoria();
