@@ -92,12 +92,17 @@ public class GerenciadorJogo : MonoBehaviour
         {
             contadorAmeaca += Time.deltaTime;
 
+            //Quanto mais melhorias a fábrica tiver, mais rapido sobe, porém o tempo necessário irá aumentar 
+            float tempoNecessario = Mathf.Max(5f, 25f / Mathf.Max(1f, producaoPorSegundo * 0.05f));
+
             //Se o contador de ameaça for maior ou igual a 10 a função AumentarAmeaça sobe para mais 1
-            if (contadorAmeaca >= 10f)
+            if (contadorAmeaca >= tempoNecessario)
             {
                 //Zera o contador para iniciar a contagem novamente
                 contadorAmeaca = 0f;
-                AumentarAmeaca(1f);
+
+                float fatorProporcional = Mathf.Max(1f, producaoPorSegundo * 0.1f);
+                AumentarAmeaca(fatorProporcional);
             }
         }
     }
@@ -158,7 +163,16 @@ public class GerenciadorJogo : MonoBehaviour
     //Função usada na para aumentar as ameaças ciberneticas
     public void AumentarAmeaca(float valor)
     {
-        ameacaCibernetica = Mathf.Clamp(ameacaCibernetica + valor, 0f, 100f);
+        ameacaCibernetica += valor;
+
+        if(ameacaCibernetica >= 100f)
+        {
+            ameacaCibernetica = 0f;
+            Debug.Log("A ameaça cibernética atingiu 100% e for resetada!");
+
+        }
+
+        ameacaCibernetica = Mathf.Clamp(ameacaCibernetica, 0f, 100f);
     }
 
     public void ReduzirAmeaca(float valor)
