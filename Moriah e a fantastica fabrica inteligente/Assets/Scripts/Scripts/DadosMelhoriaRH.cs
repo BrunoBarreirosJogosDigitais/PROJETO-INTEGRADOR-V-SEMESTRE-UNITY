@@ -5,9 +5,9 @@ public class DadosMelhoriaRH : ScriptableObject
 {
     public enum TipoBonusRH
     {
-        MitigacaoEngenhariaSocial,
-        EficienciaProdutiva,
-        ResistenciaDDoS
+        MitigacaoEngenhariaSocial, //Simulador de Phishing(-20% frequencia de invasões)
+        EficienciaProdutiva, // Central de Ergonomia(+10% velocidade/geração de dinheiro)
+        ResistenciaDDoS //Academia Corporativa(Resistência a quedas de energia)
     }
 
     [Header("Informações Básicas")]
@@ -20,6 +20,7 @@ public class DadosMelhoriaRH : ScriptableObject
 
     [Header("Bônus e Mecânicas de RH")]
     public TipoBonusRH tipoBonus;
+
     [Tooltip("Valor de Bônus")]
     public float valorBonus = 0.20f;
 }

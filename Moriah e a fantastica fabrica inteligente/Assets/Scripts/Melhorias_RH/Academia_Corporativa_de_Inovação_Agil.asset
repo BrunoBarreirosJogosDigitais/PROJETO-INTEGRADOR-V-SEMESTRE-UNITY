@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a57fae4f11b7f54495209387922f5ae, type: 3}
+  m_Name: "Academia_Corporativa_de_Inova\xE7\xE3o_Agil"
+  m_EditorClassIdentifier: 
+  nomeMelhoria: "Academia Corporativa de Inova\xE7\xE3o \xC1gil"
+  descricao: "Audit\xF3rio moderno voltado para o alinhamento cultural da empresa
+    e capacita\xE7\xE3o avan\xE7ada em processos da Ind\xFAstrias 4.0"
+  preco: 7500
+  producaoPorSegundo: 250
+  tipoBonus: 2
+  valorBonus: 0.3
