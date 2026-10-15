@@ -35,9 +35,11 @@ public class SistemaConstrucaoRH : MonoBehaviour
 
         melhoriaInstalada = Instantiate(
             prefabMelhoriaParaEsteLocal,
-            posicaoSpawn, rotacaoSpawn,
-            transform
+            posicaoSpawn, 
+            rotacaoSpawn
         );
+
+        melhoriaInstalada.transform.localScale = Vector3.one;
 
         GerenciadorJogo.Instancia.AdicionarProducao(dadosMelhoriaParaEsteLocal.producaoPorSegundo);
 

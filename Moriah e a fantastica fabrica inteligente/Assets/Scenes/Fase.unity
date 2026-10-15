@@ -240,6 +240,9 @@ MonoBehaviour:
   vidaPlacaMaxima: 500
   vidaPlaca: 0
   geracaoEnergiaPorSegundo: 0
+  simuladorPhishingAtivo: 0
+  centralErgonomiaAtiva: 0
+  academiaDDoSAtiva: 0
 --- !u!4 &9684440
 Transform:
   m_ObjectHideFlags: 0
@@ -555,7 +558,7 @@ GameObject:
   m_Layer: 0
   m_Name: Pontos_de_Instancia
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -568,7 +571,7 @@ Transform:
   m_GameObject: {fileID: 104285714}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalPosition: {x: 0, y: 2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1297,7 +1300,7 @@ GameObject:
   m_Layer: 0
   m_Name: Pontos_de_Instancia
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1310,7 +1313,7 @@ Transform:
   m_GameObject: {fileID: 274958015}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2086,7 +2089,7 @@ GameObject:
   m_Layer: 0
   m_Name: Pontos_de_Instancia
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2099,7 +2102,7 @@ Transform:
   m_GameObject: {fileID: 458380769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalPosition: {x: 0, y: 2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3496,7 +3499,7 @@ GameObject:
   m_Layer: 0
   m_Name: Pontos_de_Instancia
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3509,7 +3512,7 @@ Transform:
   m_GameObject: {fileID: 1096067181}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalPosition: {x: 0, y: 3.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3759,7 +3762,7 @@ GameObject:
   m_Layer: 0
   m_Name: Pontos_de_Instancia
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3772,7 +3775,7 @@ Transform:
   m_GameObject: {fileID: 1207632134}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalPosition: {x: 0, y: 3.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5722,7 +5725,7 @@ GameObject:
   m_Layer: 0
   m_Name: Pontos_de_Instancia
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5735,7 +5738,7 @@ Transform:
   m_GameObject: {fileID: 1835892265}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalPosition: {x: 0, y: 3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5884,11 +5887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5725914339829038337, guid: 9eaf8e4e449c2a5448aaa9935da1299d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.35
       objectReference: {fileID: 0}
     - target: {fileID: 5725914339829038337, guid: 9eaf8e4e449c2a5448aaa9935da1299d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.39
       objectReference: {fileID: 0}
     - target: {fileID: 5725914339829038337, guid: 9eaf8e4e449c2a5448aaa9935da1299d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5941,11 +5944,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5598599158935414029, guid: d0d6802ac41fe3443bf7372d450d50e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.17
       objectReference: {fileID: 0}
     - target: {fileID: 5598599158935414029, guid: d0d6802ac41fe3443bf7372d450d50e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.52
       objectReference: {fileID: 0}
     - target: {fileID: 5598599158935414029, guid: d0d6802ac41fe3443bf7372d450d50e7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6003,7 +6006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3498507263670435512, guid: d9ecfe2f64739bf45b3db9decfbb063c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 3498507263670435512, guid: d9ecfe2f64739bf45b3db9decfbb063c, type: 3}
       propertyPath: m_LocalPosition.z
