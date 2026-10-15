@@ -20,4 +20,8 @@ public class Menu : MonoBehaviour
         Application.Quit();
         Debug.Log("Jogo fechado");
     }
+    public void MenuIniciar()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

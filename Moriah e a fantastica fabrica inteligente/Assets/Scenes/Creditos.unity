@@ -467,7 +467,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 203868038}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Sair
+        m_MethodName: MenuIniciar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
