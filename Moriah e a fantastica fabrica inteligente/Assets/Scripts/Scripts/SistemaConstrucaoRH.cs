@@ -41,27 +41,9 @@ public class SistemaConstrucaoRH : MonoBehaviour
 
         GerenciadorJogo.Instancia.AdicionarProducao(dadosMelhoriaParaEsteLocal.producaoPorSegundo);
 
-        switch (dadosMelhoriaParaEsteLocal.tipoBonus)
-        {
-            case DadosMelhoriaRH.TipoBonusRH.MitigacaoEngenhariaSocial:
-                float reducaoAmeaca = dadosMelhoriaParaEsteLocal.valorBonus * 50f;
-                GerenciadorJogo.Instancia.ReduzirAmeaca(reducaoAmeaca);
-                Debug.Log("Simulador de Phishing instalado: Invasões mitigadas em 20%");
-                break;
+        GerenciadorJogo.Instancia.AtivarEfeitoRH(dadosMelhoriaParaEsteLocal.tipoBonus);
 
-            case DadosMelhoriaRH.TipoBonusRH.EficienciaProdutiva:
-                float bonusProducao = GerenciadorJogo.Instancia.producaoPorSegundo * dadosMelhoriaParaEsteLocal.valorBonus;
-                GerenciadorJogo.Instancia.AdicionarProducao(bonusProducao);
-                Debug.Log("Central de Ergonomia instalada: Bônus de 10% de eficiência aplicado.");
-                break;
-
-            case DadosMelhoriaRH.TipoBonusRH.ResistenciaDDoS:
-                GerenciadorJogo.Instancia.AdicionarGeracaoEnergia(2f);
-                Debug.Log("Academia Corporativa instalada: Operadores capacitados contra quedas de energia");
-                break;
-        }
-
-        Debug.Log("Melhoria do Setor de RH erquida com sucesso!");
+        Debug.Log("Melhoria do Setor de RH erguida com sucesso: " + dadosMelhoriaParaEsteLocal.nomeMelhoria);
     }
 
 }
