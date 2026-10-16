@@ -44,9 +44,11 @@ public class SistemaConstrucao : MonoBehaviour
 
         maquinaInstalada = Instantiate(
                 prefabMaquinaParaEsteLocal,
-                posicaoSpawn, rotacaoSpawn,
-                transform
+                posicaoSpawn, 
+                rotacaoSpawn
         );
+
+        maquinaInstalada.transform.localScale = Vector3.one;
 
         GerenciadorJogo.Instancia.AdicionarProducao(dadosMaquinaParaEsteLocal.producaoPorSegundo);
         GerenciadorJogo.Instancia.AdicionarManutencao(dadosMaquinaParaEsteLocal.manutencaoPorSegundo);

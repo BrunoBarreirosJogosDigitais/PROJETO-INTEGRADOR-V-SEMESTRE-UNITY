@@ -31,6 +31,11 @@ public class GerenciadorJogo : MonoBehaviour
     public float geracaoEnergiaPorSegundo = 0f;
     private float contadorEnergia = 5f;
 
+    [Header("Bônus do Setor de RH (Área 3)")]
+    public bool simuladorPhishingAtivo = false;
+    public bool centralErgonomiaAtiva = false;
+    public bool academiaDDoSAtiva = false;
+
     private float contadorEconomia;
     private float contadorAmeaca;
 
@@ -81,6 +86,12 @@ public class GerenciadorJogo : MonoBehaviour
 
             float rendaBasePassiva = 100f;
 
+            float producaoEfetiva = producaoPorSegundo;
+            if (centralErgonomiaAtiva)
+            {
+                producaoEfetiva *= 1.10f;
+            }
+
             float lucro = (producaoPorSegundo - manutencaoPorSegundo) + rendaBasePassiva;
             dinheiro += Mathf.Max(0f, lucro);
 
@@ -94,6 +105,12 @@ public class GerenciadorJogo : MonoBehaviour
 
             //Quanto mais melhorias a fábrica tiver, mais rapido sobe, porém o tempo necessário irá aumentar 
             float tempoNecessario = Mathf.Max(5f, 25f / Mathf.Max(1f, producaoPorSegundo * 0.05f));
+
+            //Se o simulador estiver ativo o tempo necessário para a ameaça subir aumenta
+            if (simuladorPhishingAtivo)
+            {
+                tempoNecessario *= 1.20f;
+            }
 
             //Se o contador de ameaça for maior ou igual a 10 a função AumentarAmeaça sobe para mais 1
             if (contadorAmeaca >= tempoNecessario)
@@ -121,6 +138,28 @@ public class GerenciadorJogo : MonoBehaviour
         dinheiro -= valor;
         VerificarCondicaoVitoria();
         return true;
+    }
+
+    public void AtivarEfeitoRH(DadosMelhoriaRH.TipoBonusRH tipoBonus)
+    {
+        switch (tipoBonus)
+        {
+            case DadosMelhoriaRH.TipoBonusRH.MitigacaoEngenhariaSocial:
+                simuladorPhishingAtivo = true;
+                Debug.Log("Efeito contínuo ativo: Simulador de Phishing mitigando ameaças.");
+                break;
+
+            case DadosMelhoriaRH.TipoBonusRH.EficienciaProdutiva:
+                centralErgonomiaAtiva = true;
+                Debug.Log("Efeito contínuo ativo: Central de Ergonomia aplicando +10% de eficiência global.");
+                break;
+
+            case DadosMelhoriaRH.TipoBonusRH.ResistenciaDDoS:
+                academiaDDoSAtiva = true;
+                AdicionarGeracaoEnergia(2f); // Reforço passivo de energia contra DDoS
+                Debug.Log("Efeito contínuo ativo: Academia Corporativa blindando contra quedas de energia.");
+                break;
+        }
     }
 
     public void AdicionarGeracaoEnergia(float valor)

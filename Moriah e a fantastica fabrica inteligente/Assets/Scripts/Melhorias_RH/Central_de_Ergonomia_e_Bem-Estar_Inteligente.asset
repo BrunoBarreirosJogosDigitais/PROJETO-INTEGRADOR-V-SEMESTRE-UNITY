@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a57fae4f11b7f54495209387922f5ae, type: 3}
+  m_Name: Central_de_Ergonomia_e_Bem-Estar_Inteligente
+  m_EditorClassIdentifier: 
+  nomeMelhoria: Central de Ergonomia e Bem-Estar Inteligente
+  descricao: "\xC1rea de descanso equipada com sensores de fadiga e biometria para
+    garantir que os funcion\xE1rios operem no pico de produtividade sem desgaste
+    f\xEDsico."
+  preco: 3000
+  producaoPorSegundo: 95
+  tipoBonus: 1
+  valorBonus: 0.1
