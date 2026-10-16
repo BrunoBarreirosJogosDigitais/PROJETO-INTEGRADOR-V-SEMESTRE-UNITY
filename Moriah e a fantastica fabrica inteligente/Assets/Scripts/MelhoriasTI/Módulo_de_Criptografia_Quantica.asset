@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3a984c8c1c941469df7606a8af520e, type: 3}
+  m_Name: "M\xF3dulo_de_Criptografia_Quantica"
+  m_EditorClassIdentifier: 
+  nomeConstructo: "Modulo de Criptografia Qu\xE2ntica"
+  descricao: "Servidores de alta seguran\xE7a avan\xE7ada que protege os algoritmos
+    da Moriah contra roubos de propriedade intelectu"
+  preco: 4000
+  producaoPorSegundo: 150
+  geracaoPontosServidor: 5
+  tipoBonus: 1
+  valorBonus: 60

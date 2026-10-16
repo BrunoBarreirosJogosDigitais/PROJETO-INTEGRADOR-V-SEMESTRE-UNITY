@@ -31,6 +31,10 @@ public class GerenciadorJogo : MonoBehaviour
     public float geracaoEnergiaPorSegundo = 0f;
     private float contadorEnergia = 5f;
 
+    [Header("Bônus do Setor de TI (Área 2)")]
+    public bool criptografiaAtivado = false;
+    public bool supercomputadorAtivado = false;
+
     [Header("Bônus do Setor de RH (Área 3)")]
     public bool simuladorPhishingAtivo = false;
     public bool centralErgonomiaAtiva = false;
@@ -138,6 +142,29 @@ public class GerenciadorJogo : MonoBehaviour
         dinheiro -= valor;
         VerificarCondicaoVitoria();
         return true;
+    }
+
+    public void AtivarEfeitoTI(DadosMelhoriaTI.TipoBonusTI tipoBonus, float valorBonus)
+    {
+        switch (tipoBonus)
+        {
+            case DadosMelhoriaTI.TipoBonusTI.BlindagemNucleo:
+                int hpExtra = Mathf.RoundToInt(valorBonus);
+                vidaPlacaMaxima += hpExtra;
+                vidaPlaca = Mathf.Min(vidaPlacaMaxima, vidaPlaca + hpExtra);
+                Debug.Log($"[TI] Edge Server instalado: +{hpExtra} HP de blindagem aplicada ao núcleo da placa-mãe.");
+                break;
+
+            case DadosMelhoriaTI.TipoBonusTI.ReducaoDanoRansomware:
+                criptografiaAtivado = true;
+                Debug.Log("[TI] Módulo de Criptografia Quântica ativo: Redução de dano contra Ransomwares aplicada.");
+                break;
+
+            case DadosMelhoriaTI.TipoBonusTI.EconomiaCartasTD:
+                supercomputadorAtivado = true;
+                Debug.Log("[TI] Supercomputador Neural ativo: Custo de energia das cartas defensivas reduzido");
+                break;
+        }
     }
 
     public void AtivarEfeitoRH(DadosMelhoriaRH.TipoBonusRH tipoBonus)
