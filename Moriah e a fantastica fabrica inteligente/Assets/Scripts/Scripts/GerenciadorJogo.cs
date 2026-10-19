@@ -34,6 +34,17 @@ public class GerenciadorJogo : MonoBehaviour
     private float contadorEconomia;
     private float contadorAmeaca;
 
+    [Header("Cenas")]
+    public string cenaMenu = "Menu";
+    public string cenaVitoria = "Vitoria";
+
+    [Header("Teste - Drenar Vida da Placa")]
+    public bool drenarVidaTeste = false;
+    public int vidaPerdidaPorSegundo = 10000;
+    private float contadorDrenoVida;
+
+    private bool vitoriaConquistada;
+
     private void Awake()
     {
         if (Instancia != null && Instancia != this)
@@ -58,8 +69,22 @@ public class GerenciadorJogo : MonoBehaviour
         if (estadoAtual == EstadoJogo.Pausado || estadoAtual == EstadoJogo.GameOver ||
             estadoAtual == EstadoJogo.Vitoria)
             return;
+        
+        // Teste: drena a vida da placa com o tempo.
+        if (drenarVidaTeste)
+        {
+            contadorDrenoVida += Time.deltaTime;
 
-        //RegeneraÁ„o automatica de pontos de servidor
+            if(contadorDrenoVida >= 1f)
+            {
+                contadorDrenoVida = 0f;
+                ReceberDanoPlaca(vidaPerdidaPorSegundo);
+            }
+
+            if (estadoAtual == EstadoJogo.GameOver) return;
+        }
+
+        //RegeneraÔøΩÔøΩo automatica de pontos de servidor
         if(geracaoEnergiaPorSegundo > 0f && pontosServidor < pontosServidorMaximos)
         {
             contadorEnergia += Time.deltaTime;
@@ -71,7 +96,7 @@ public class GerenciadorJogo : MonoBehaviour
             }
         }
 
-        //O dinheiro passivo do protagonista ir· se incrementar gradativamente
+        //O dinheiro passivo do protagonista irÔøΩ se incrementar gradativamente
         contadorEconomia += Time.deltaTime;
 
 
@@ -87,15 +112,15 @@ public class GerenciadorJogo : MonoBehaviour
             VerificarCondicaoVitoria();
         }
 
-        //Se a produÁ„o por segundo for maior que zero o contador de ameaÁa ira aumentar
+        //Se a produÔøΩÔøΩo por segundo for maior que zero o contador de ameaÔøΩa ira aumentar
         if (producaoPorSegundo > 0f)
         {
             contadorAmeaca += Time.deltaTime;
 
-            //Quanto mais melhorias a f·brica tiver, mais rapido sobe, porÈm o tempo necess·rio ir· aumentar 
+            //Quanto mais melhorias a fÔøΩbrica tiver, mais rapido sobe, porÔøΩm o tempo necessÔøΩrio irÔøΩ aumentar 
             float tempoNecessario = Mathf.Max(5f, 25f / Mathf.Max(1f, producaoPorSegundo * 0.05f));
 
-            //Se o contador de ameaÁa for maior ou igual a 10 a funÁ„o AumentarAmeaÁa sobe para mais 1
+            //Se o contador de ameaÔøΩa for maior ou igual a 10 a funÔøΩÔøΩo AumentarAmeaÔøΩa sobe para mais 1
             if (contadorAmeaca >= tempoNecessario)
             {
                 //Zera o contador para iniciar a contagem novamente
@@ -107,7 +132,7 @@ public class GerenciadorJogo : MonoBehaviour
         }
     }
 
-    //FunÁ„o que ser· chamada em momentos de melhorias das maquinas ou na liberaÁ„o de outras ·reas
+    //FunÔøΩÔøΩo que serÔøΩ chamada em momentos de melhorias das maquinas ou na liberaÔøΩÔøΩo de outras ÔøΩreas
     public bool GastarDinheiro(float valor)
     {
         if (valor <= 0f) return true;
@@ -138,7 +163,7 @@ public class GerenciadorJogo : MonoBehaviour
         if (valor > 0f) dinheiro += valor;
     }
 
-    //FunÁ„o usada nas maquinas da fabrica
+    //FunÔøΩÔøΩo usada nas maquinas da fabrica
     public void AdicionarProducao(float valor)
     {
         producaoPorSegundo += Mathf.Max(0f, valor);
@@ -160,7 +185,7 @@ public class GerenciadorJogo : MonoBehaviour
         manutencaoPorSegundo = Mathf.Max(0f, manutencaoPorSegundo - valor);
     }
 
-    //FunÁ„o usada na para aumentar as ameaÁas ciberneticas
+    //FunÔøΩÔøΩo usada na para aumentar as ameaÔøΩas ciberneticas
     public void AumentarAmeaca(float valor)
     {
         ameacaCibernetica += valor;
@@ -168,7 +193,7 @@ public class GerenciadorJogo : MonoBehaviour
         if(ameacaCibernetica >= 100f)
         {
             ameacaCibernetica = 0f;
-            Debug.Log("A ameaÁa cibernÈtica atingiu 100% e for resetada!");
+            Debug.Log("A ameaÔøΩa cibernÔøΩtica atingiu 100% e for resetada!");
 
         }
 
@@ -225,7 +250,7 @@ public class GerenciadorJogo : MonoBehaviour
 
     private void VerificarCondicaoVitoria()
     {
-        if(dinheiro >= metaFinanceiraVitoria && estadoAtual != EstadoJogo.Vitoria)
+        if(dinheiro >= metaFinanceiraVitoria && !vitoriaConquistada)
         {
             AcionarVitoria();
         }
@@ -237,12 +262,14 @@ public class GerenciadorJogo : MonoBehaviour
         pontosServidor = pontosServidorMaximos;
         vidaPlaca = vidaPlacaMaxima;
         ameacaCibernetica = 0f;
+        vitoriaConquistada = false;
+        contadorDrenoVida = 0f;
 
         estadoAtual = EstadoJogo.Tycoon3D;
 
         SceneManager.LoadScene("Fase");
 
-        Debug.Log("Jogo iniciado! Entrando no modo Tycoon 3D da f·brica... ");
+        Debug.Log("Jogo iniciado! Entrando no modo Tycoon 3D da fÔøΩbrica... ");
     }
 
     public void Creditos()
@@ -265,15 +292,32 @@ public class GerenciadorJogo : MonoBehaviour
 
     private void AcionarGameOver()
     {
+        if (estadoAtual == EstadoJogo.GameOver) return; // evita carregar a cena duas vezes
+        
         estadoAtual = EstadoJogo.GameOver;
-        Debug.Log("Game Over! O n˙cleo da Placa-m„e foi destruÌdo");
+        Debug.Log("Game Over! O nÔøΩcleo da Placa-mÔøΩe foi destruÔøΩdo");
+
+        SceneManager.LoadScene(cenaMenu);
     }
 
     private void AcionarVitoria()
     {
+        vitoriaConquistada = true; // impede que a vit√≥ria dispare de novo quando o jogador voltar
         estadoAtual = EstadoJogo.Vitoria;
-        Debug.Log("ParabÈns! Meta financeira de R$ 3.000.000 atingida!");
+        Debug.Log("ParabÔøΩns! Meta financeira de R$ 3.000.000 atingida!");
+
+        // ATIVAR ISSO AQUI DEPOIS, S√ì TIRAR O COMENT√ÅRIO //
+        // SceneManager.LoadSceneAsync(cenaVitoria, LoadSceneMode.Additive);
     }
+
+    /* FUN√á√ÉO PARA VOLTAR DA VIT√ìRIA
+    public void VoltarDaVitoria()
+    {
+        SceneManager.UnloadSceneAsync(cenaVitoria);
+        estadoAtual = EstadoJogo.Tycoon3D;
+    }
+    */
+
 
     public void AlternaModoJogo(EstadoJogo novoEstado)
     {
@@ -281,11 +325,11 @@ public class GerenciadorJogo : MonoBehaviour
 
         if(estadoAtual == EstadoJogo.TowerDefense2D)
         {
-            Debug.Log("Entrando no modo CibernÈtico (Tower Defense 2D)...");
+            Debug.Log("Entrando no modo CibernÔøΩtico (Tower Defense 2D)...");
         }
         else if(estadoAtual == EstadoJogo.Tycoon3D)
         {
-            Debug.Log("Retornando ao modo Ind˙stria (Tycoon 3D)...");
+            Debug.Log("Retornando ao modo IndÔøΩstria (Tycoon 3D)...");
         }
     }
 }
