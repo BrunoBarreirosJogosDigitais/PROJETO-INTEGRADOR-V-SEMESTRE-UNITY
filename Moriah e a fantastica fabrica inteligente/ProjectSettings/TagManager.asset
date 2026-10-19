@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - SlotDefesa
+  - Inimigos
   layers:
   - Default
   - TransparentFX
