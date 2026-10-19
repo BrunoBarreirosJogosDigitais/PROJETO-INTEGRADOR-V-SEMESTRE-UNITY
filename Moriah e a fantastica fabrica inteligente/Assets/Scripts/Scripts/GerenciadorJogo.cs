@@ -37,6 +37,7 @@ public class GerenciadorJogo : MonoBehaviour
     [Header("Cenas")]
     public string cenaMenu = "Menu";
     public string cenaVitoria = "Vitoria";
+    public string cenaGameOver = "GameOver";
 
     [Header("Teste - Drenar Vida da Placa")]
     public bool drenarVidaTeste = false;
@@ -297,7 +298,7 @@ public class GerenciadorJogo : MonoBehaviour
         estadoAtual = EstadoJogo.GameOver;
         Debug.Log("Game Over! O n�cleo da Placa-m�e foi destru�do");
 
-        SceneManager.LoadScene(cenaMenu);
+        SceneManager.LoadScene(cenaGameOver);
     }
 
     private void AcionarVitoria()
@@ -307,17 +308,16 @@ public class GerenciadorJogo : MonoBehaviour
         Debug.Log("Parab�ns! Meta financeira de R$ 3.000.000 atingida!");
 
         // ATIVAR ISSO AQUI DEPOIS, SÓ TIRAR O COMENTÁRIO //
-        // SceneManager.LoadSceneAsync(cenaVitoria, LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync(cenaVitoria, LoadSceneMode.Additive);
     }
 
-    /* FUNÇÃO PARA VOLTAR DA VITÓRIA
+    // FUNÇÃO PARA VOLTAR DA VITÓRIA
     public void VoltarDaVitoria()
     {
         SceneManager.UnloadSceneAsync(cenaVitoria);
         estadoAtual = EstadoJogo.Tycoon3D;
     }
-    */
-
+    
 
     public void AlternaModoJogo(EstadoJogo novoEstado)
     {
