@@ -5,36 +5,47 @@ public class Antivirus : MonoBehaviour
     [Header("Objeto Scriptável da Carta")]
     public CartaDefensiva dadosDaCarta;
 
+    [Header("Configuração do Disparo")]
+    public GameObject prefabprojetil;
+    public Transform pontoDeDisparo;
+
     [Header("Atributos em Tempo de Execução")]
     public float danoDisparo;
     public float alcance;
     public float tempoRecarga;
+    public float vidaAtual;
 
     private float cronogramDisparo = 0f;
 
     void Start()
     {
-        if (dadosDaCarta != null) 
+        if (dadosDaCarta != null)
         {
             danoDisparo = dadosDaCarta.dano;
             alcance = dadosDaCarta.alcance;
             tempoRecarga = dadosDaCarta.tempoRecarga;
+            vidaAtual = dadosDaCarta.vidaBloqueio;
         }
         else
         {
-            Debug.LogWarning("[Antivírus] Nenhum CartaDefensiva foi associada no Inspector");
+            Debug.LogWarning("[Antivírus] Nenhuma CartaDefensiva foi associada no Inspector");
             danoDisparo = 25f;
             alcance = 3f;
             tempoRecarga = 1f;
+            vidaAtual = 100f;
+        }
+
+        if (pontoDeDisparo == null)
+        {
+            pontoDeDisparo = transform;
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         cronogramDisparo += Time.deltaTime;
 
-        if(cronogramDisparo >= tempoRecarga)
+        if (cronogramDisparo >= tempoRecarga)
         {
             AtacarInimigoNoAlcance();
             cronogramDisparo = 0f;
@@ -59,17 +70,60 @@ public class Antivirus : MonoBehaviour
 
         if (inimigoMaisProximo != null)
         {
-            Debug.Log($"[Antivirus] Disparando contra {inimigoMaisProximo.name} causando {danoDisparo} de dano!");
+            if (prefabprojetil != null)
+            {
+                GameObject tiroInstanciado = Instantiate(prefabprojetil, pontoDeDisparo.position, Quaternion.identity);
 
-            inimigoMaisProximo.SendMessage("ReceberDano", danoDisparo, SendMessageOptions.DontRequireReceiver);
-
+                ProjetilAntivirus projScript = tiroInstanciado.GetComponent<ProjetilAntivirus>();
+                if (projScript != null)
+                {
+                    projScript.ConfigurarAlvo(inimigoMaisProximo.transform, danoDisparo);
+                }
+            }
+            else
+            {
+                Debug.Log($"[Antivirus] Disparando contra {inimigoMaisProximo.name} causando {danoDisparo} de dano!");
+                inimigoMaisProximo.SendMessage("ReceberDano", danoDisparo, SendMessageOptions.DontRequireReceiver);
+            }
         }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Inimigos"))
+        {
+            // Pega o dano do próprio script do inimigo se existir, ou usa um valor padrão por segundo
+            InimigoTeste inimigo = collision.gameObject.GetComponent<InimigoTeste>();
+            float danoSofrido = (inimigo != null) ? inimigo.danoDeContato : 20f;
+
+            ReceberDano(danoSofrido * Time.deltaTime);
+        }
+    }
+
+    // Método chamado para aplicar dano e diminuir a vida da torre
+    public void ReceberDano(float quantidadeDano)
+    {
+        vidaAtual -= quantidadeDano;
+        vidaAtual = Mathf.Clamp(vidaAtual, 0f, (dadosDaCarta != null ? dadosDaCarta.vidaBloqueio : 100f));
+
+        Debug.Log($"[Antivírus] Recebendo dano de contato do inimigo! HP Restante: {vidaAtual}");
+
+        if (vidaAtual <= 0f)
+        {
+            Morrer();
+        }
+    }
+
+    private void Morrer()
+    {
+        Debug.Log("[Antivírus] Destruído pelos inimigos!");
+        Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;
         float raioVisual = (dadosDaCarta != null) ? dadosDaCarta.alcance : alcance;
-        Gizmos.DrawWireSphere(transform.position, raioVisual);  
+        Gizmos.DrawWireSphere(transform.position, raioVisual);
     }
 }
