@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeCarta: Anti-Virus
   descricao: 'Antivirus super legal '
-  custoServidor: 10
-  dano: 20
-  vidaBloqueio: 150
-  alcance: 10
-  tempoRecarga: 3
+  custoServidor: 50
+  dano: 30
+  vidaBloqueio: 100
+  alcance: 15
+  tempoRecarga: 2
   prefabTorreParaInstanciar: {fileID: 6963197113602703075, guid: ca1ac0e3a109a6a459217dcd284e9eb2, type: 3}

@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 414458234076123592}
   - component: {fileID: 1834019571318554046}
   - component: {fileID: 5031878292271764038}
-  m_Layer: 0
+  - component: {fileID: 1813354164597869354}
+  - component: {fileID: 446080765433178583}
+  m_Layer: 3
   m_Name: Anti_Virus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 738359103
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 0.5615011, b: 0, a: 1}
@@ -138,3 +140,49 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!50 &1813354164597869354
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6963197113602703075}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &446080765433178583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6963197113602703075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 883a76c0145813745a15c2ebaa1b2c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dadosDaCarta: {fileID: 11400000, guid: adb65ad483f9d1441a795c749be42490, type: 2}
+  prefabprojetil: {fileID: 3032042233500843912, guid: 6defac4f7ed91ed438d905560144907a, type: 3}
+  pontoDeDisparo: {fileID: 414458234076123592}
+  danoDisparo: 0
+  alcance: 0
+  tempoRecarga: 0
+  vidaAtual: 0
