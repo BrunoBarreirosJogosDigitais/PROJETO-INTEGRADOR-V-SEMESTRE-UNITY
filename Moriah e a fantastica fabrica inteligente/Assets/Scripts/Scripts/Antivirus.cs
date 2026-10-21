@@ -92,11 +92,8 @@ public class Antivirus : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Inimigos"))
         {
-            // Pega o dano do próprio script do inimigo se existir, ou usa um valor padrão por segundo
-            InimigoTeste inimigo = collision.gameObject.GetComponent<InimigoTeste>();
-            float danoSofrido = (inimigo != null) ? inimigo.danoDeContato : 20f;
-
-            ReceberDano(danoSofrido * Time.deltaTime);
+           
+            //Implementar metodo ou função de recebimento de dano presente em outros inimigos
         }
     }
 
