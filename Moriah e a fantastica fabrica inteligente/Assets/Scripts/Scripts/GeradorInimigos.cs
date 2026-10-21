@@ -5,11 +5,17 @@ public class GeradorInimigos : MonoBehaviour
     public GameObject[] prefabsInimigos;
     public Transform pontoNascimento;
     public Transform nucleo;
+    public Vector3 range;
 
     public float intervalo = 3f;
     public int quantidadePorOnda = 5;
 
     private float contador;
+
+    private void Start()
+    {
+        // InvokeRepeating("CriarInimigo", 0, intervalo);
+    }
 
     private void Update()
     {
@@ -30,9 +36,11 @@ public class GeradorInimigos : MonoBehaviour
             Random.Range(0, prefabsInimigos.Length)
         ];
 
+        Vector3 pos = this.transform.position + Vector3.Lerp(-range, range, Random.value);
+
         GameObject inimigo = Instantiate(
             prefab,
-            pontoNascimento.position,
+            pos,
             Quaternion.identity
         );
 
