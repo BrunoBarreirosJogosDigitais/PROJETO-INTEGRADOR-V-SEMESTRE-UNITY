@@ -7,7 +7,7 @@ public class InimigoTeste : MonoBehaviour
     public float vidaMaxima = 80f;
     public float vidaAtual;
     public float velocidade = 3f;
-    public float danoNoFirewall = 20f; // Dano que ele causa na torre
+    public float danoDeContato = 20f; // Dano aplicado no AirGapped por segundo
 
     private Transform alvoTorre;
 
@@ -20,50 +20,52 @@ public class InimigoTeste : MonoBehaviour
             gameObject.tag = "Inimigos";
         }
 
-        // Ignora automaticamente a colisão física com todos os objetos que têm a tag "SlotDefesa" na cena
+        // Ignora a colisão física com os slots do mapa
         GameObject[] slots = GameObject.FindGameObjectsWithTag("SlotDefesa");
         Collider2D meuCollider = GetComponent<Collider2D>();
 
-        foreach (GameObject slot in slots)
+        if (meuCollider != null)
         {
-            Collider2D colliderSlot = slot.GetComponent<Collider2D>();
-            if (meuCollider != null && colliderSlot != null)
+            foreach (GameObject slot in slots)
             {
-                Physics2D.IgnoreCollision(meuCollider, colliderSlot, true);
+                Collider2D colliderSlot = slot.GetComponent<Collider2D>();
+                if (colliderSlot != null)
+                {
+                    Physics2D.IgnoreCollision(meuCollider, colliderSlot, true);
+                }
             }
         }
     }
 
     private void Update()
     {
-        // Se não tiver um alvo (torre) na cena, tenta encontrar o Firewall mais próximo automaticamente
+        // Procura a barreira AirGapped se ainda não tiver um alvo
         if (alvoTorre == null)
         {
-            EncontrarTorreMaisProxima();
-            return; // Fica parado se não achar nenhuma torre
+            EncontrarAirGappedMaisProximo();
+            return;
         }
 
-        // Move-se em direção à torre encontrada
+        // Caminha em direção ao AirGapped
         transform.position = Vector2.MoveTowards(transform.position, alvoTorre.position, velocidade * Time.deltaTime);
     }
 
-    private void EncontrarTorreMaisProxima()
+    private void EncontrarAirGappedMaisProximo()
     {
-        // Procura automaticamente por objetos que tenham o script Firewall na cena
-        Firewall[] torresNaCena = FindObjectsByType<Firewall>(FindObjectsSortMode.None);
+        AirGapped[] barreiras = FindObjectsByType<AirGapped>(FindObjectsSortMode.None);
 
-        if (torresNaCena.Length > 0)
+        if (barreiras.Length > 0)
         {
             float menorDistancia = Mathf.Infinity;
             Transform maisProxima = null;
 
-            foreach (var torre in torresNaCena)
+            foreach (var barreira in barreiras)
             {
-                float distancia = Vector2.Distance(transform.position, torre.transform.position);
+                float distancia = Vector2.Distance(transform.position, barreira.transform.position);
                 if (distancia < menorDistancia)
                 {
                     menorDistancia = distancia;
-                    maisProxima = torre.transform;
+                    maisProxima = barreira.transform;
                 }
             }
 
@@ -71,17 +73,12 @@ public class InimigoTeste : MonoBehaviour
         }
     }
 
-    // Se estiver usando colisão física normal (sem Trigger)
+    // Ao encostar no AirGapped, causa dano contínuo
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("SlotDefesa") || collision.gameObject.GetComponent<Firewall>() != null)
+        if (collision.gameObject.GetComponent<AirGapped>() != null)
         {
-            Firewall firewall = collision.gameObject.GetComponent<Firewall>();
-            if (firewall != null)
-            {
-                // Causa dano contínuo na torre ao encostar nela
-                firewall.ReceberDano(danoNoFirewall * Time.deltaTime);
-            }
+            collision.gameObject.SendMessage("ReceberDano", danoDeContato * Time.deltaTime, SendMessageOptions.DontRequireReceiver);
         }
     }
 
@@ -90,7 +87,7 @@ public class InimigoTeste : MonoBehaviour
         vidaAtual -= quantidadeDano;
         vidaAtual = Mathf.Clamp(vidaAtual, 0f, vidaMaxima);
 
-        Debug.Log($"[{nomeInimigo}] Recebeu dano do Firewall! HP Atual: {vidaAtual}/{vidaMaxima}");
+        Debug.Log($"[{nomeInimigo}] HP Atual: {vidaAtual}/{vidaMaxima}");
 
         if (vidaAtual <= 0f)
         {
@@ -100,7 +97,7 @@ public class InimigoTeste : MonoBehaviour
 
     private void Morrer()
     {
-        Debug.Log($"[{nomeInimigo}] Destruído pelas defesas!");
+        Debug.Log($"[{nomeInimigo}] Destruído!");
         Destroy(gameObject);
     }
 }
