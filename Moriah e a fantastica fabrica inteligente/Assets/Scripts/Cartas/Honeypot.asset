@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a034d899278c2e444a9831517fbaaf41, type: 3}
+  m_Name: Honeypot
+  m_EditorClassIdentifier: 
+  nomeCarta: Honeypot
+  descricao: "Atrai a aten\xE7\xE3o dos inimigos para uma falsa vulnerabilidade e
+    aplica um efeito de lentid\xE3o ao ser destruida."
+  custoServidor: 20
+  dano: 70
+  vidaBloqueio: 50
+  alcance: 5
+  tempoRecarga: 1
+  prefabTorreParaInstanciar: {fileID: 8992558529120537174, guid: 88761e477e80ffb40a06a3fb4e9b7669, type: 3}
