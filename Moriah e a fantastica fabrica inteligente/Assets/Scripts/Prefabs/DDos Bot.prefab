@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5963866838990294470}
   - component: {fileID: 433967551115106431}
   - component: {fileID: 343151220190883306}
+  - component: {fileID: 7009965016978655253}
   m_Layer: 0
   m_Name: DDos Bot
   m_TagString: Untagged
@@ -177,3 +178,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alvo: {fileID: 0}
   speed: 2.25
+--- !u!114 &7009965016978655253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7253561527085947223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b76425454bb1c4692eef4e28af223e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  distanciaParaParar: 5
+  prefabTiro: {fileID: 4568706472903482488, guid: 4087fa9b9bfad954ea251e3f62c31dda, type: 3}
+  pontoDeTiro: {fileID: 0}
+  tirosPorRajada: 3
+  intervaloEntreTiros: 0.15
+  intervaloEntreRajadas: 2
