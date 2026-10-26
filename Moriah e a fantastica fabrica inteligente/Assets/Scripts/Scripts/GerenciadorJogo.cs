@@ -337,6 +337,12 @@ public class GerenciadorJogo : MonoBehaviour
         SceneManager.LoadScene("Creditos");
     }
 
+    public void VoltarAoMenu()
+    {
+        estadoAtual = EstadoJogo.Menu;
+        SceneManager.LoadScene(cenaMenu);
+    }
+
     public void QuitGame()
     {
         Debug.Log("Saindo do jogo...");
