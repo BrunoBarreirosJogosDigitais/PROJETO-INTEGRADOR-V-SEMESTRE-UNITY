@@ -9,6 +9,7 @@ public class GerenciadorJogo : MonoBehaviour
 
     [Header("Estado Atual")]
     public EstadoJogo estadoAtual;
+    private EstadoJogo estadoAnteriorAntesDoPause;
 
     [Header("Economia")]
     public float dinheiroInicial = 1000f;
@@ -77,8 +78,21 @@ public class GerenciadorJogo : MonoBehaviour
 
     private void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(estadoAtual == EstadoJogo.Tycoon3D || estadoAtual == EstadoJogo.TowerDefense2D)
+            {
+                PausarJogo();
+            }
+            else if(estadoAtual == EstadoJogo.Pausado)
+            {
+                RetomarJogo();
+            }
+        }
+
         if (estadoAtual == EstadoJogo.Pausado || estadoAtual == EstadoJogo.GameOver ||
-            estadoAtual == EstadoJogo.Vitoria)
+            estadoAtual == EstadoJogo.Vitoria || estadoAtual == EstadoJogo.Menu)
             return;
         
         // Teste: drena a vida da placa com o tempo.
@@ -145,6 +159,31 @@ public class GerenciadorJogo : MonoBehaviour
             }
 
         }
+    }
+
+    public void PausarJogo()
+    {
+        if (estadoAtual == EstadoJogo.Pausado || estadoAtual == EstadoJogo.Menu ||
+            estadoAtual == EstadoJogo.GameOver || estadoAtual == EstadoJogo.Vitoria)
+            return;
+
+        estadoAnteriorAntesDoPause = estadoAtual;
+        estadoAtual = EstadoJogo.Pausado;
+        Time.timeScale = 0f;
+        Debug.Log("[GerenciadorJogo] Jogo Pausado");
+    }
+
+    public void RetomarJogo()
+    {
+        if (estadoAtual != EstadoJogo.Pausado) return;
+
+        estadoAtual = estadoAnteriorAntesDoPause;
+        if (estadoAtual == EstadoJogo.Menu || estadoAtual == EstadoJogo.Pausado)
+        {
+            estadoAtual = EstadoJogo.Tycoon3D; // Fallback de segurança
+        }
+        Time.timeScale = 1f; // Restaura o tempo normal do jogo
+        Debug.Log("[GerenciadorJogo] Jogo Retomado.");
     }
 
     //Fun��o que ser� chamada em momentos de melhorias das maquinas ou na libera��o de outras �reas
@@ -318,6 +357,7 @@ public class GerenciadorJogo : MonoBehaviour
 
     public void IniciarJogo()
     {
+        Time.timeScale = 1f;
         dinheiro = dinheiroInicial;
         pontosServidor = pontosServidorMaximos;
         vidaPlaca = vidaPlacaMaxima;
@@ -339,6 +379,7 @@ public class GerenciadorJogo : MonoBehaviour
 
     public void VoltarAoMenu()
     {
+        Time.timeScale = 1f;
         estadoAtual = EstadoJogo.Menu;
         SceneManager.LoadScene(cenaMenu);
     }
