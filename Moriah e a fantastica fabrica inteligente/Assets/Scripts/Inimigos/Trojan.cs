@@ -7,6 +7,11 @@ public class Trojan : MonoBehaviour
     public float speed = 1.5f;
     public float suavizacao = 5f; // quanto maior, mais rápido ele muda de direção.
 
+    [Header("Atributos de Vida e Dano")]
+    public float vidaMaxima = 180f;
+    private float vidaAtual;
+    public int danoAoNucleo = 18;
+
     [Header("Escudo")]
     public EscudoTrojan escudo;
 
@@ -97,6 +102,30 @@ public class Trojan : MonoBehaviour
                 return true;
         }
         return false;
+    }
+
+    public void ReceberDano(float quantidadeDano)
+    {
+        if(escudo != null && escudo.Ativo)
+        {
+            escudo.ReceberDano();
+            Debug.Log("[Trojan] O escudo criptográfico interceptou o dano!");
+            return;
+        }
+
+        vidaAtual -= quantidadeDano;
+        Debug.Log($"[Trojan] Sofreu {quantidadeDano} de dano. Vida restante: {vidaAtual}/{vidaMaxima}");
+
+        if(vidaAtual <= 0f )
+        {
+            Morrer();
+        }
+    }
+
+    private void Morrer()
+    {
+        Debug.Log("[Trojan] Inimigo Trojan foi destruído!");
+        Destroy(gameObject);
     }
 
     void TestarDanoNoEscudo()

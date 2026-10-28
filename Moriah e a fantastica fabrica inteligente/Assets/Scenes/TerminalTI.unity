@@ -211,10 +211,6 @@ GameObject:
   - component: {fileID: 53242357}
   m_Layer: 5
   m_Name: "Text_Descri\xE7\xE3o"
-  - component: {fileID: 13917948}
-  - component: {fileID: 13917949}
-  m_Layer: 0
-  m_Name: GeradorInimigos_Baixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,22 +277,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53242355}
   m_CullTransparentMesh: 1
-  m_GameObject: {fileID: 13917947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a82a58192d0f6d44be877bf380b5e23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabsInimigos:
-  - {fileID: 7253561527085947223, guid: 2e6221a36dcf5124db9fb5dd7d280441, type: 3}
-  - {fileID: 7253561527085947223, guid: 9bf6bc52ce5533948b23944d40fe0647, type: 3}
-  - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
-  - {fileID: 7253561527085947223, guid: 69f8c874145a08e46a08bf689a7dbe92, type: 3}
-  pontoNascimento: {fileID: 13917948}
-  nucleo: {fileID: 3527750267871379052}
-  range: {x: 33, y: 0, z: 0}
-  intervalo: 3
-  quantidadePorOnda: 5
 --- !u!1 &129864977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,10 +1121,6 @@ GameObject:
   - component: {fileID: 438715975}
   m_Layer: 5
   m_Name: Text_Bloqueio
-  - component: {fileID: 351504883}
-  - component: {fileID: 351504884}
-  m_Layer: 0
-  m_Name: GeradorInimigos_Direita
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1606,22 +1582,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729041539}
   m_CullTransparentMesh: 1
-  m_GameObject: {fileID: 351504882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a82a58192d0f6d44be877bf380b5e23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabsInimigos:
-  - {fileID: 7253561527085947223, guid: 2e6221a36dcf5124db9fb5dd7d280441, type: 3}
-  - {fileID: 7253561527085947223, guid: 9bf6bc52ce5533948b23944d40fe0647, type: 3}
-  - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
-  - {fileID: 7253561527085947223, guid: 69f8c874145a08e46a08bf689a7dbe92, type: 3}
-  pontoNascimento: {fileID: 351504883}
-  nucleo: {fileID: 3527750267871379052}
-  range: {x: 0, y: 20, z: 0}
-  intervalo: 3
-  quantidadePorOnda: 5
 --- !u!1 &780221096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,11 +2884,11 @@ Transform:
   m_GameObject: {fileID: 1208999507}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -49.2, y: -20.4, z: 0.46656835}
+  m_LocalPosition: {x: -49.2, y: -5.1, z: 0.46656835}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1377304731}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1208999509
 MonoBehaviour:
@@ -3451,9 +3411,6 @@ GameObject:
   - component: {fileID: 1401949275}
   m_Layer: 5
   m_Name: Carta03_Mini
-  - component: {fileID: 1377304731}
-  m_Layer: 0
-  m_Name: Geradores de Inimigos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3563,19 +3520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a69487a428b44d42b4c57b55c2c292f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GameObject: {fileID: 1377304730}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.669157, y: 20.611263, z: -0.46656835}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5930890054405184116}
-  - {fileID: 13917948}
-  - {fileID: 1208999508}
-  - {fileID: 351504883}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1445391315
 GameObject:
   m_ObjectHideFlags: 0
@@ -5750,7 +5694,6 @@ GameObject:
   - component: {fileID: 2004165289}
   - component: {fileID: 2004165291}
   - component: {fileID: 2004165290}
-  - component: {fileID: 2004165292}
   m_Layer: 5
   m_Name: "TapaBuracoPlacaM\xE3e"
   m_TagString: Untagged
@@ -5904,46 +5847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a69487a428b44d42b4c57b55c2c292f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GameObject: {fileID: 2004165288}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &2058401842
 GameObject:
   m_ObjectHideFlags: 0
@@ -6201,11 +6104,11 @@ Transform:
   m_GameObject: {fileID: 1867921587573334923}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.669157, y: -0.21126366, z: 0.46656835}
+  m_LocalPosition: {x: -1.4, y: 34, z: 0.46656835}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1377304731}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5930890054405184117
 MonoBehaviour:
@@ -6326,6 +6229,7 @@ RectTransform:
   - {fileID: 1632097999}
   - {fileID: 171046578}
   - {fileID: 1832286610}
+  - {fileID: 985109475}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6462,5 +6366,6 @@ SceneRoots:
   - {fileID: 1668958731}
   - {fileID: 8605041073274257028}
   - {fileID: 206699506}
-  - {fileID: 1377304731}
   - {fileID: 1839783539}
+  - {fileID: 1208999508}
+  - {fileID: 5930890054405184116}

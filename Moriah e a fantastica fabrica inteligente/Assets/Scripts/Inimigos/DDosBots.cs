@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class DDosBots : MonoBehaviour
 {
-    [Header("Movimento")]
+    [Header("Atributos do Inimigo")]
     public float speed = 1.5f;
+    public float vidaMaxima = 100f;
+    private float vidaAtual;
     public float distanciaParaParar = 5f; // 0 = vai até o alvo, 1 = para a 1 unidade de distância do alvo, 2 = para a 2 unidades de distância do alvo, etc.
 
     [Header("Tiro")]
@@ -20,6 +22,7 @@ public class DDosBots : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        vidaAtual = vidaMaxima;
         alvo = GameObject.Find("PlacaMae");
         StartCoroutine(LoopDeRajadas());
     }
@@ -36,6 +39,23 @@ public class DDosBots : MonoBehaviour
         {
             transform.Translate(direcao.normalized * speed * Time.deltaTime, Space.World);
         }
+    }
+
+    public void ReceberDano(float quantidadeDano)
+    {
+        vidaAtual -= quantidadeDano;
+        Debug.Log($"[DDoSBots] Sofreu {quantidadeDano} de dano. Vida Restante: {vidaAtual}/{vidaMaxima}");
+
+        if(vidaAtual <= 0f)
+        {
+            Morrer();
+        }
+    }
+
+    private void Morrer()
+    {
+        Debug.Log("[DDoSBots] Bot DDoS foi destruido");
+        Destroy(gameObject);
     }
 
     IEnumerator LoopDeRajadas()

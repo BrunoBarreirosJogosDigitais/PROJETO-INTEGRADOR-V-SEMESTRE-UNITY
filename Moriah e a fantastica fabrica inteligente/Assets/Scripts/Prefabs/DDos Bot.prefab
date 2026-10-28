@@ -171,13 +171,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7253561527085947223}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9faaf83113e35474289da0bf6a7ce12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
+  vidaMaxima: 100
+  danoAoNucleo: 5
   alvo: {fileID: 0}
-  speed: 2.25
 --- !u!114 &7009965016978655253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
+  vidaMaxima: 100
   distanciaParaParar: 5
   prefabTiro: {fileID: 4568706472903482488, guid: 4087fa9b9bfad954ea251e3f62c31dda, type: 3}
   pontoDeTiro: {fileID: 0}

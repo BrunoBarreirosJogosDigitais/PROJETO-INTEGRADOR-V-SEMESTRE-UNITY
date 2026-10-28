@@ -172,13 +172,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7253561527085947223}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9faaf83113e35474289da0bf6a7ce12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alvo: {fileID: 0}
   speed: 1
+  vidaMaxima: 50
+  danoAoNucleo: 15
+  alvo: {fileID: 0}
 --- !u!114 &8739934132939987563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   suavizacao: 5
+  vidaMaxima: 120
+  danoAoNucleo: 18
   escudo: {fileID: 0}
   prefabsParaEvitar:
   - {fileID: 6963197113602703075, guid: ca1ac0e3a109a6a459217dcd284e9eb2, type: 3}

@@ -4,6 +4,7 @@ public class TiroInimigo : MonoBehaviour
 {
     public float velocidade = 6f;
     public float tempoDeVida = 5f;
+    public int danoDoTiro = 5;
 
     private Vector3 direcao;
 
@@ -28,6 +29,11 @@ public class TiroInimigo : MonoBehaviour
     {
         if (collision.name.StartsWith("PlacaMae"))
         {
+            if(GerenciadorJogo.Instancia != null)
+            {
+                GerenciadorJogo.Instancia.ReceberDanoPlaca(danoDoTiro);
+            }
+
             Destroy(this.gameObject);
         }
     }
