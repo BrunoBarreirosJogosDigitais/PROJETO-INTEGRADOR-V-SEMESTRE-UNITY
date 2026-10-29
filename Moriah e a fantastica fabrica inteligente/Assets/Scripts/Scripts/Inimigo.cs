@@ -104,20 +104,24 @@ public class Inimigo : MonoBehaviour
         }
     }
 
-    // Tratamento de colisão física contínua para a Placa-Mãe e Torres Defensivas
-    void OnCollisionStay2D(Collision2D collision)
+    // Impacto único e direto ao atingir o núcleo da Placa-Mãe
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name.StartsWith("PlacaMae"))
         {
             if (GerenciadorJogo.Instancia != null)
             {
-                // Dano contínuo na placa por segundo, ou se preferir impacto único, pode manter o Enter apenas para a placa
-                GerenciadorJogo.Instancia.ReceberDanoPlaca(Mathf.RoundToInt(danoAoNucleo * Time.deltaTime));
+                GerenciadorJogo.Instancia.ReceberDanoPlaca(danoAoNucleo);
             }
+            Destroy(this.gameObject);
         }
-        else if (collision.gameObject.CompareTag("CartaDefensiva"))
+    }
+
+    // Dano contínuo por intervalo de tempo (por segundo) enquanto estiver encostado na torre defensiva
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("CartaDefensiva"))
         {
-            // Aplica o dano de forma contínua enquanto estiver encostado na carta
             float danoContinuo = danoAoNucleo * Time.deltaTime;
             collision.gameObject.SendMessage("ReceberDano", danoContinuo, SendMessageOptions.DontRequireReceiver);
         }
