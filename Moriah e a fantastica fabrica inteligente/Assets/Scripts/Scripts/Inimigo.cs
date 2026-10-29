@@ -4,28 +4,40 @@ public class Inimigo : MonoBehaviour
 {
     [Header("Atributos do Inimigo")]
     public float speed;
+    public float velocidadeOriginal;
     public float vidaMaxima = 50f;
     private float vidaAtual;
     public int danoAoNucleo = 15;
 
-    public GameObject alvo;
+    [Header("Filtros de Colisão")]
+    public string nomeTagCirculoInvocacao = "SlotDefesa"; // Nome da Tag ou parte do nome do objeto a ignorar
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject alvo;
+    private bool estaLentificado = false;
+
     void Start()
     {
         vidaAtual = vidaMaxima;
+        velocidadeOriginal = speed;
 
-        if(alvo == null)
+        if (!gameObject.CompareTag("Inimigos"))
+        {
+            gameObject.tag = "Inimigos";
+        }
+
+        if (alvo == null)
         {
             GameObject placaObj = GameObject.Find("PlacaMae");
-            if(placaObj != null)
+            if (placaObj != null)
             {
                 alvo = placaObj;
             }
         }
+
+        // Configuração automática para ignorar colisões físicas com os círculos de invocação da cena
+        IgnorarColisoesComCirculos();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (alvo == null) return;
@@ -40,10 +52,32 @@ public class Inimigo : MonoBehaviour
         vidaAtual -= quantidadeDano;
         Debug.Log($"[Inimigo] Worm Sofreu {quantidadeDano} de dano. Vida restante: {vidaAtual / vidaMaxima}");
 
-        if(vidaAtual <= 0f)
+        if (vidaAtual <= 0f)
         {
             Morrer();
         }
+    }
+
+    public void AplicarLentidao(float fatorLentidao, float duracao)
+    {
+        if (!estaLentificado)
+        {
+            StartCoroutine(RotinaLentidao(fatorLentidao, duracao));
+        }
+    }
+
+    private System.Collections.IEnumerator RotinaLentidao(float fator, float duracao)
+    {
+        estaLentificado = true;
+        speed = velocidadeOriginal * (1f - fator);
+        Debug.Log($"[Inimigo] {gameObject.name} foi afetado por lentidão! Velocidade reduzida para: {speed}");
+
+        // CORRIGIDO: Agora aguarda o tempo correto da duração em segundos (e não o valor da velocidade)
+        yield return new WaitForSeconds(duracao);
+
+        speed = velocidadeOriginal;
+        estaLentificado = false;
+        Debug.Log($"[Inimigo] {gameObject.name} recuperou a velocidade normal");
     }
 
     private void Morrer()
@@ -52,15 +86,40 @@ public class Inimigo : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    // Método para ignorar colisão física com os círculos de invocação / áreas de posicionamento
+    void IgnorarColisoesComCirculos()
     {
-        if(collision.name.StartsWith("PlacaMae"))
+        Collider2D meuColisor = GetComponent<Collider2D>();
+        if (meuColisor == null) return;
+
+        // Procura todos os objetos que possam ser círculos de invocação na cena
+        GameObject[] circulos = GameObject.FindGameObjectsWithTag(nomeTagCirculoInvocacao);
+        foreach (GameObject circulo in circulos)
         {
-            if(GerenciadorJogo.Instancia != null)
+            Collider2D colisorCirculo = circulo.GetComponent<Collider2D>();
+            if (colisorCirculo != null)
             {
-                GerenciadorJogo.Instancia.ReceberDanoPlaca(danoAoNucleo);
+                Physics2D.IgnoreCollision(meuColisor, colisorCirculo, true);
             }
-            Destroy(this.gameObject);
+        }
+    }
+
+    // Tratamento de colisão física contínua para a Placa-Mãe e Torres Defensivas
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.StartsWith("PlacaMae"))
+        {
+            if (GerenciadorJogo.Instancia != null)
+            {
+                // Dano contínuo na placa por segundo, ou se preferir impacto único, pode manter o Enter apenas para a placa
+                GerenciadorJogo.Instancia.ReceberDanoPlaca(Mathf.RoundToInt(danoAoNucleo * Time.deltaTime));
+            }
+        }
+        else if (collision.gameObject.CompareTag("CartaDefensiva"))
+        {
+            // Aplica o dano de forma contínua enquanto estiver encostado na carta
+            float danoContinuo = danoAoNucleo * Time.deltaTime;
+            collision.gameObject.SendMessage("ReceberDano", danoContinuo, SendMessageOptions.DontRequireReceiver);
         }
     }
 }

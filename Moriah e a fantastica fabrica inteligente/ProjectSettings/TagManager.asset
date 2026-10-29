@@ -6,6 +6,8 @@ TagManager:
   tags:
   - SlotDefesa
   - Inimigos
+  - PlacaMae
+  - CartaDefensiva
   layers:
   - Default
   - TransparentFX

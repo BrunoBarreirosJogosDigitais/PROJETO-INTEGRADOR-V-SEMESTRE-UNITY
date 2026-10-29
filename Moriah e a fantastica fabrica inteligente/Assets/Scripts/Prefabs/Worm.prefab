@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 343151220190883306}
   m_Layer: 0
   m_Name: Worm
-  m_TagString: Untagged
+  m_TagString: Inimigos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,7 +120,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -162,7 +162,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &343151220190883306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +176,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  velocidadeOriginal: 0
   vidaMaxima: 70
   danoAoNucleo: 15
-  alvo: {fileID: 0}
+  nomeTagCirculoInvocacao: SlotDefesa
+  alvo: {fileID: 7789600089305579735, guid: 65c44e2bc38056949bf4eff7feae7227, type: 3}
