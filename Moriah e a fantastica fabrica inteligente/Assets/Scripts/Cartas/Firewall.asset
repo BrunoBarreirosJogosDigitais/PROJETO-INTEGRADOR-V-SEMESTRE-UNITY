@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeCarta: Firewall
   descricao: Carta ofensiva
-  custoServidor: 20
-  dano: 30
+  custoServidor: 30
+  dano: 20
   vidaBloqueio: 200
   alcance: 5
   tempoRecarga: 5
