@@ -177,8 +177,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  velocidadeOriginal: 0
   vidaMaxima: 100
   danoAoNucleo: 5
+  nomeTagCirculoInvocacao: SlotDefesa
   alvo: {fileID: 0}
 --- !u!114 &7009965016978655253
 MonoBehaviour:
@@ -194,9 +196,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   vidaMaxima: 100
-  distanciaParaParar: 5
+  distanciaParaParar: 3
   prefabTiro: {fileID: 4568706472903482488, guid: 4087fa9b9bfad954ea251e3f62c31dda, type: 3}
-  pontoDeTiro: {fileID: 0}
+  pontoDeTiro: {fileID: 1821544945431819937}
   tirosPorRajada: 3
   intervaloEntreTiros: 0.15
   intervaloEntreRajadas: 2
