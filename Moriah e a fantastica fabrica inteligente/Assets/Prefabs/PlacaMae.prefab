@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7761667598183964654}
   - component: {fileID: 796568728856898823}
-  - component: {fileID: 470018493534059781}
+  - component: {fileID: 3440858806069483039}
   m_Layer: 0
   m_Name: PlacaMae
   m_TagString: PlacaMae
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &470018493534059781
+--- !u!61 &3440858806069483039
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

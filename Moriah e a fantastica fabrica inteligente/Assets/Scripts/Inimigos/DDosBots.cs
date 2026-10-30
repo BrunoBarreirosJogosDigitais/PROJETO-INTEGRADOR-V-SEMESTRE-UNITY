@@ -6,28 +6,40 @@ public class DDosBots : MonoBehaviour
 {
     [Header("Atributos do Inimigo")]
     public float speed = 1.5f;
-    public float vidaMaxima = 100f;
+    public float vidaMaxima = 100f; 
     private float vidaAtual;
-    public float distanciaParaParar = 5f; // 0 = vai até o alvo, 1 = para a 1 unidade de distância do alvo, 2 = para a 2 unidades de distância do alvo, etc.
+    public float distanciaParaParar = 5f;
+    public float alcanceDeDisparo = 6f;
+
+    [Header("Filtros de Colisão")]
+    public string nomeTagSlotDefesa = "SlotDefesa";
 
     [Header("Tiro")]
     public GameObject prefabTiro;
-    public Transform pontoDeTiro; // opcional, se não for definido, o tiro será instanciado na posição do inimigo
+    public Transform pontoDeTiro;
     public int tirosPorRajada = 3;
     public float intervaloEntreTiros = 0.15f;
     public float intervaloEntreRajadas = 2f;
 
     private GameObject alvo;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         vidaAtual = vidaMaxima;
+
+        if (!gameObject.CompareTag("Inimigos"))
+        {
+            gameObject.tag = "Inimigos";
+        }
+
         alvo = GameObject.Find("PlacaMae");
+
+        // Ignora colisões físicas com os slots de defesa do mapa
+        IgnorarColisoesComSlots();
+
         StartCoroutine(LoopDeRajadas());
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (alvo == null) return;
@@ -46,7 +58,7 @@ public class DDosBots : MonoBehaviour
         vidaAtual -= quantidadeDano;
         Debug.Log($"[DDoSBots] Sofreu {quantidadeDano} de dano. Vida Restante: {vidaAtual}/{vidaMaxima}");
 
-        if(vidaAtual <= 0f)
+        if (vidaAtual <= 0f)
         {
             Morrer();
         }
@@ -64,13 +76,23 @@ public class DDosBots : MonoBehaviour
 
         while (true)
         {
-            for (int i = 0; i < tirosPorRajada; i++)
+            if(alvo != null)
             {
-                Atirar();
-                yield return new WaitForSeconds(intervaloEntreTiros);
+                float distanciaAoAlvo = Vector3.Distance(transform.position, alvo.transform.position);
+
+                if(distanciaAoAlvo <= alcanceDeDisparo)
+                {
+                    for (int i = 0; i < tirosPorRajada; i++)
+                    {
+                        Atirar();
+                        yield return new WaitForSeconds(intervaloEntreTiros);
+                    }
+
+                    yield return new WaitForSeconds(intervaloEntreRajadas);
+                }
             }
 
-            yield return new WaitForSeconds(intervaloEntreRajadas);
+            yield return new WaitForSeconds(0.5f);
         }
     }
 
@@ -84,12 +106,36 @@ public class DDosBots : MonoBehaviour
         direcao.Normalize();
 
         GameObject tiro = Instantiate(prefabTiro, origem, Quaternion.identity);
-        tiro.GetComponent<TiroInimigo>().Iniciar(direcao);
+
+        TiroInimigo tiroScript = tiro.GetComponent<TiroInimigo>();
+        if (tiroScript != null)
+        {
+            tiroScript.danoDoTiro = 25; // Alinhado com o SDD para DDoS Bots[cite: 1]
+        }
+
+        tiroScript?.Iniciar(direcao);
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void IgnorarColisoesComSlots()
     {
-        if (collision.name.StartsWith("PlacaMae"))
+        Collider2D meuColisor = GetComponent<Collider2D>();
+        if (meuColisor == null) return;
+
+        GameObject[] slots = GameObject.FindGameObjectsWithTag(nomeTagSlotDefesa);
+        foreach (GameObject slot in slots)
+        {
+            Collider2D colisorSlot = slot.GetComponent<Collider2D>();
+            if (colisorSlot != null)
+            {
+                Physics2D.IgnoreCollision(meuColisor, colisorSlot, true);
+            }
+        }
+    }
+
+    // Colisão física normal para interagir com o cenário e a Placa-Mãe
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.StartsWith("PlacaMae"))
         {
             Destroy(gameObject);
         }
