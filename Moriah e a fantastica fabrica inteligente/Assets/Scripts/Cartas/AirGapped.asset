@@ -15,9 +15,9 @@ MonoBehaviour:
   nomeCarta: AirGapped
   descricao: Atua como uma muralha isolada para absorver o dano concentrado de inimigos
     pesados.
-  custoServidor: 60
+  custoServidor: 45
   dano: 0
-  vidaBloqueio: 300
+  vidaBloqueio: 280
   alcance: 0
   tempoRecarga: 0
   prefabTorreParaInstanciar: {fileID: 2919003154030386258, guid: 7a2cfa10532dd6b43b1d8b4ddfd289e7, type: 3}
