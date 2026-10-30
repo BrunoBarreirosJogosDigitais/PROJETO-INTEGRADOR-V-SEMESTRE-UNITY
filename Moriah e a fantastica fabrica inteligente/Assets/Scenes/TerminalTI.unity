@@ -2903,7 +2903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsInimigos:
-  - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
+  - {fileID: 7253561527085947223, guid: 69f8c874145a08e46a08bf689a7dbe92, type: 3}
   pontoNascimento: {fileID: 1208999508}
   nucleo: {fileID: 3527750267871379052}
   range: {x: 0, y: 20, z: 0}
@@ -5986,7 +5986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsInimigos:
-  - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
+  - {fileID: 7253561527085947223, guid: 69f8c874145a08e46a08bf689a7dbe92, type: 3}
   pontoNascimento: {fileID: 5930890054405184116}
   nucleo: {fileID: 3527750267871379052}
   range: {x: 33, y: 0, z: 0}

@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 4342288449770959336}
   - component: {fileID: 5963866838990294470}
   - component: {fileID: 433967551115106431}
-  - component: {fileID: 343151220190883306}
   - component: {fileID: 8739934132939987563}
   m_Layer: 0
   m_Name: Trojan
-  m_TagString: Untagged
+  m_TagString: Inimigos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.0071456432, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -122,7 +121,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -165,22 +164,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &343151220190883306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7253561527085947223}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9faaf83113e35474289da0bf6a7ce12d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  vidaMaxima: 50
-  danoAoNucleo: 15
-  alvo: {fileID: 0}
 --- !u!114 &8739934132939987563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,9 +178,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   suavizacao: 5
-  vidaMaxima: 120
+  vidaMaxima: 180
   danoAoNucleo: 18
-  escudo: {fileID: 0}
+  escudo: {fileID: 4307323622935953935}
   prefabsParaEvitar:
   - {fileID: 6963197113602703075, guid: ca1ac0e3a109a6a459217dcd284e9eb2, type: 3}
   - {fileID: 2735150983619217899, guid: eafe7ff0230626f48894db005562638f, type: 3}
