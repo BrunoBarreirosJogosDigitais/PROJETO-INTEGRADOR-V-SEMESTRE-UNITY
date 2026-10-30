@@ -92,8 +92,8 @@ public class Antivirus : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Inimigos"))
         {
-           
-            //Implementar metodo ou função de recebimento de dano presente em outros inimigos
+            // Retribui um dano contínuo de contato ao inimigo enquanto estiverem encostados
+            collision.gameObject.SendMessage("ReceberDano", danoDisparo * Time.deltaTime, SendMessageOptions.DontRequireReceiver);
         }
     }
 
