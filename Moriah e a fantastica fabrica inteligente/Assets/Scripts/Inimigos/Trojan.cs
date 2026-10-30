@@ -1,16 +1,18 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Trojan : MonoBehaviour
 {
     [Header("Movimento")]
     public float speed = 1.5f;
+    public float velocidadeOriginal;
     public float suavizacao = 5f; // quanto maior, mais rápido ele muda de direção.
 
     [Header("Atributos de Vida e Dano")]
-    public float vidaMaxima = 180f; 
+    public float vidaMaxima = 180f;
     private float vidaAtual;
-    public int danoAoNucleo = 18; 
+    public int danoAoNucleo = 18;
 
     [Header("Escudo")]
     public EscudoTrojan escudo;
@@ -24,23 +26,25 @@ public class Trojan : MonoBehaviour
     public float forcaDoDesvio = 2f;
 
     [Header("Teste")]
-    public bool simularDanoNoEscudo; // ISSO É SOMENTE PRA TESTAR
+    public bool simularDanoNoEscudo; // ISSO IS SOMENTE PRA TESTAR
     public float intervaloDanoSimulado = 1f;
 
     private GameObject alvo;
     private Vector2 direcaoAtual;
     private float timerDano;
+    private bool estaLentificado = false;
 
     void Start()
     {
         vidaAtual = vidaMaxima;
+        velocidadeOriginal = speed;
 
         if (!gameObject.CompareTag("Inimigos"))
         {
             gameObject.tag = "Inimigos";
         }
 
-        alvo = GameObject.Find("PlacaMae");
+        AtualizarAlvoPrincipal();
 
         if (escudo == null)
             escudo = GetComponentInChildren<EscudoTrojan>();
@@ -56,7 +60,12 @@ public class Trojan : MonoBehaviour
     {
         TestarDanoNoEscudo();
 
-        if (alvo == null) return;
+        // Se o alvo atual sumiu (ex: o Honeypot foi destruído), busca a Placa-Mãe novamente
+        if (alvo == null)
+        {
+            AtualizarAlvoPrincipal();
+            if (alvo == null) return;
+        }
 
         Vector2 desejada = CalcularDirecao();
 
@@ -67,6 +76,23 @@ public class Trojan : MonoBehaviour
         else direcaoAtual.Normalize();
 
         transform.Translate(direcaoAtual * speed * Time.deltaTime, Space.World);
+    }
+
+    void AtualizarAlvoPrincipal()
+    {
+        GameObject placaObj = GameObject.Find("PlacaMae");
+        if (placaObj != null)
+        {
+            alvo = placaObj;
+        }
+    }
+
+    public void DefinirAlvo(Transform novoAlvo)
+    {
+        if (novoAlvo != null)
+        {
+            alvo = novoAlvo.gameObject;
+        }
     }
 
     Vector2 CalcularDirecao()
@@ -133,6 +159,28 @@ public class Trojan : MonoBehaviour
         }
     }
 
+    // Método obrigatório para aceitar a lentidão do Honeypot
+    public void AplicarLentidao(float fatorLentidao, float duracao)
+    {
+        if (!estaLentificado)
+        {
+            StartCoroutine(RotinaLentidao(fatorLentidao, duracao));
+        }
+    }
+
+    private IEnumerator RotinaLentidao(float fator, float duracao)
+    {
+        estaLentificado = true;
+        speed = velocidadeOriginal * (1f - fator);
+        Debug.Log($"[Trojan] {gameObject.name} foi afetado por lentidão! Velocidade reduzida para: {speed}");
+
+        yield return new WaitForSeconds(duracao);
+
+        speed = velocidadeOriginal;
+        estaLentificado = false;
+        Debug.Log($"[Trojan] {gameObject.name} recuperou a velocidade normal");
+    }
+
     private void Morrer()
     {
         Debug.Log("[Trojan] Inimigo Trojan foi destruído!");
@@ -185,7 +233,7 @@ public class Trojan : MonoBehaviour
         if (collision.gameObject.CompareTag("CartaDefensiva"))
         {
             float danoContinuo = danoAoNucleo * Time.deltaTime;
-            collision.gameObject.SendMessage("ReceberDano", danoContinuo, SendMessageOptions.DontRequireReceiver);  
+            collision.gameObject.SendMessage("ReceberDano", danoContinuo, SendMessageOptions.DontRequireReceiver);
         }
     }
 

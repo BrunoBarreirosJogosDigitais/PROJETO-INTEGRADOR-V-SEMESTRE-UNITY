@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1948853872605131859}
   m_Layer: 0
   m_Name: Honeypot
-  m_TagString: Untagged
+  m_TagString: CartaDefensiva
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,3 +185,5 @@ MonoBehaviour:
   raioExplosao: 3.5
   fatorLentisao: 0.5
   duracaoLentidao: 3
+  raioAtracao: 5.68
+  nomeTagSlotDefesa: SlotDefesa

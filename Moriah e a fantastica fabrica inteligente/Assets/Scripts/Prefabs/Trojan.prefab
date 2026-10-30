@@ -163,7 +163,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8739934132939987563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,10 +177,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
+  velocidadeOriginal: 0
   suavizacao: 5
   vidaMaxima: 180
   danoAoNucleo: 18
   escudo: {fileID: 4307323622935953935}
+  nomeTagSlotDefesa: SlotDefesa
   prefabsParaEvitar:
   - {fileID: 6963197113602703075, guid: ca1ac0e3a109a6a459217dcd284e9eb2, type: 3}
   - {fileID: 2735150983619217899, guid: eafe7ff0230626f48894db005562638f, type: 3}

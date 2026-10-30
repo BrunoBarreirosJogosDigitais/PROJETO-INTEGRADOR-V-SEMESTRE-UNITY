@@ -40,7 +40,18 @@ public class Inimigo : MonoBehaviour
 
     void Update()
     {
-        if (alvo == null) return;
+        if (alvo == null)
+        {
+            GameObject placaObj = GameObject.Find("PlacaMae");
+            if(placaObj != null)
+            {
+                alvo = placaObj;
+            }
+            else
+            {
+                return;
+            }
+        }
 
         Vector3 pos = alvo.transform.position - this.transform.position;
         Vector3 velocidade = pos.normalized * speed;
@@ -101,6 +112,14 @@ public class Inimigo : MonoBehaviour
             {
                 Physics2D.IgnoreCollision(meuColisor, colisorCirculo, true);
             }
+        }
+    }
+
+    public void DefinirAlvo(Transform novoAlvo)
+    {
+        if(novoAlvo != null)
+        {
+            alvo = novoAlvo.gameObject;
         }
     }
 
