@@ -1390,6 +1390,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: geracaoEnergiaPorSegundo
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5436122278931139430, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

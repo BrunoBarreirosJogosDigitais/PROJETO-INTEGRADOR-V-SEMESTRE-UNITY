@@ -277,85 +277,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53242355}
   m_CullTransparentMesh: 1
---- !u!1 &129864977
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 129864978}
-  - component: {fileID: 129864980}
-  - component: {fileID: 129864979}
-  m_Layer: 5
-  m_Name: "TextoVidaPlacaM\xE3e"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &129864978
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129864977}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8605041073274257028}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 143.57}
-  m_SizeDelta: {x: 404.2774, y: 61.0949}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &129864979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129864977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 53
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 65
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Vida Placa M\xE3e"
---- !u!222 &129864980
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129864977}
-  m_CullTransparentMesh: 1
 --- !u!1 &171046577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,6 +1899,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879479061}
   m_CullTransparentMesh: 1
+--- !u!1 &883254614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 883254617}
+  - component: {fileID: 883254616}
+  - component: {fileID: 883254615}
+  m_Layer: 5
+  m_Name: TextPlacaMae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &883254615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883254614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &883254616
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883254614}
+  m_CullTransparentMesh: 1
+--- !u!224 &883254617
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883254614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.1379, y: 1.8428, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8605041073274257028}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.562, y: 190}
+  m_SizeDelta: {x: 401.402, y: 77.752}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &891693850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,7 +2903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsInimigos:
-  - {fileID: 7253561527085947223, guid: 2e6221a36dcf5124db9fb5dd7d280441, type: 3}
+  - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
   pontoNascimento: {fileID: 1208999508}
   nucleo: {fileID: 3527750267871379052}
   range: {x: 0, y: 20, z: 0}
@@ -4872,7 +4872,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824745418}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1824745420
 Camera:
   m_ObjectHideFlags: 0
@@ -5986,7 +5986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsInimigos:
-  - {fileID: 7253561527085947223, guid: 2e6221a36dcf5124db9fb5dd7d280441, type: 3}
+  - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
   pontoNascimento: {fileID: 5930890054405184116}
   nucleo: {fileID: 3527750267871379052}
   range: {x: 33, y: 0, z: 0}
@@ -6048,6 +6048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlacaMae
       objectReference: {fileID: 0}
+    - target: {fileID: 9156490626596878581, guid: 65c44e2bc38056949bf4eff7feae7227, type: 3}
+      propertyPath: textoVidaPlaca
+      value: 
+      objectReference: {fileID: 883254615}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6144,7 +6148,7 @@ RectTransform:
   - {fileID: 1991084861}
   - {fileID: 800808292}
   - {fileID: 2004165289}
-  - {fileID: 129864978}
+  - {fileID: 883254617}
   - {fileID: 2012406443}
   - {fileID: 1613426538}
   - {fileID: 1632097999}
@@ -6171,7 +6175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoServidor: {fileID: 345698853}
-  textoVida: {fileID: 129864979}
+  textoVida: {fileID: 0}
   textoOnda: {fileID: 308459446}
   painelDerrota: {fileID: 1632097998}
   nomeCenaFabrica: Fase

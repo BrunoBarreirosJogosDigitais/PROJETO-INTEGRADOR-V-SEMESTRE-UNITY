@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7761667598183964654}
   - component: {fileID: 796568728856898823}
   - component: {fileID: 3440858806069483039}
+  - component: {fileID: 8060657053133170192}
+  - component: {fileID: 9156490626596878581}
   m_Layer: 0
   m_Name: PlacaMae
   m_TagString: PlacaMae
@@ -134,3 +136,44 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &8060657053133170192
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7789600089305579735}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &9156490626596878581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7789600089305579735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d26a9dc0101799439bf87ed4a406d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagInimigos: Inimigos
+  textoVidaPlaca: {fileID: 4187876995658063130, guid: da7842e116710d64b8241813cf28a037, type: 3}
