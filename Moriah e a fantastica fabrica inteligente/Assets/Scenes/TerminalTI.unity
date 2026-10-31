@@ -2903,11 +2903,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsInimigos:
+  - {fileID: 7253561527085947223, guid: 2e6221a36dcf5124db9fb5dd7d280441, type: 3}
+  - {fileID: 7253561527085947223, guid: 9bf6bc52ce5533948b23944d40fe0647, type: 3}
   - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
+  - {fileID: 7253561527085947223, guid: 69f8c874145a08e46a08bf689a7dbe92, type: 3}
   pontoNascimento: {fileID: 1208999508}
   nucleo: {fileID: 3527750267871379052}
   range: {x: 0, y: 20, z: 0}
   intervalo: 3
+  intervaloChecagem: 5
   quantidadePorOnda: 1
 --- !u!1 &1209641891
 GameObject:
@@ -5986,11 +5990,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsInimigos:
+  - {fileID: 7253561527085947223, guid: 2e6221a36dcf5124db9fb5dd7d280441, type: 3}
+  - {fileID: 7253561527085947223, guid: 9bf6bc52ce5533948b23944d40fe0647, type: 3}
   - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
+  - {fileID: 7253561527085947223, guid: 69f8c874145a08e46a08bf689a7dbe92, type: 3}
   pontoNascimento: {fileID: 5930890054405184116}
   nucleo: {fileID: 3527750267871379052}
   range: {x: 33, y: 0, z: 0}
   intervalo: 3
+  intervaloChecagem: 5
   quantidadePorOnda: 1
 --- !u!1001 &6108232606262888558
 PrefabInstance:

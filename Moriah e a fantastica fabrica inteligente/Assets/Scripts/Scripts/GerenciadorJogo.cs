@@ -144,18 +144,25 @@ public class GerenciadorJogo : MonoBehaviour
         }
 
         //Se a produ��o por segundo for maior que zero o contador de amea�a ira aumentar
-        if (producaoPorSegundo > 0f)
+        if (producaoPorSegundo > 0f && estadoAtual != EstadoJogo.Pausado && estadoAtual != EstadoJogo.Menu)
         {
             contadorAmeaca += Time.deltaTime;
 
-            //Quanto mais melhorias a f�brica tiver, mais rapido sobe, por�m o tempo necess�rio ir� aumentar 
-            float tempoNecessario = Mathf.Max(5f, 25f / Mathf.Max(1f, producaoPorSegundo * 0.05f));
-
-
-            //Se o simulador estiver ativo o tempo necess�rio para a amea�a subir aumenta
-            if (simuladorPhishingAtivo)
+            if(contadorAmeaca >= 1f)
             {
-                tempoNecessario *= 1.20f;
+                contadorAmeaca = 0f;
+
+                float incrementoBase = 0.15f;
+                float fatorProducao = producaoPorSegundo * 0.0002f;
+
+                float subidaEfetiva = (incrementoBase + fatorProducao);
+
+                if (simuladorPhishingAtivo)
+                {
+                    subidaEfetiva *= 0.80f;
+                }
+
+                AumentarAmeaca(subidaEfetiva);
             }
 
         }
