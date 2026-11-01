@@ -7,7 +7,7 @@ public class UI_CartaDefensiva : MonoBehaviour, IPointerClickHandler
     [Header("Dados da Carta")]
     public CartaDefensiva cartaDados;
 
-    [Header("Referências de Texto da HUD")]
+    [Header("Referï¿½ncias de Texto da HUD")]
     public Text textoNomeCarta;
     public Text textoDescricao;
     public Text textoCusto;
@@ -19,7 +19,7 @@ public class UI_CartaDefensiva : MonoBehaviour, IPointerClickHandler
     public Image imagemIcone;
     public GameObject painelDetalhes;
 
-    [Header("Configuração de Duplo Clique")]
+    [Header("Configuraï¿½ï¿½o de Duplo Clique")]
     private float tempoUltimoClique = 0f;
     private float limiteDuploClique = 0.3f;
     private bool cartaExpandida = false;
@@ -27,7 +27,7 @@ public class UI_CartaDefensiva : MonoBehaviour, IPointerClickHandler
     private void Start()
     {
         ConfigurarVisualCarta();
-        AlternaModoVisualização(false);
+        AlternaModoVisualizacao(false);
     }
 
     public void ConfigurarVisualCarta()
@@ -40,6 +40,15 @@ public class UI_CartaDefensiva : MonoBehaviour, IPointerClickHandler
         if (textoDano != null) textoDano.text = "Dano: " + cartaDados.dano;
         if (textoVida != null) textoVida.text = "Bloqueio: " + cartaDados.vidaBloqueio;
         if (textoAlcance != null) textoAlcance.text = "Alcance: " + cartaDados.alcance;
+        if (imagemIcone != null && cartaDados.imagemCarta != null)
+        {
+            imagemIcone.sprite = cartaDados.imagemCarta;
+            imagemIcone.preserveAspect = true;
+        }
+        else
+        {
+            Debug.LogWarning("Imagem da carta nï¿½o atribuï¿½da para: " + cartaDados.nomeCarta);
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -64,10 +73,10 @@ public class UI_CartaDefensiva : MonoBehaviour, IPointerClickHandler
     private void AlternarExpansaoCarta()
     {
         cartaExpandida = !cartaExpandida;
-        AlternaModoVisualização(cartaExpandida);
+        AlternaModoVisualizacao(cartaExpandida);
     }
 
-    private void AlternaModoVisualização(bool expandido)
+    private void AlternaModoVisualizacao(bool expandido)
     {
         if(painelDetalhes != null)
         {

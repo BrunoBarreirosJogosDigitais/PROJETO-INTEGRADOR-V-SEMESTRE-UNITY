@@ -5,6 +5,7 @@ public class CartaDefensiva : ScriptableObject
 {
     public string nomeCarta = "Firewall";
     [TextArea] public string descricao;
+    public Sprite imagemCarta;
 
     public int custoServidor = 20;
     public float dano = 0f;
