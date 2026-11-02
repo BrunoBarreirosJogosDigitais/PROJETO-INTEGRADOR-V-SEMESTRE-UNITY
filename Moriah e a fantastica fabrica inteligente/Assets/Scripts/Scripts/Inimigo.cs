@@ -53,9 +53,13 @@ public class Inimigo : MonoBehaviour
             }
         }
 
-        Vector3 pos = alvo.transform.position - this.transform.position;
-        Vector3 velocidade = pos.normalized * speed;
-        this.transform.Translate(velocidade * Time.deltaTime, Space.World);
+        //Vector3 pos = alvo.transform.position - this.transform.position;
+        //Vector3 velocidade = pos.normalized * speed;
+        //this.transform.Translate(velocidade * Time.deltaTime, Space.World);
+
+        Vector3 direcao = (alvo.transform.position - transform.position).normalized;
+        transform.position += direcao * speed * Time.deltaTime;
+
     }
 
     public void ReceberDano(float quantidadeDano)

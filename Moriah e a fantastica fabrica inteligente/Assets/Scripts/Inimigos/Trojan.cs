@@ -67,15 +67,9 @@ public class Trojan : MonoBehaviour
             if (alvo == null) return;
         }
 
-        Vector2 desejada = CalcularDirecao();
-
-        float t = Mathf.Clamp01(suavizacao * Time.deltaTime);
-        direcaoAtual = Vector2.Lerp(direcaoAtual, desejada, t);
-
-        if (direcaoAtual.sqrMagnitude < 0.0001f) direcaoAtual = desejada;
-        else direcaoAtual.Normalize();
-
-        transform.Translate(direcaoAtual * speed * Time.deltaTime, Space.World);
+        // Movimento direto em direção à Placa-Mãe ignorando travamentos de terreno/colisões de rota
+        Vector3 direcao = (alvo.transform.position - transform.position).normalized;
+        transform.position += direcao * speed * Time.deltaTime;
     }
 
     void AtualizarAlvoPrincipal()

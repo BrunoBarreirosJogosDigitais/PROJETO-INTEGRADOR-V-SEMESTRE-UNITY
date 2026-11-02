@@ -1503,6 +1503,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729041539}
   m_CullTransparentMesh: 1
+--- !u!1 &742304042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742304044}
+  m_Layer: 0
+  m_Name: GeradorInimigos_Baixo
+  m_TagString: PontoSpawn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &742304044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742304042}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: -19.8, z: 0.46656835}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &780221096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,10 +2898,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1208999508}
-  - component: {fileID: 1208999509}
   m_Layer: 0
   m_Name: GeradorInimigos_Esquerda
-  m_TagString: Untagged
+  m_TagString: PontoSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2890,29 +2920,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1208999509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208999507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a82a58192d0f6d44be877bf380b5e23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabsInimigos:
-  - {fileID: 7253561527085947223, guid: 2e6221a36dcf5124db9fb5dd7d280441, type: 3}
-  - {fileID: 7253561527085947223, guid: 9bf6bc52ce5533948b23944d40fe0647, type: 3}
-  - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
-  - {fileID: 7253561527085947223, guid: 69f8c874145a08e46a08bf689a7dbe92, type: 3}
-  pontoNascimento: {fileID: 1208999508}
-  nucleo: {fileID: 3527750267871379052}
-  range: {x: 0, y: 20, z: 0}
-  intervalo: 3
-  intervaloChecagem: 5
-  quantidadePorOnda: 1
 --- !u!1 &1209641891
 GameObject:
   m_ObjectHideFlags: 0
@@ -3521,6 +3528,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a69487a428b44d42b4c57b55c2c292f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1429744769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429744771}
+  m_Layer: 0
+  m_Name: GeradorInimigos_Direita
+  m_TagString: PontoSpawn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1429744771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429744769}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.2, y: -5.1, z: 0.46656835}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1445391315
 GameObject:
   m_ObjectHideFlags: 0
@@ -3666,11 +3704,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60427ae8b654ff44d9c91fbdc35d67d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoServidor: {fileID: 0}
+  textoServidor: {fileID: 345698853}
   textoVida: {fileID: 0}
-  textoOnda: {fileID: 0}
+  textoOnda: {fileID: 308459446}
   painelDerrota: {fileID: 800808291}
-  nomeCenaFabrica: Fase
   nomeCanvasTycoon: CanvasTycoon
   nomeCenaTerminal: TerminalTI
 --- !u!4 &1513230577
@@ -5550,6 +5587,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991084860}
   m_CullTransparentMesh: 1
+--- !u!1 &2001746297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001746299}
+  - component: {fileID: 2001746300}
+  m_Layer: 0
+  m_Name: GeradorSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001746299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001746297}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.175521, y: 21.996855, z: -8.201137}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2001746300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001746297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a82a58192d0f6d44be877bf380b5e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabsInimigos:
+  - {fileID: 7253561527085947223, guid: 2e6221a36dcf5124db9fb5dd7d280441, type: 3}
+  - {fileID: 7253561527085947223, guid: 69f8c874145a08e46a08bf689a7dbe92, type: 3}
+  - {fileID: 7253561527085947223, guid: 9bf6bc52ce5533948b23944d40fe0647, type: 3}
+  - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
+  pontosNascimento:
+  - {fileID: 1208999508}
+  - {fileID: 1429744771}
+  - {fileID: 5930890054405184116}
+  - {fileID: 742304044}
+  nucleo: {fileID: 6108232606262888559}
+  range: {x: 2, y: 0, z: 0}
+  intervaloChecagem: 5
 --- !u!1 &2004165288
 GameObject:
   m_ObjectHideFlags: 0
@@ -5881,10 +5975,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5930890054405184116}
-  - component: {fileID: 5930890054405184117}
   m_Layer: 0
   m_Name: GeradorInimigos_Cima
-  m_TagString: Untagged
+  m_TagString: PontoSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5977,29 +6070,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5930890054405184117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1867921587573334923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a82a58192d0f6d44be877bf380b5e23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabsInimigos:
-  - {fileID: 7253561527085947223, guid: 2e6221a36dcf5124db9fb5dd7d280441, type: 3}
-  - {fileID: 7253561527085947223, guid: 9bf6bc52ce5533948b23944d40fe0647, type: 3}
-  - {fileID: 7253561527085947223, guid: 5c22f0a3219cbf740bfcf924cef6b366, type: 3}
-  - {fileID: 7253561527085947223, guid: 69f8c874145a08e46a08bf689a7dbe92, type: 3}
-  pontoNascimento: {fileID: 5930890054405184116}
-  nucleo: {fileID: 3527750267871379052}
-  range: {x: 33, y: 0, z: 0}
-  intervalo: 3
-  intervaloChecagem: 5
-  quantidadePorOnda: 1
 --- !u!1001 &6108232606262888558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6065,6 +6135,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65c44e2bc38056949bf4eff7feae7227, type: 3}
+--- !u!4 &6108232606262888559 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7761667598183964654, guid: 65c44e2bc38056949bf4eff7feae7227, type: 3}
+  m_PrefabInstance: {fileID: 6108232606262888558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!223 &7570637819886836429
 Canvas:
   m_ObjectHideFlags: 0
@@ -6186,7 +6261,6 @@ MonoBehaviour:
   textoVida: {fileID: 0}
   textoOnda: {fileID: 308459446}
   painelDerrota: {fileID: 1632097998}
-  nomeCenaFabrica: Fase
   nomeCanvasTycoon: CanvasTycoon
   nomeCenaTerminal: TerminalTI
 --- !u!1 &8687173650049921723
@@ -6301,4 +6375,7 @@ SceneRoots:
   - {fileID: 206699506}
   - {fileID: 6108232606262888558}
   - {fileID: 1208999508}
+  - {fileID: 1429744771}
   - {fileID: 5930890054405184116}
+  - {fileID: 742304044}
+  - {fileID: 2001746299}

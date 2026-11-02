@@ -8,6 +8,7 @@ TagManager:
   - Inimigos
   - PlacaMae
   - CartaDefensiva
+  - PontoSpawn
   layers:
   - Default
   - TransparentFX

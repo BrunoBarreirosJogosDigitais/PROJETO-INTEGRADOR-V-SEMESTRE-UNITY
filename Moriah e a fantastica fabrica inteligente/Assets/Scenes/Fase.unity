@@ -239,6 +239,9 @@ MonoBehaviour:
   pontosServidor: 0
   vidaPlacaMaxima: 500
   vidaPlaca: 0
+  prefabsInimigos: []
+  rangeSpawn: {x: 5, y: 5, z: 0}
+  intervaloChecagemHorda: 5
   geracaoEnergiaPorSegundo: 0
   criptografiaAtivado: 0
   supercomputadorAtivado: 0

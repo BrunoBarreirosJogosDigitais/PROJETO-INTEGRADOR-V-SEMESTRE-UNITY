@@ -2,11 +2,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
-using Unity.VisualScripting;
 
 public class InterfaceDefesa : MonoBehaviour
 {
-
     [Header("Elementos de Texto (UI)")]
     public Text textoServidor;
     public Text textoVida;
@@ -14,16 +12,20 @@ public class InterfaceDefesa : MonoBehaviour
 
     [Header("Painéis de Fim de Jogo")]
     public GameObject painelDerrota;
-    //public GameObject painelVitoria;
 
     [Header("Configuração de Cenas")]
-    public string nomeCenaFabrica = "Fase";
     public string nomeCanvasTycoon = "CanvasTycoon";
     public string nomeCenaTerminal = "TerminalTI";
 
     private void Start()
     {
-        AlternarVisibilidaeTycoon(false);
+        // Esconde o canvas do Tycoon em todas as cenas carregadas assim que o terminal abre
+        AlternarVisibilidadeTycoonEmTodasAsCenas(false);
+
+        if (GerenciadorJogo.Instancia != null)
+        {
+            GerenciadorJogo.Instancia.AlternaModoJogo(GerenciadorJogo.EstadoJogo.TowerDefense2D);
+        }
     }
 
     private void Update()
@@ -44,35 +46,39 @@ public class InterfaceDefesa : MonoBehaviour
 
         if (jogo.vidaPlaca <= 0 && painelDerrota != null && !painelDerrota.activeSelf)
             painelDerrota.SetActive(true);
-
     }
 
     public void VoltarParaFabrica()
     {
-        AlternarVisibilidaeTycoon(true);
+        // Restaura a visibilidade do Tycoon nas cenas ativas
+        AlternarVisibilidadeTycoonEmTodasAsCenas(true);
 
         if (GerenciadorJogo.Instancia != null)
         {
             GerenciadorJogo.Instancia.AlternaModoJogo(GerenciadorJogo.EstadoJogo.Tycoon3D);
-
-            //GerenciadorJogo.Instancia.ReduzirAmeaca(15f);
         }
 
-        SceneManager.UnloadSceneAsync(nomeCenaTerminal);
+        if (SceneManager.GetSceneByName(nomeCenaTerminal).isLoaded)
+        {
+            SceneManager.UnloadSceneAsync(nomeCenaTerminal);
+        }
     }
 
-    private void AlternarVisibilidaeTycoon(bool ativar)
+    private void AlternarVisibilidadeTycoonEmTodasAsCenas(bool ativar)
     {
-        Scene cenaFabrica = SceneManager.GetSceneByName(nomeCenaFabrica);
-        if(cenaFabrica.IsValid() && cenaFabrica.isLoaded)
+        // Varre todas as cenas abertas no modo Additive para achar e desligar o canvas da fábrica
+        for (int i = 0; i < SceneManager.sceneCount; i++)
         {
-            foreach(GameObject obj in cenaFabrica.GetRootGameObjects())
+            Scene cena = SceneManager.GetSceneAt(i);
+            if (cena.IsValid() && cena.isLoaded)
             {
-                if(obj.name == nomeCanvasTycoon)
+                foreach (GameObject obj in cena.GetRootGameObjects())
                 {
-                    obj.SetActive(ativar);
-                    Debug.Log("Canvas do Tycoon (" + obj.name + ") foi alterado para: " + ativar);
-                    return;
+                    if (obj.name == nomeCanvasTycoon)
+                    {
+                        obj.SetActive(ativar);
+                        Debug.Log("Canvas do Tycoon (" + obj.name + ") na cena " + cena.name + " alterado para: " + ativar);
+                    }
                 }
             }
         }

@@ -51,14 +51,18 @@ public class DDosBots : MonoBehaviour
             if (alvo == null) return;
         }
 
-        Vector3 direcao = alvo.transform.position - transform.position;
-        direcao.z = 0f;
+        //Vector3 direcao = alvo.transform.position - transform.position;
+        //direcao.z = 0f;
+        //
+        //// Respeita a distância de parada para posicionar o bot antes de abrir fogo
+        //if (direcao.magnitude > distanciaParaParar)
+        //{
+        //    transform.Translate(direcao.normalized * speed * Time.deltaTime, Space.World);
+        //}
 
-        // Respeita a distância de parada para posicionar o bot antes de abrir fogo
-        if (direcao.magnitude > distanciaParaParar)
-        {
-            transform.Translate(direcao.normalized * speed * Time.deltaTime, Space.World);
-        }
+        // Movimento direto em direção à Placa-Mãe ignorando colisões de terreno
+        Vector3 direcao = (alvo.transform.position - transform.position).normalized;
+        transform.position += direcao * speed * Time.deltaTime;
     }
 
     void AtualizarAlvoPrincipal()

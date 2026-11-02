@@ -26,6 +26,12 @@ public class UI_CartaDefensiva : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
+        if (GerenciadorJogo.Instancia != null && GerenciadorJogo.Instancia.estadoAtual != GerenciadorJogo.EstadoJogo.TowerDefense2D)
+        {
+            // Opcional: desativa o componente se estiver rodando fora da hora
+            // gameObject.SetActive(false); 
+        }
+
         ConfigurarVisualCarta();
         AlternaModoVisualização(false);
     }
