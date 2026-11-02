@@ -824,6 +824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173685417}
   - component: {fileID: 1173685418}
+  - component: {fileID: 1173685419}
   m_Layer: 0
   m_Name: GerenciadorAcessibilidadde
   m_TagString: Untagged
@@ -862,6 +863,20 @@ MonoBehaviour:
   corFundoAltoContraste: {r: 0, g: 0, b: 0, a: 0.95}
   corTextoNormal: {r: 1, g: 1, b: 1, a: 1}
   corTextoAltoContraste: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+--- !u!114 &1173685419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173685416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef295f59b099024ea76ddd27d10a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shaderDaltonismo: {fileID: 4800000, guid: 239605ca12bfe8f49a85a8ab7d697b04, type: 3}
+  intensidade: 1
 --- !u!1 &1289077230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,6 +1237,7 @@ GameObject:
   - component: {fileID: 1824745421}
   - component: {fileID: 1824745420}
   - component: {fileID: 1824745419}
+  - component: {fileID: 1824745422}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1303,6 +1319,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1824745422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824745418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a90c108291f2b43a5e6691ca7354ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2109085290
 GameObject:
   m_ObjectHideFlags: 0
