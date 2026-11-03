@@ -5,7 +5,7 @@ using TMPro;
 [RequireComponent(typeof(Slider))]
 public class SliderEscalaTexto : MonoBehaviour
 {
-    [Header("ISSO É SÓ PRA DEBUGAR, NÃO É USADO NO JOGO, SÓ PRA TESTAR O SLIDER")]
+    [Header("Texto que mostra o valor do slider")]
     public Text textoPercentual;
     public TMP_Text textoPercentualTMP;
 
@@ -45,7 +45,9 @@ public class SliderEscalaTexto : MonoBehaviour
         AtualizarRotulo(valor);
     }
 
-    // Esse "rótulo" é o texto que mostra o valor atual do slider, só pra debug mesmo.
+    /// <summary>
+    /// Esse "rótulo" é o texto que mostra o valor atual do slider, fica em cima do slider. A porcentagenzinha
+    /// </summary>
     private void AtualizarRotulo(float valor)
     {
         string texto = Mathf.RoundToInt(valor * 100f) + "%";
