@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5963866838990294470}
   - component: {fileID: 433967551115106431}
   - component: {fileID: 8739934132939987563}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trojan
   m_TagString: Inimigos
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 6402994968995389931}
   - component: {fileID: 7669812019199923784}
   - component: {fileID: 4307323622935953935}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Escudo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

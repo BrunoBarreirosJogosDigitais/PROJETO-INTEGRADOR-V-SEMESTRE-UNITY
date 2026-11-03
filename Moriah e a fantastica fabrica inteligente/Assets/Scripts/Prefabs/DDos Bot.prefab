@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 433967551115106431}
   - component: {fileID: 3699933436672969707}
   - component: {fileID: 7009965016978655253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DDos Bot
   m_TagString: Inimigos
   m_Icon: {fileID: 0}
@@ -189,6 +189,7 @@ MonoBehaviour:
   vidaMaxima: 100
   distanciaParaParar: 3
   alcanceDeDisparo: 20
+  danoAoNucleoPorContato: 25
   nomeTagSlotDefesa: SlotDefesa
   prefabTiro: {fileID: 4568706472903482488, guid: 4087fa9b9bfad954ea251e3f62c31dda, type: 3}
   pontoDeTiro: {fileID: 1821544945431819937}

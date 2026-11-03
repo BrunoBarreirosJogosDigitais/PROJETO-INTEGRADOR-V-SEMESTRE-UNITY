@@ -1477,15 +1477,35 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: nucleo
+      value: 
+      objectReference: {fileID: 7761667598183964654, guid: 65c44e2bc38056949bf4eff7feae7227, type: 3}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
       propertyPath: nucleoGlobal
       value: 
       objectReference: {fileID: 7761667598183964654, guid: 65c44e2bc38056949bf4eff7feae7227, type: 3}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: rangeSpawn.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: rangeSpawn.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: rangeSpawn.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
       propertyPath: geracaoEnergiaPorSegundo
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
       propertyPath: prefabsInimigos.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: pontosNascimento.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
@@ -1503,7 +1523,23 @@ PrefabInstance:
     - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
       propertyPath: 'prefabsInimigos.Array.data[3]'
       value: 
-      objectReference: {fileID: 6963197113602703075, guid: ca1ac0e3a109a6a459217dcd284e9eb2, type: 3}
+      objectReference: {fileID: 7253561527085947223, guid: 9bf6bc52ce5533948b23944d40fe0647, type: 3}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: 'pontosNascimento.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3136464994906934678, guid: 85d77d7e0b7454c4cb92ece30a59b058, type: 3}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: 'pontosNascimento.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8591398932020551508, guid: d7ec3b24156e0504ab5bbf208b395ad0, type: 3}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: 'pontosNascimento.Array.data[2]'
+      value: 
+      objectReference: {fileID: 6970112436113216446, guid: a22aeb616f4b2074fa797b092a990351, type: 3}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: 'pontosNascimento.Array.data[3]'
+      value: 
+      objectReference: {fileID: 80883032073856306, guid: 070d53a5ec512c049b60824090c3b68e, type: 3}
     - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
       propertyPath: pontoNascimentoGlobal.Array.size
       value: 4

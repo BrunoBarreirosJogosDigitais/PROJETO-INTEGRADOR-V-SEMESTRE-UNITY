@@ -49,6 +49,14 @@ public class GerenciadorJogo : MonoBehaviour
     public string cenaVitoria = "Vitoria";
     public string cenaGameOver = "GameOver";
 
+    [Header("Configuração de Hordas Global")]
+    public float intervaloChecagemHorda = 5f;
+    private float contadorHorda;
+    public GameObject[] prefabsInimigos;
+    public Transform[] pontosNascimento;
+    public Transform nucleo;
+    public Vector3 rangeSpawn = new Vector3(2f, 2f, 0f);
+
     [Header("Teste - Drenar Vida da Placa")]
     public bool drenarVidaTeste = false;
     public int vidaPerdidaPorSegundo = 10000;
@@ -158,6 +166,91 @@ public class GerenciadorJogo : MonoBehaviour
 
                 AumentarAmeaca(subidaEfetiva);
             }
+        }
+
+        if (producaoPorSegundo > 0f && estadoAtual != EstadoJogo.Pausado && estadoAtual != EstadoJogo.GameOver && estadoAtual != EstadoJogo.Vitoria && estadoAtual != EstadoJogo.Menu)
+        {
+            contadorHorda += Time.deltaTime;
+
+            if (contadorHorda >= intervaloChecagemHorda)
+            {
+                contadorHorda = 0f;
+                TentarDispararHordaGlobal();
+            }
+        }
+
+    }
+
+    private void TentarDispararHordaGlobal()
+    {
+        float sorteio = Random.Range(0f, 100f);
+
+        if (sorteio <= ameacaCibernetica)
+        {
+            int quantidadeInimigos = Mathf.Clamp(Mathf.FloorToInt(ameacaCibernetica / 15f), 2, 15);
+            Debug.Log($"<color=red>[ALERTA DE ATAQUE]</color> Horda cibernética deflagrada em segundo plano! Ameaça atual: {ameacaCibernetica:F1}% | Unidades: {quantidadeInimigos}");
+
+            DispararHordaImediata(quantidadeInimigos);
+            ReduzirAmeaca(15f);
+        }
+    }
+
+    private void DispararHordaImediata(int quantidadeInimigos)
+    {
+        if (prefabsInimigos == null || prefabsInimigos.Length == 0)
+        {
+            Debug.LogWarning("[GerenciadorJogo] Prefabs de inimigos não atribuídos no Inspector!");
+            return;
+        }
+
+        // Busca o núcleo (PlacaMae) nas cenas ativas se estiver nulo
+        if (nucleo == null)
+        {
+            GameObject placaObj = GameObject.Find("PlacaMae");
+            if (placaObj != null) nucleo = placaObj.transform;
+        }
+
+        // Busca os pontos de spawn pela Tag se necessário
+        if (pontosNascimento == null || pontosNascimento.Length == 0)
+        {
+            GameObject[] objsTag = GameObject.FindGameObjectsWithTag("PontoSpawn");
+            if (objsTag.Length > 0)
+            {
+                pontosNascimento = new Transform[objsTag.Length];
+                for (int i = 0; i < objsTag.Length; i++)
+                {
+                    pontosNascimento[i] = objsTag[i].transform;
+                }
+            }
+        }
+
+        if (nucleo == null || pontosNascimento == null || pontosNascimento.Length == 0)
+        {
+            Debug.LogWarning("[GerenciadorJogo] Núcleo ou Pontos de Spawn não encontrados na cena ativa para instanciar a horda.");
+            return;
+        }
+
+        // Instancia os inimigos imediatamente
+        for (int i = 0; i < quantidadeInimigos; i++)
+        {
+            GameObject prefab = prefabsInimigos[Random.Range(0, prefabsInimigos.Length)];
+            Transform pEscolhido = pontosNascimento[Random.Range(0, pontosNascimento.Length)];
+
+            Vector3 posSpawn = pEscolhido != null ? pEscolhido.position : Vector3.zero;
+            Vector3 pos = posSpawn + Vector3.Lerp(-rangeSpawn, rangeSpawn, Random.value);
+            pos.z = 0f;
+
+            GameObject inimigo = Instantiate(prefab, pos, Quaternion.identity);
+
+            // Configura os alvos do inimigo instanciado
+            Inimigo compInimigo = inimigo.GetComponent<Inimigo>();
+            if (compInimigo != null) compInimigo.alvo = nucleo.gameObject;
+
+            Trojan compTrojan = inimigo.GetComponent<Trojan>();
+            if (compTrojan != null) compTrojan.DefinirAlvo(nucleo);
+
+            DDosBots compDdos = inimigo.GetComponent<DDosBots>();
+            if (compDdos != null) compDdos.DefinirAlvo(nucleo);
         }
     }
 
