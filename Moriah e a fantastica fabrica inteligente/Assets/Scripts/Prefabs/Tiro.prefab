@@ -152,6 +152,7 @@ MonoBehaviour:
   tempoDeVida: 5
   danoDoTiro: 25
   nomeTagSlotDefesa: SlotDefesa
+  nomeTagInimigos: Inimigos
 --- !u!50 &6234389027627081663
 Rigidbody2D:
   serializedVersion: 5
