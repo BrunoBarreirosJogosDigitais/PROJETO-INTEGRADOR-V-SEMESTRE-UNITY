@@ -181,6 +181,8 @@ public class GerenciadorJogo : MonoBehaviour
 
     }
 
+    public static event System.Action OnAlertaAtaqueDisparado;
+
     private void TentarDispararHordaGlobal()
     {
         float sorteio = Random.Range(0f, 100f);
@@ -192,6 +194,8 @@ public class GerenciadorJogo : MonoBehaviour
 
             DispararHordaImediata(quantidadeInimigos);
             ReduzirAmeaca(15f);
+
+            OnAlertaAtaqueDisparado?.Invoke();
         }
     }
 
