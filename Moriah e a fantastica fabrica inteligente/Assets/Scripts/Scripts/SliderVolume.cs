@@ -9,6 +9,9 @@ public class SliderVolume : MonoBehaviour
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private string nomeParametro = "MusicVolume";
 
+    [Range(0.0001f, 1f)]
+    [SerializeField] private float volumePadrao = 0.5f;
+
     private Slider volumeSlider;
     private const string VolumeKey = "SavedMusicVolume";
 
@@ -22,7 +25,7 @@ public class SliderVolume : MonoBehaviour
         volumeSlider.minValue = 0.0001f;
         volumeSlider.maxValue = 1f;
 
-        float volumeSalvo = PlayerPrefs.GetFloat(VolumeKey, volumeSlider.value);
+        float volumeSalvo = PlayerPrefs.GetFloat(VolumeKey, volumePadrao);
         
         volumeSlider.value = volumeSalvo;
         DefinirAudioVolume(volumeSalvo);

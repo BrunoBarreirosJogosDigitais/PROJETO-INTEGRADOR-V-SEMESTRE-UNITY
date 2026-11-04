@@ -4399,6 +4399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 428722450fafd3547bac45b1d0256d0a, type: 2}
   nomeParametro: MusicVolume
+  volumePadrao: 0.5
 --- !u!1 &947837116
 GameObject:
   m_ObjectHideFlags: 0
