@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Firewall
   m_EditorClassIdentifier: 
   nomeCarta: Firewall
-  descricao: Carta ofensiva
+  descricao: "Bloqueia o avan\xE7o de Worms e causa dano cont\xEDnuo leve por contato
+    aos inimigos que o atingem"
+  imagemCarta: {fileID: 0}
   custoServidor: 30
   dano: 20
   vidaBloqueio: 200

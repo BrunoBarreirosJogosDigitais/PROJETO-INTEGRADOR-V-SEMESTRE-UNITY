@@ -253,6 +253,7 @@ MonoBehaviour:
   pontosNascimento: []
   nucleo: {fileID: 0}
   rangeSpawn: {x: 2, y: 2, z: 0}
+  numeroOndaAtual: 0
   drenarVidaTeste: 0
   vidaPerdidaPorSegundo: 10000
 --- !u!4 &9684440
@@ -3647,7 +3648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3657,7 +3658,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 48
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 132
@@ -7896,7 +7897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1748585739
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11671,6 +11672,7 @@ GameObject:
   - component: {fileID: 6814280352435483348}
   - component: {fileID: 820160091965228015}
   - component: {fileID: 6659056105586639671}
+  - component: {fileID: 6814280352435483349}
   m_Layer: 5
   m_Name: ImageTI
   m_TagString: Untagged
@@ -12852,6 +12854,18 @@ RectTransform:
   m_AnchoredPosition: {x: -338.58002, y: 371.2}
   m_SizeDelta: {x: 325.84, y: 55.963}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6814280352435483349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099369194035755299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a69487a428b44d42b4c57b55c2c292f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &6838741498062080830
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13159,6 +13173,7 @@ GameObject:
   - component: {fileID: 243703201694881524}
   - component: {fileID: 374482168505249095}
   - component: {fileID: 5672758054426980915}
+  - component: {fileID: 7482529134448369265}
   m_Layer: 5
   m_Name: ImageAmeaca
   m_TagString: Untagged
@@ -13166,6 +13181,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7482529134448369265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482529134448369264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a69487a428b44d42b4c57b55c2c292f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!143 &7544266391317518430
 CharacterController:
   m_ObjectHideFlags: 0

@@ -780,8 +780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0864ff83414d83240af59e0a48eaa4d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corFundoNormal: {r: 0, g: 0, b: 0, a: 0.4}
-  corFundoAltoContraste: {r: 0, g: 0, b: 0, a: 0.95}
+  corFundoNormal: {r: 0.023529412, g: 0, b: 1, a: 1}
+  corFundoAltoContraste: {r: 0, g: 0, b: 0, a: 1}
   corTextoNormal: {r: 1, g: 1, b: 1, a: 1}
   corTextoAltoContraste: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!114 &1173685419
