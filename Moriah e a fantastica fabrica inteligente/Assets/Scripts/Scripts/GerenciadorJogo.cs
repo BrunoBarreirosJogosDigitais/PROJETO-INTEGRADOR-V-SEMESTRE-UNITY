@@ -56,6 +56,7 @@ public class GerenciadorJogo : MonoBehaviour
     public Transform[] pontosNascimento;
     public Transform nucleo;
     public Vector3 rangeSpawn = new Vector3(2f, 2f, 0f);
+    public int numeroOndaAtual = 0;
 
     [Header("Teste - Drenar Vida da Placa")]
     public bool drenarVidaTeste = false;
@@ -189,6 +190,7 @@ public class GerenciadorJogo : MonoBehaviour
 
         if (sorteio <= ameacaCibernetica)
         {
+            numeroOndaAtual++;
             int quantidadeInimigos = Mathf.Clamp(Mathf.FloorToInt(ameacaCibernetica / 15f), 2, 15);
             Debug.Log($"<color=red>[ALERTA DE ATAQUE]</color> Horda cibernética deflagrada em segundo plano! Ameaça atual: {ameacaCibernetica:F1}% | Unidades: {quantidadeInimigos}");
 
