@@ -2321,7 +2321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &327213062
 Transform:
   m_ObjectHideFlags: 0
@@ -4185,6 +4185,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521626032}
   m_CullTransparentMesh: 1
+--- !u!1 &534545599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 534545602}
+  - component: {fileID: 534545601}
+  - component: {fileID: 534545600}
+  m_Layer: 2
+  m_Name: "\xC1rea de proximidade2"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &534545600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534545599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dadosMaquina: {fileID: 11400000, guid: 8d3fcff696b07dc4fae9167f0c77a910, type: 2}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 0}
+  local: "\xC1rea de TI"
+  imagemItem: {fileID: 0}
+  gerenciadorPainel: {fileID: 853773831}
+--- !u!65 &534545601
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534545599}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18, y: 1, z: 19.59}
+  m_Center: {x: 0, y: 0, z: -1.8574615}
+--- !u!4 &534545602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534545599}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -27.35, y: 3.5642, z: 231.6}
+  m_LocalScale: {x: 7.7804112, y: 6.890827, z: 0.48648}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &559681315
 GameObject:
   m_ObjectHideFlags: 0
@@ -5075,6 +5147,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d37736dd6edc5fc4b9036f447a7014ea, type: 3}
   m_PrefabInstance: {fileID: 1974970458}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &669622393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669622394}
+  - component: {fileID: 669622396}
+  - component: {fileID: 669622395}
+  m_Layer: 2
+  m_Name: "\xC1rea de proximidade"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &669622394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669622393}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.63, y: 3.5642, z: 271.3}
+  m_LocalScale: {x: 7.7804112, y: 6.890827, z: 0.48648}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669622395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669622393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dadosMaquina: {fileID: 11400000, guid: 8da62dbda518265438c238c21c0c165f, type: 2}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 0}
+  local: "\xC1rea de RH"
+  imagemItem: {fileID: 0}
+  gerenciadorPainel: {fileID: 853773831}
+--- !u!65 &669622396
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669622393}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 4.7149243}
+  m_Center: {x: 0, y: 0, z: -1.8574615}
 --- !u!1 &682127760
 GameObject:
   m_ObjectHideFlags: 0
@@ -6719,6 +6863,7 @@ MonoBehaviour:
   porta: {fileID: 947837116}
   valorParaDesbloqueio: 2000
   areaDesbloqueada: 0
+  informacoesDaPorta: {fileID: 669622395}
 --- !u!1 &964713238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ad8eb0564f7904644a8d4e35c3165115, type: 3}
@@ -16867,6 +17012,7 @@ MonoBehaviour:
   porta: {fileID: 5205320434438538381}
   valorParaDesbloqueio: 3000
   areaDesbloqueada: 0
+  informacoesDaPorta: {fileID: 534545600}
 --- !u!4 &6131933432828039772
 Transform:
   m_ObjectHideFlags: 0
@@ -18310,6 +18456,8 @@ SceneRoots:
   - {fileID: 1028272513}
   - {fileID: 142644575}
   - {fileID: 947837120}
+  - {fileID: 669622394}
+  - {fileID: 534545602}
   - {fileID: 1233517990}
   - {fileID: 1382874704}
   - {fileID: 830109536}
