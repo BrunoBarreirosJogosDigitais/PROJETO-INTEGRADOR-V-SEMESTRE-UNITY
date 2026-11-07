@@ -57,6 +57,8 @@ public class GerenciadorJogo : MonoBehaviour
     public Transform nucleo;
     public Vector3 rangeSpawn = new Vector3(2f, 2f, 0f);
     public int numeroOndaAtual = 0;
+    public AudioSource audioSourceAlarme;
+    public AudioClip somAlerta;
 
     [Header("Teste - Drenar Vida da Placa")]
     public bool drenarVidaTeste = false;
@@ -196,6 +198,11 @@ public class GerenciadorJogo : MonoBehaviour
 
             DispararHordaImediata(quantidadeInimigos);
             ReduzirAmeaca(15f);
+
+            if(audioSourceAlarme != null && somAlerta != null )
+            {
+                audioSourceAlarme.PlayOneShot(somAlerta);
+            }
 
             OnAlertaAtaqueDisparado?.Invoke();
         }

@@ -767,7 +767,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1636,6 +1636,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7761667598183964654, guid: 65c44e2bc38056949bf4eff7feae7227, type: 3}
     - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: somAlerta
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ad7768c198d6c34c895fa2deb2ad5fa, type: 3}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
       propertyPath: nucleoGlobal
       value: 
       objectReference: {fileID: 7761667598183964654, guid: 65c44e2bc38056949bf4eff7feae7227, type: 3}
@@ -1651,6 +1655,10 @@ PrefabInstance:
       propertyPath: rangeSpawn.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: audioSourceAlarme
+      value: 
+      objectReference: {fileID: 876905489483288013}
     - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
       propertyPath: geracaoEnergiaPorSegundo
       value: 5
@@ -1698,6 +1706,18 @@ PrefabInstance:
     - target: {fileID: 1015775692577080717, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
       propertyPath: pontoNascimentoGlobal.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441495584956828157, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441495584956828157, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ad7768c198d6c34c895fa2deb2ad5fa, type: 3}
+    - target: {fileID: 4441495584956828157, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5436122278931139430, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1748,6 +1768,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+--- !u!82 &876905489483288013 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4441495584956828157, guid: 4f69c16744b724e47abd98e8f6346313, type: 3}
+  m_PrefabInstance: {fileID: 876905489483288012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3678149861926738383
 RectTransform:
   m_ObjectHideFlags: 0
