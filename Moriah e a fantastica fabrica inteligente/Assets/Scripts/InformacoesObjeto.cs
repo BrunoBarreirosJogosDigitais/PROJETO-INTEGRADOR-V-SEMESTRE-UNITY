@@ -1,20 +1,14 @@
-
 using UnityEngine;
 
 public class InformacoesObjeto : MonoBehaviour
 {
-    [Header("Informacoes do Objeto")]
-    public string nomeItem = "Braço Robótico";
+    [Header("Opções de ScriptableObject (Preencha apenas UM)")]
+    public DadosMaquina dadosMaquina;
+    public DadosMelhoriaRH dadosRH;
+    public DadosMelhoriaTI dadosTI;
 
+    [Header("Informações Manuais de Apoio")]
     public string local = "Setor de Produção";
-
-    public float valor = 5000f;
-
-    [TextArea(3, 6)]
-    public string descricao =
-        "Máquina utilizada para automatizar a produção.";
-
-    [Header("Imagem do Objeto")]
     public Sprite imagemItem;
 
     [Header("Gerenciador do Painel")]
@@ -24,17 +18,46 @@ public class InformacoesObjeto : MonoBehaviour
     {
         if (outro.CompareTag("Player"))
         {
-            if (gerenciadorPainel != null)
+            if (gerenciadorPainel == null) return;
+
+            string nome = "";
+            float valor = 0f;
+            string descricao = "";
+
+            // Verifica qual ScriptableObject foi atribuído ao objeto
+            if (dadosMaquina != null)
             {
-                gerenciadorPainel.MostrarInformacoes(
-                    this,
-                    nomeItem,
-                    local,
-                    valor,
-                    descricao,
-                    imagemItem
-                );
+                nome = dadosMaquina.nomeMaquina;
+                valor = dadosMaquina.preco;
+                descricao = dadosMaquina.descricao;
             }
+            else if (dadosRH != null)
+            {
+                nome = dadosRH.nomeMelhoria;
+                valor = dadosRH.preco;
+                descricao = dadosRH.descricao;
+            }
+            else if (dadosTI != null)
+            {
+                nome = dadosTI.nomeConstructo;
+                valor = dadosTI.preco;
+                descricao = dadosTI.descricao;
+            }
+            else
+            {
+                Debug.LogWarning($"[InformacoesObjeto] Nenhum ScriptableObject atribuído em {gameObject.name}!");
+                return;
+            }
+
+            // Envia os dados para o painel de UI exibir
+            gerenciadorPainel.MostrarInformacoes(
+                this,
+                nome,
+                local,
+                valor,
+                descricao,
+                imagemItem
+            );
         }
     }
 

@@ -571,10 +571,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 0}
+  dadosRH: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  dadosTI: {fileID: 0}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: 0}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &46808029
@@ -766,10 +766,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 0}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: -1893340568, guid: 4f96d7bdc41bcfb4fa138585e7a556bc, type: 3}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &63398950
@@ -860,7 +860,7 @@ Transform:
   m_GameObject: {fileID: 104285714}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.8, z: 0}
+  m_LocalPosition: {x: 0.01, y: 2.8, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1028,10 +1028,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 0}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: 0}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &118162027
@@ -3095,10 +3095,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 0}
+  dadosRH: {fileID: 11400000, guid: d511b5dda803ce54a91293e2547210f8, type: 2}
+  dadosTI: {fileID: 0}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: 0}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &374677503
@@ -3529,10 +3529,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 0}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: -1893340568, guid: 4f96d7bdc41bcfb4fa138585e7a556bc, type: 3}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &417726192
@@ -3724,10 +3724,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 0}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: -1893340568, guid: 4f96d7bdc41bcfb4fa138585e7a556bc, type: 3}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &433817382
@@ -3890,7 +3890,7 @@ Transform:
   m_GameObject: {fileID: 458380769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.7, z: 0}
+  m_LocalPosition: {x: 0, y: 6, z: -0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3920,7 +3920,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &503574277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4737,10 +4737,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
+  dadosMaquina: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 0}
+  local: "Esta\xE7\xE3o de Impress\xE3o 3D Industrial"
   imagemItem: {fileID: -1893340568, guid: 4f96d7bdc41bcfb4fa138585e7a556bc, type: 3}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &589613730
@@ -6219,7 +6219,7 @@ Transform:
   m_GameObject: {fileID: 891662586}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.9, z: 0}
+  m_LocalPosition: {x: 0, y: 3.9, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7838,10 +7838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 0}
+  dadosRH: {fileID: 11400000, guid: fa83003ba7cad364a90a182cecad92c3, type: 2}
+  dadosTI: {fileID: 0}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: 0}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &1158548507
@@ -8584,7 +8584,7 @@ RectTransform:
   m_Father: {fileID: 12933462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9225,10 +9225,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 0}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: 0}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &1468529046
@@ -9677,10 +9677,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 0}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: -1893340568, guid: 4f96d7bdc41bcfb4fa138585e7a556bc, type: 3}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &1543437522
@@ -10203,10 +10203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 0}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: 0}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &1569350727
@@ -12078,7 +12078,7 @@ RectTransform:
   m_Father: {fileID: 1732559616}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12429,10 +12429,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
+  dadosMaquina: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 0}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "Equipamento utilizado na automa\xE7\xE3o industrial."
   imagemItem: {fileID: -1893340568, guid: 4f96d7bdc41bcfb4fa138585e7a556bc, type: 3}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &1830201409
@@ -12487,7 +12487,7 @@ Transform:
   m_GameObject: {fileID: 1835892265}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.2, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14462,10 +14462,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: COMPUTADOR
+  dadosMaquina: {fileID: 0}
+  dadosRH: {fileID: 0}
+  dadosTI: {fileID: 0}
   local: "Setor de Produ\xE7\xE3o"
-  valor: 0
-  descricao: "Equipamento utilizado na prote\xE7\xE3o do sistema."
   imagemItem: {fileID: -1893340568, guid: 4f96d7bdc41bcfb4fa138585e7a556bc, type: 3}
   gerenciadorPainel: {fileID: 853773831}
 --- !u!54 &1247159642608150923
