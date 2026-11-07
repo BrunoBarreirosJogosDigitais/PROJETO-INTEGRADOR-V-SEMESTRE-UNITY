@@ -254,6 +254,8 @@ MonoBehaviour:
   nucleo: {fileID: 0}
   rangeSpawn: {x: 2, y: 2, z: 0}
   numeroOndaAtual: 0
+  audioSourceAlarme: {fileID: 0}
+  somAlerta: {fileID: 0}
   drenarVidaTeste: 0
   vidaPerdidaPorSegundo: 10000
 --- !u!4 &9684440
@@ -4429,7 +4431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 428722450fafd3547bac45b1d0256d0a, type: 2}
   nomeParametro: MusicVolume
-  volumePadrao: 0.5
+  volumePadrao: 1
 --- !u!1 &947837116
 GameObject:
   m_ObjectHideFlags: 0

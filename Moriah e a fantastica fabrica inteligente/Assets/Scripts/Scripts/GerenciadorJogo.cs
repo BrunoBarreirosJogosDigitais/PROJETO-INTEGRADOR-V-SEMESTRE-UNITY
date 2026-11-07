@@ -60,6 +60,9 @@ public class GerenciadorJogo : MonoBehaviour
     public AudioSource audioSourceAlarme;
     public AudioClip somAlerta;
 
+    // Controle de horda ativa para a ameaça
+    private bool hordaEmAndamento = false;
+
     [Header("Teste - Drenar Vida da Placa")]
     public bool drenarVidaTeste = false;
     public int vidaPerdidaPorSegundo = 10000;
@@ -149,39 +152,56 @@ public class GerenciadorJogo : MonoBehaviour
             VerificarCondicaoVitoria();
         }
 
-        // Se a produção por segundo for maior que zero, o contador de ameaça irá aumentar de forma contínua
-        if (producaoPorSegundo > 0f)
+        // Se a horda estiver em andamento, monitora se todos os inimigos foram destruídos para abaixar a ameaça
+        if (hordaEmAndamento)
         {
-            contadorAmeaca += Time.deltaTime;
+            // Procura por todos os objetos com a tag "Inimigos" na cena ativa
+            GameObject[] inimigosRestantes = GameObject.FindGameObjectsWithTag("Inimigos");
 
-            if (contadorAmeaca >= 1f)
+            if (inimigosRestantes.Length == 0)
             {
-                contadorAmeaca = 0f;
+                // A horda terminou! Agora sim a ameaça diminui
+                ReduzirAmeaca(15f);
+                hordaEmAndamento = false;
+                Debug.Log("<color=green>[FIM DA HORDA]</color> Todos os inimigos foram eliminados. Ameaça reduzida!");
+            }
+        }
+        else
+        {
+            // Se NÃO houver horda ativa, a ameaça sobe normalmente com a produção
+            if (producaoPorSegundo > 0f)
+            {
+                contadorAmeaca += Time.deltaTime;
 
-                float incrementoBase = 0.15f;
-                float fatorProducao = producaoPorSegundo * 0.0002f;
-                float subidaEfetiva = (incrementoBase + fatorProducao);
-
-                if (simuladorPhishingAtivo)
+                if (contadorAmeaca >= 1f)
                 {
-                    subidaEfetiva *= 0.80f;
+                    contadorAmeaca = 0f;
+
+                    float incrementoBase = 0.15f;
+                    float fatorProducao = producaoPorSegundo * 0.0002f;
+                    float subidaEfetiva = (incrementoBase + fatorProducao);
+
+                    if (simuladorPhishingAtivo)
+                    {
+                        subidaEfetiva *= 0.80f;
+                    }
+
+                    AumentarAmeaca(subidaEfetiva);
                 }
-
-                AumentarAmeaca(subidaEfetiva);
             }
-        }
 
-        if (producaoPorSegundo > 0f && estadoAtual != EstadoJogo.Pausado && estadoAtual != EstadoJogo.GameOver && estadoAtual != EstadoJogo.Vitoria && estadoAtual != EstadoJogo.Menu)
-        {
-            contadorHorda += Time.deltaTime;
-
-            if (contadorHorda >= intervaloChecagemHorda)
+            // Checagem periódica para disparar nova horda
+            if (producaoPorSegundo > 0f)
             {
-                contadorHorda = 0f;
-                TentarDispararHordaGlobal();
+                contadorHorda += Time.deltaTime;
+
+                if (contadorHorda >= intervaloChecagemHorda)
+                {
+                    contadorHorda = 0f;
+                    TentarDispararHordaGlobal();
+                }
             }
         }
-
     }
 
     public static event System.Action OnAlertaAtaqueDisparado;
@@ -194,16 +214,18 @@ public class GerenciadorJogo : MonoBehaviour
         {
             numeroOndaAtual++;
             int quantidadeInimigos = Mathf.Clamp(Mathf.FloorToInt(ameacaCibernetica / 15f), 2, 15);
-            Debug.Log($"<color=red>[ALERTA DE ATAQUE]</color> Horda cibernética deflagrada em segundo plano! Ameaça atual: {ameacaCibernetica:F1}% | Unidades: {quantidadeInimigos}");
+            Debug.Log($"<color=red>[ALERTA DE ATAQUE]</color> Onda {numeroOndaAtual} deflagrada! Ameaça atual: {ameacaCibernetica:F1}% | Unidades: {quantidadeInimigos}");
 
             DispararHordaImediata(quantidadeInimigos);
-            ReduzirAmeaca(15f);
 
-            if(audioSourceAlarme != null && somAlerta != null )
+            // ATENÇÃO: A linha ReduzirAmeaca(15f) foi removida daqui e colocada no término da horda!
+
+            if (audioSourceAlarme != null && somAlerta != null)
             {
                 audioSourceAlarme.PlayOneShot(somAlerta);
             }
 
+            hordaEmAndamento = true; // Trava para indicar que a horda começou
             OnAlertaAtaqueDisparado?.Invoke();
         }
     }
@@ -465,6 +487,7 @@ public class GerenciadorJogo : MonoBehaviour
         ameacaCibernetica = 0f;
         vitoriaConquistada = false;
         contadorDrenoVida = 0f;
+        hordaEmAndamento = false;
 
         estadoAtual = EstadoJogo.Tycoon3D;
 
