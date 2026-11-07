@@ -10,7 +10,7 @@ public class SliderVolume : MonoBehaviour
     [SerializeField] private string nomeParametro = "MusicVolume";
 
     [Range(0.0001f, 1f)]
-    [SerializeField] private float volumePadrao = 0.5f;
+    [SerializeField] private float volumePadrao = 1f;
 
     private Slider volumeSlider;
     private const string VolumeKey = "SavedMusicVolume";
