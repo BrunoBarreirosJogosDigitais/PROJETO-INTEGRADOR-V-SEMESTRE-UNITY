@@ -18,15 +18,28 @@ public class InimigoCibernetico : MonoBehaviour
 
     private void Update()
     {
-        if (alvo == null) return;
-
-        Vector3 direcao = (alvo.position - transform.position).normalized;
-        transform.position += direcao * velocidade * Time.deltaTime;
-
-        if (Vector3.Distance(transform.position, alvo.position) < 0.6f)
+        // Se o alvo estiver vazio por algum motivo, procura a Placa-Mãe na cena na hora
+        if (alvo == null)
         {
-            GerenciadorJogo.Instancia.ReceberDanoPlaca(danoNoNucleo);
-            Destroy(gameObject);
+            GameObject placa = GameObject.Find("PlacaMae");
+            if (placa != null)
+            {
+                alvo = placa.transform;
+            }
+        }
+
+        // Se encontrou o alvo, move-se em direção a ele
+        if (alvo != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, alvo.position, velocidade * Time.deltaTime);
+
+            // Opcional: checa se encostou no centro do círculo para causar dano
+            float distancia = Vector3.Distance(transform.position, alvo.position);
+            if (distancia <= 0.5f)
+            {
+                // Lógica de dano ao núcleo ou destruição do inimigo
+                Destroy(gameObject);
+            }
         }
     }
 

@@ -12,6 +12,12 @@ public class Honeypot : MonoBehaviour
     public float fatorLentisao = 0.5f;
     public float duracaoLentidao = 3f;
 
+    [Header("Comportamento de Isca")]
+    public float raioAtracao = 5.0f;
+
+    [Header("Filtros de Colisão")]
+    public string nomeTagSlotDefesa = "SlotDefesa";
+
     private bool jaExplodiu = false;
 
     void Start()
@@ -26,6 +32,72 @@ public class Honeypot : MonoBehaviour
             Debug.LogWarning("[Honeypot] Nenhuma CartaDefensiva associada no Inspector");
             vidaAtual = 50f;
             danoExplosao = 70f;
+        }
+
+        IgnorarColisoesComSlots();
+    }
+
+    private void Update()
+    {
+        if (jaExplodiu) return;
+
+        AtrairInimigosProximos();
+    }
+
+    void AtrairInimigosProximos()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, raioAtracao);
+
+        foreach (Collider2D col in colliders)
+        {
+            if (col.CompareTag("Inimigos"))
+            {
+                // Se for um inimigo corpo a corpo tipo worm ou Ransomwares
+                Inimigo inimigoScript = col.GetComponent<Inimigo>();
+                if (inimigoScript != null)
+                {
+                    inimigoScript.DefinirAlvo(transform);
+                }
+
+                // Se for o DDoS Bot (inimigo de longo alcance)
+                DDosBots ddosScript = col.GetComponent<DDosBots>();
+                if (ddosScript != null)
+                {
+                    ddosScript.DefinirAlvo(transform);
+                }
+
+                //Se for o Trojan(inimigo com escudo)
+                Trojan trojanScript = col.GetComponent<Trojan>();
+                if(trojanScript != null)
+                {
+                    trojanScript.DefinirAlvo(transform);
+                }
+            }
+        }
+    }
+
+    void IgnorarColisoesComSlots()
+    {
+        Collider2D meuColisor = GetComponent<Collider2D>();
+        if (meuColisor == null) return;
+
+        GameObject[] slots = GameObject.FindGameObjectsWithTag(nomeTagSlotDefesa);
+        foreach (GameObject slot in slots)
+        {
+            Collider2D colisorSlot = slot.GetComponent<Collider2D>();   
+            if(colisorSlot != null)
+            {
+                Physics2D.IgnoreCollision(meuColisor, colisorSlot, true);
+            }
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Inimigos"))
+        {
+            float danoContato = 5f * Time.deltaTime;
+            collision.gameObject.SendMessage("ReceberDano", danoContato, SendMessageOptions.DontRequireReceiver);
         }
     }
 
@@ -48,20 +120,36 @@ public class Honeypot : MonoBehaviour
     private void ExplodirEAplicarSlow()
     {
         jaExplodiu = true;
-        Debug.Log("[Honetpot] ARMADILHA DETONADA! Aplicando dano em área e lentidão!");
+        Debug.Log("[Honeypot] ARMADILHA DETONADA! Aplicando dano em área e lentidão!");
 
         Collider2D[] alvosAtingidos = Physics2D.OverlapCircleAll(transform.position, raioExplosao);
 
-        foreach(Collider2D col in alvosAtingidos)
+        foreach (Collider2D col in alvosAtingidos)
         {
             if (col.CompareTag("Inimigos"))
             {
+                // Aplica o dano em área da explosão
                 col.SendMessage("ReceberDano", danoExplosao, SendMessageOptions.DontRequireReceiver);
 
-                InimigoTeste inimigo = col.GetComponent<InimigoTeste>();
-                if(inimigo != null)
+                // Aplica a lentidão para inimigos padrão (Worm, etc.)
+                Inimigo inimigoScript = col.GetComponent<Inimigo>();
+                if (inimigoScript != null)
                 {
-                    inimigo.AplicarLentidao(fatorLentisao, duracaoLentidao);
+                    inimigoScript.AplicarLentidao(fatorLentisao, duracaoLentidao);
+                }
+
+                // Aplica a lentidão para os DDoS Bots
+                DDosBots ddosScript = col.GetComponent<DDosBots>();
+                if (ddosScript != null)
+                {
+                    ddosScript.AplicarLentidao(fatorLentisao, duracaoLentidao);
+                }
+
+                // Aplica a lentidão para o Trojan de forma direta e segura
+                Trojan trojanScript = col.GetComponent<Trojan>();
+                if (trojanScript != null)
+                {
+                    trojanScript.AplicarLentidao(fatorLentisao, duracaoLentidao);
                 }
             }
         }
@@ -74,6 +162,9 @@ public class Honeypot : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, raioExplosao);
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, raioAtracao);
     }
 
 }

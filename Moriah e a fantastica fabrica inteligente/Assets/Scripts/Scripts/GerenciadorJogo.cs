@@ -5,7 +5,7 @@ public class GerenciadorJogo : MonoBehaviour
 {
     public static GerenciadorJogo Instancia { get; private set; }
 
-    public enum EstadoJogo { Menu, Tycoon3D, TowerDefense2D, Pausado, GameOver, Vitoria}
+    public enum EstadoJogo { Menu, Tycoon3D, TowerDefense2D, Pausado, GameOver, Vitoria }
 
     [Header("Estado Atual")]
     public EstadoJogo estadoAtual;
@@ -16,7 +16,7 @@ public class GerenciadorJogo : MonoBehaviour
     public float dinheiro;
     public float producaoPorSegundo;
     public float manutencaoPorSegundo;
-    public float metaFinanceiraVitoria = 3000000f; //Meta para o final do game
+    public float metaFinanceiraVitoria = 3000000f; // Meta para o final do game
 
     [Header("Seguranca")]
     [Range(0, 100)] public float ameacaCibernetica = 0f;
@@ -32,12 +32,11 @@ public class GerenciadorJogo : MonoBehaviour
     public float geracaoEnergiaPorSegundo = 0f;
     private float contadorEnergia = 5f;
 
-
-    [Header("B�nus do Setor de TI (�rea 2)")]
+    [Header("Bônus do Setor de TI (Área 2)")]
     public bool criptografiaAtivado = false;
     public bool supercomputadorAtivado = false;
 
-    [Header("B�nus do Setor de RH (�rea 3)")]
+    [Header("Bônus do Setor de RH (Área 3)")]
     public bool simuladorPhishingAtivo = false;
     public bool centralErgonomiaAtiva = false;
     public bool academiaDDoSAtiva = false;
@@ -65,10 +64,9 @@ public class GerenciadorJogo : MonoBehaviour
             return;
         }
 
-        //Persistencia entre as cenas
+        // Persistencia entre as cenas
         Instancia = this;
         DontDestroyOnLoad(gameObject);
-
 
         dinheiro = dinheiroInicial;
         pontosServidor = pontosServidorMaximos;
@@ -78,14 +76,13 @@ public class GerenciadorJogo : MonoBehaviour
 
     private void Update()
     {
-
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(estadoAtual == EstadoJogo.Tycoon3D || estadoAtual == EstadoJogo.TowerDefense2D)
+            if (estadoAtual == EstadoJogo.Tycoon3D || estadoAtual == EstadoJogo.TowerDefense2D)
             {
                 PausarJogo();
             }
-            else if(estadoAtual == EstadoJogo.Pausado)
+            else if (estadoAtual == EstadoJogo.Pausado)
             {
                 RetomarJogo();
             }
@@ -94,13 +91,13 @@ public class GerenciadorJogo : MonoBehaviour
         if (estadoAtual == EstadoJogo.Pausado || estadoAtual == EstadoJogo.GameOver ||
             estadoAtual == EstadoJogo.Vitoria || estadoAtual == EstadoJogo.Menu)
             return;
-        
+
         // Teste: drena a vida da placa com o tempo.
         if (drenarVidaTeste)
         {
             contadorDrenoVida += Time.deltaTime;
 
-            if(contadorDrenoVida >= 1f)
+            if (contadorDrenoVida >= 1f)
             {
                 contadorDrenoVida = 0f;
                 ReceberDanoPlaca(vidaPerdidaPorSegundo);
@@ -109,28 +106,26 @@ public class GerenciadorJogo : MonoBehaviour
             if (estadoAtual == EstadoJogo.GameOver) return;
         }
 
-        //Regenera��o automatica de pontos de servidor
-        if(geracaoEnergiaPorSegundo > 0f && pontosServidor < pontosServidorMaximos)
+        // Regeneração automatica de pontos de servidor
+        if (geracaoEnergiaPorSegundo > 0f && pontosServidor < pontosServidorMaximos)
         {
             contadorEnergia += Time.deltaTime;
 
-            if(contadorEnergia >= 1f)
+            if (contadorEnergia >= 1f)
             {
                 contadorEnergia = 0f;
                 RecuperarPontosServidor(Mathf.RoundToInt(geracaoEnergiaPorSegundo));
             }
         }
 
-        //O dinheiro passivo do protagonista ir� se incrementar gradativamente
+        // O dinheiro passivo do protagonista irá se incrementar gradativamente
         contadorEconomia += Time.deltaTime;
-
 
         if (contadorEconomia >= 1f)
         {
             contadorEconomia = 0f;
 
             float rendaBasePassiva = 100f;
-
             float producaoEfetiva = producaoPorSegundo;
             if (centralErgonomiaAtiva)
             {
@@ -143,21 +138,26 @@ public class GerenciadorJogo : MonoBehaviour
             VerificarCondicaoVitoria();
         }
 
-        //Se a produ��o por segundo for maior que zero o contador de amea�a ira aumentar
+        // Se a produção por segundo for maior que zero, o contador de ameaça irá aumentar de forma contínua
         if (producaoPorSegundo > 0f)
         {
             contadorAmeaca += Time.deltaTime;
 
-            //Quanto mais melhorias a f�brica tiver, mais rapido sobe, por�m o tempo necess�rio ir� aumentar 
-            float tempoNecessario = Mathf.Max(5f, 25f / Mathf.Max(1f, producaoPorSegundo * 0.05f));
-
-
-            //Se o simulador estiver ativo o tempo necess�rio para a amea�a subir aumenta
-            if (simuladorPhishingAtivo)
+            if (contadorAmeaca >= 1f)
             {
-                tempoNecessario *= 1.20f;
-            }
+                contadorAmeaca = 0f;
 
+                float incrementoBase = 0.15f;
+                float fatorProducao = producaoPorSegundo * 0.0002f;
+                float subidaEfetiva = (incrementoBase + fatorProducao);
+
+                if (simuladorPhishingAtivo)
+                {
+                    subidaEfetiva *= 0.80f;
+                }
+
+                AumentarAmeaca(subidaEfetiva);
+            }
         }
     }
 
@@ -182,11 +182,10 @@ public class GerenciadorJogo : MonoBehaviour
         {
             estadoAtual = EstadoJogo.Tycoon3D; // Fallback de segurança
         }
-        Time.timeScale = 1f; // Restaura o tempo normal do jogo
+        Time.timeScale = 1f;
         Debug.Log("[GerenciadorJogo] Jogo Retomado.");
     }
 
-    //Fun��o que ser� chamada em momentos de melhorias das maquinas ou na libera��o de outras �reas
     public bool GastarDinheiro(float valor)
     {
         if (valor <= 0f) return true;
@@ -210,12 +209,12 @@ public class GerenciadorJogo : MonoBehaviour
                 int hpExtra = Mathf.RoundToInt(valorBonus);
                 vidaPlacaMaxima += hpExtra;
                 vidaPlaca = Mathf.Min(vidaPlacaMaxima, vidaPlaca + hpExtra);
-                Debug.Log($"[TI] Edge Server instalado: +{hpExtra} HP de blindagem aplicada ao n�cleo da placa-m�e.");
+                Debug.Log($"[TI] Edge Server instalado: +{hpExtra} HP de blindagem aplicada ao núcleo da placa-mãe.");
                 break;
 
             case DadosMelhoriaTI.TipoBonusTI.ReducaoDanoRansomware:
                 criptografiaAtivado = true;
-                Debug.Log("[TI] M�dulo de Criptografia Qu�ntica ativo: Redu��o de dano contra Ransomwares aplicada.");
+                Debug.Log("[TI] Módulo de Criptografia Quântica ativo: Redução de dano contra Ransomwares aplicada.");
                 break;
 
             case DadosMelhoriaTI.TipoBonusTI.EconomiaCartasTD:
@@ -231,18 +230,18 @@ public class GerenciadorJogo : MonoBehaviour
         {
             case DadosMelhoriaRH.TipoBonusRH.MitigacaoEngenhariaSocial:
                 simuladorPhishingAtivo = true;
-                Debug.Log("Efeito cont�nuo ativo: Simulador de Phishing mitigando amea�as.");
+                Debug.Log("Efeito contínuo ativo: Simulador de Phishing mitigando ameaças.");
                 break;
 
             case DadosMelhoriaRH.TipoBonusRH.EficienciaProdutiva:
                 centralErgonomiaAtiva = true;
-                Debug.Log("Efeito cont�nuo ativo: Central de Ergonomia aplicando +10% de efici�ncia global.");
+                Debug.Log("Efeito contínuo ativo: Central de Ergonomia aplicando +10% de eficiência global.");
                 break;
 
             case DadosMelhoriaRH.TipoBonusRH.ResistenciaDDoS:
                 academiaDDoSAtiva = true;
-                AdicionarGeracaoEnergia(2f); // Refor�o passivo de energia contra DDoS
-                Debug.Log("Efeito cont�nuo ativo: Academia Corporativa blindando contra quedas de energia.");
+                AdicionarGeracaoEnergia(2f);
+                Debug.Log("Efeito contínuo ativo: Academia Corporativa blindando contra quedas de energia.");
                 break;
         }
     }
@@ -256,18 +255,16 @@ public class GerenciadorJogo : MonoBehaviour
     {
         geracaoEnergiaPorSegundo += Mathf.Max(0f, geracaoEnergiaPorSegundo - valor);
     }
-  
+
     public void AdicionarDinheiro(float valor)
     {
         if (valor > 0f) dinheiro += valor;
     }
 
-    //Fun��o usada nas maquinas da fabrica
     public void AdicionarProducao(float valor)
     {
         producaoPorSegundo += Mathf.Max(0f, valor);
     }
-
 
     public void AdicionarManutencao(float valor)
     {
@@ -284,16 +281,14 @@ public class GerenciadorJogo : MonoBehaviour
         manutencaoPorSegundo = Mathf.Max(0f, manutencaoPorSegundo - valor);
     }
 
-    //Fun��o usada na para aumentar as amea�as ciberneticas
     public void AumentarAmeaca(float valor)
     {
         ameacaCibernetica += valor;
 
-        if(ameacaCibernetica >= 100f)
+        if (ameacaCibernetica >= 100f)
         {
             ameacaCibernetica = 0f;
-            Debug.Log("A amea�a cibern�tica atingiu 100% e for resetada!");
-
+            Debug.Log("A ameaça cibernética atingiu 100% e foi resetada!");
         }
 
         ameacaCibernetica = Mathf.Clamp(ameacaCibernetica, 0f, 100f);
@@ -349,7 +344,7 @@ public class GerenciadorJogo : MonoBehaviour
 
     private void VerificarCondicaoVitoria()
     {
-        if(dinheiro >= metaFinanceiraVitoria && !vitoriaConquistada)
+        if (dinheiro >= metaFinanceiraVitoria && !vitoriaConquistada)
         {
             AcionarVitoria();
         }
@@ -369,7 +364,7 @@ public class GerenciadorJogo : MonoBehaviour
 
         SceneManager.LoadScene("Fase");
 
-        Debug.Log("Jogo iniciado! Entrando no modo Tycoon 3D da f�brica... ");
+        Debug.Log("Jogo iniciado! Entrando no modo Tycoon 3D da fábrica... ");
     }
 
     public void Creditos()
@@ -388,54 +383,49 @@ public class GerenciadorJogo : MonoBehaviour
     {
         Debug.Log("Saindo do jogo...");
 
-        // Se estiver testando dentro do Editor da Unity, ele para o modo Play
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #else
-            // Se for o jogo exportado (buildado), ele fecha o aplicativo de verdade
-            Application.Quit();
-        #endif
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 
     private void AcionarGameOver()
     {
-        if (estadoAtual == EstadoJogo.GameOver) return; // evita carregar a cena duas vezes
-        
+        if (estadoAtual == EstadoJogo.GameOver) return;
+
         estadoAtual = EstadoJogo.GameOver;
-        Debug.Log("Game Over! O n�cleo da Placa-m�e foi destru�do");
+        Debug.Log("Game Over! O núcleo da Placa-mãe foi destruído");
 
         SceneManager.LoadScene(cenaGameOver);
     }
 
     private void AcionarVitoria()
     {
-        vitoriaConquistada = true; // impede que a vitória dispare de novo quando o jogador voltar
+        vitoriaConquistada = true;
         estadoAtual = EstadoJogo.Vitoria;
-        Debug.Log("Parab�ns! Meta financeira de R$ 3.000.000 atingida!");
+        Debug.Log("Parabéns! Meta financeira de R$ 3.000.000 atingida!");
 
-        // ATIVAR ISSO AQUI DEPOIS, SÓ TIRAR O COMENTÁRIO //
         SceneManager.LoadSceneAsync(cenaVitoria, LoadSceneMode.Additive);
     }
 
-    // FUNÇÃO PARA VOLTAR DA VITÓRIA
     public void VoltarDaVitoria()
     {
         SceneManager.UnloadSceneAsync(cenaVitoria);
         estadoAtual = EstadoJogo.Tycoon3D;
     }
-    
 
     public void AlternaModoJogo(EstadoJogo novoEstado)
     {
         estadoAtual = novoEstado;
 
-        if(estadoAtual == EstadoJogo.TowerDefense2D)
+        if (estadoAtual == EstadoJogo.TowerDefense2D)
         {
-            Debug.Log("Entrando no modo Cibern�tico (Tower Defense 2D)...");
+            Debug.Log("Entrando no modo Cibernético (Tower Defense 2D)...");
         }
-        else if(estadoAtual == EstadoJogo.Tycoon3D)
+        else if (estadoAtual == EstadoJogo.Tycoon3D)
         {
-            Debug.Log("Retornando ao modo Ind�stria (Tycoon 3D)...");
+            Debug.Log("Retornando ao modo Indústria (Tycoon 3D)...");
         }
     }
 }

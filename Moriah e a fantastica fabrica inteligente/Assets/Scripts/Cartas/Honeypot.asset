@@ -15,9 +15,9 @@ MonoBehaviour:
   nomeCarta: Honeypot
   descricao: "Atrai a aten\xE7\xE3o dos inimigos para uma falsa vulnerabilidade e
     aplica um efeito de lentid\xE3o ao ser destruida."
-  custoServidor: 20
-  dano: 70
-  vidaBloqueio: 50
+  custoServidor: 15
+  dano: 50
+  vidaBloqueio: 40
   alcance: 5
   tempoRecarga: 1
   prefabTorreParaInstanciar: {fileID: 8992558529120537174, guid: 88761e477e80ffb40a06a3fb4e9b7669, type: 3}

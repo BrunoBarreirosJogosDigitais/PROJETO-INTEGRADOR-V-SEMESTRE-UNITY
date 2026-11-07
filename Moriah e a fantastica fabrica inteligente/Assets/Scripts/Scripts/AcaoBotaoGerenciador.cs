@@ -4,7 +4,11 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class AcaoBotaoGerenciador : MonoBehaviour
 {
-    public enum AcaoBotao { creditos, VoltarMenu, Jogar, Quit, AlternaAltoContraste}
+    public enum AcaoBotao 
+    { 
+        creditos, VoltarMenu, Jogar, Quit, AlternaAltoContraste, 
+        Protanopia, Deuteranopia, Tritanopia, DaltonismoNormal
+    }
     public AcaoBotao acaoDesejada;
 
     void Start()
@@ -38,6 +42,26 @@ public class AcaoBotaoGerenciador : MonoBehaviour
                 case AcaoBotao.AlternaAltoContraste:
                     if (GerenciadorAltoContraste.Instancia != null)
                         GerenciadorAltoContraste.Instancia.AlternarAltoContraste();
+                    break;
+
+                case AcaoBotao.Protanopia:
+                    if (GerenciadorDaltonismo.Instancia != null)
+                        GerenciadorDaltonismo.Instancia.AlternarModo(ModoDaltonismo.Protanopia);
+                    break;
+
+                case AcaoBotao.Deuteranopia:
+                    if (GerenciadorDaltonismo.Instancia != null)
+                        GerenciadorDaltonismo.Instancia.AlternarModo(ModoDaltonismo.Deuteranopia);
+                    break;
+
+                case AcaoBotao.Tritanopia:
+                    if (GerenciadorDaltonismo.Instancia != null)
+                        GerenciadorDaltonismo.Instancia.AlternarModo(ModoDaltonismo.Tritanopia);
+                    break;
+
+                case AcaoBotao.DaltonismoNormal:
+                    if (GerenciadorDaltonismo.Instancia != null)
+                        GerenciadorDaltonismo.Instancia.DefinirModo(ModoDaltonismo.Nenhum);
                     break;
             }
         });
