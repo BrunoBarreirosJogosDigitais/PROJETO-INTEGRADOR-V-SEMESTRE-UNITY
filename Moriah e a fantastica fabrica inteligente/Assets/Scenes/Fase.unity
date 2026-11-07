@@ -4334,6 +4334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 941294138}
   - component: {fileID: 941294139}
+  - component: {fileID: 941294140}
   m_Layer: 5
   m_Name: SliderVolume
   m_TagString: Untagged
@@ -4407,13 +4408,28 @@ MonoBehaviour:
   m_FillRect: {fileID: 1819140118}
   m_HandleRect: {fileID: 1358212963}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &941294140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941294137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 866da6f9eaa0d104c8d643f1a0b6e7f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 428722450fafd3547bac45b1d0256d0a, type: 2}
+  nomeParametro: MusicVolume
+  volumePadrao: 0.5
 --- !u!1 &947837116
 GameObject:
   m_ObjectHideFlags: 0
