@@ -537,7 +537,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 315945633}
   melhoriaInstalada: {fileID: 0}
   dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 6368347913769884660, guid: 9eaf8e4e449c2a5448aaa9935da1299d, type: 3}
+  prefabMelhoriaParaEsteLocal: {fileID: 8384142189673641447, guid: d0d6802ac41fe3443bf7372d450d50e7, type: 3}
 --- !u!65 &46808027
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1668,38 +1668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &238328961
 GameObject:
   m_ObjectHideFlags: 0
@@ -3356,17 +3324,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
 --- !u!1 &417726184
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,7 +4570,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 1835892266}
   maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 5946786708215080747}
+  prefabMaquinaParaEsteLocal: {fileID: 2023073180111518724, guid: 015c5ef169469634faa31041674e4078, type: 3}
 --- !u!65 &589613724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6219,7 +6176,7 @@ Transform:
   m_GameObject: {fileID: 891662586}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.9, z: -0.01}
+  m_LocalPosition: {x: 0, y: 3.5, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6854,17 +6811,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
 --- !u!108 &966316546
 Light:
   m_ObjectHideFlags: 0
@@ -7804,7 +7750,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 1167228932}
   melhoriaInstalada: {fileID: 0}
   dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: fa83003ba7cad364a90a182cecad92c3, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 7040442915203078600, guid: 30255a051343c8d4dba2d6e03a57eba9, type: 3}
+  prefabMelhoriaParaEsteLocal: {fileID: 7826288170908925068, guid: a5476f36548622d449446d281b379797, type: 3}
 --- !u!65 &1158548505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7971,7 +7917,7 @@ Transform:
   m_GameObject: {fileID: 1167228931}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8470,7 +8416,7 @@ Transform:
   m_GameObject: {fileID: 1295153323}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07, y: 3.05, z: 0}
+  m_LocalPosition: {x: -0.07, y: 14.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9191,7 +9137,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 891662587}
   constructoInstalado: {fileID: 0}
   dadosTIParaEsteLocal: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3936156313906564675, guid: d9ecfe2f64739bf45b3db9decfbb063c, type: 3}
+  prefabTIParaEsteLocal: {fileID: 8247361820733386512, guid: de6b833f0b440cd468bc70e13be33cf2, type: 3}
 --- !u!65 &1468529044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10169,7 +10115,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 1295153324}
   constructoInstalado: {fileID: 0}
   dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 6368347913769884660, guid: 9eaf8e4e449c2a5448aaa9935da1299d, type: 3}
+  prefabTIParaEsteLocal: {fileID: 2627058004856666617, guid: 59eeb2661acf9b34980f40f435cb2442, type: 3}
 --- !u!65 &1569350725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12304,8 +12250,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 1207632135}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 3936156313906564675, guid: d9ecfe2f64739bf45b3db9decfbb063c, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 9ee190f51b698714c835934a333d897e, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 7275791044915046440, guid: 96204ac15b1554541aa411e5d8cce210, type: 3}
 --- !u!65 &1830201403
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12429,7 +12375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dadosMaquina: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  dadosMaquina: {fileID: 11400000, guid: 9ee190f51b698714c835934a333d897e, type: 2}
   dadosRH: {fileID: 0}
   dadosTI: {fileID: 0}
   local: "Setor de Produ\xE7\xE3o"
@@ -16812,11 +16758,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &5946786708215080747 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3922012317522056422, guid: b68f8023bd8a01143bee66eebe56372c, type: 3}
-  m_PrefabInstance: {fileID: 2652480494258446936}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5957880969562021953
 GameObject:
   m_ObjectHideFlags: 0
