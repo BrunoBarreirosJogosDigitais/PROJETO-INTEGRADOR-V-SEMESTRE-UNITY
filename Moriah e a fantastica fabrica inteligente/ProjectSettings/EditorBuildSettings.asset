@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TerminalTI.unity
     guid: 1df8de7c08d527e48a2e4fa923ff6335
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 597d5fcf4b4916a428e2b1ec218fb508
+  - enabled: 1
     path: Assets/Scenes/Vitoria.unity
     guid: a3b7f2b6b405de2478eb35cbe41c6c1c
   - enabled: 1

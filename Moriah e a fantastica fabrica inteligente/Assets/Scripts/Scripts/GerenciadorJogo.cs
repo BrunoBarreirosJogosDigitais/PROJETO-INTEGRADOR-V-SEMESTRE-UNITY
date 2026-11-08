@@ -52,6 +52,7 @@ public class GerenciadorJogo : MonoBehaviour
 
     [Header("Cenas")]
     public string cenaMenu = "Menu";
+    public string cenaTutorial = "Tutorial";
     public string cenaVitoria = "Vitoria";
     public string cenaGameOver = "GameOver";
 
@@ -544,6 +545,12 @@ public class GerenciadorJogo : MonoBehaviour
         Time.timeScale = 1f;
         estadoAtual = EstadoJogo.Menu;
         SceneManager.LoadScene(cenaMenu);
+    }
+
+    public void AbrirTutorial()
+    {
+        SceneManager.LoadScene(cenaTutorial);
+        Debug.Log("Abrindo tela de tutorial");
     }
 
     public void QuitGame()
