@@ -3,8 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class GerenciadorJogo : MonoBehaviour
 {
+    /// 
+    /// [FIXO 1] Singleton e Gestão de Estados Globais
+    /// 
+
+    // Instância estática para o padrão Singleton garantindo acesso global único)
     public static GerenciadorJogo Instancia { get; private set; }
 
+    //Enum para controlar os estados globais do jogo na State Machine
     public enum EstadoJogo { Menu, Tycoon3D, TowerDefense2D, Pausado, GameOver, Vitoria }
 
     [Header("Estado Atual")]
@@ -70,26 +76,37 @@ public class GerenciadorJogo : MonoBehaviour
 
     private bool vitoriaConquistada;
 
+    //Método Awake executado antes de Start: Configura e SIgleton e persistência
     private void Awake()
     {
+        //[FIXO 1.2] Validação de Duplicidade e DontDestroyOnLoad
+        // Se já exiiste uma instância ativa e não é esta, destroi o duplicado
         if (Instancia != null && Instancia != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        // Persistencia entre as cenas
+        // Persistencia entre as cenas e define a instancia global impedindo que o objeto seja
+        // destruído ao mudar de cena
         Instancia = this;
         DontDestroyOnLoad(gameObject);
 
+        //Inicializa valores padrão de partida
         dinheiro = dinheiroInicial;
         pontosServidor = pontosServidorMaximos;
         vidaPlaca = vidaPlacaMaxima;
         estadoAtual = EstadoJogo.Menu;
     }
+    //=========================================
 
+
+    /// ============================================
+    /// BLOCO 2: LOOP ECONÔMICO E DE AMEÇA NO UPDATE
+    /// =============================================
     private void Update()
     {
+        //Atalho de teclado ESC para pausar/retomar o jogo
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (estadoAtual == EstadoJogo.Tycoon3D || estadoAtual == EstadoJogo.TowerDefense2D)
@@ -102,6 +119,7 @@ public class GerenciadorJogo : MonoBehaviour
             }
         }
 
+        //Se o jogo estiver pausado ou fora da partida, interrompe o Update
         if (estadoAtual == EstadoJogo.Pausado || estadoAtual == EstadoJogo.GameOver ||
             estadoAtual == EstadoJogo.Vitoria || estadoAtual == EstadoJogo.Menu)
             return;
@@ -133,6 +151,7 @@ public class GerenciadorJogo : MonoBehaviour
         }
 
         // O dinheiro passivo do protagonista irá se incrementar gradativamente
+        // [FIXO 2] Loop de Economia Passiva com Time.deltime e bônus do RH
         contadorEconomia += Time.deltaTime;
 
         if (contadorEconomia >= 1f)
@@ -141,14 +160,18 @@ public class GerenciadorJogo : MonoBehaviour
 
             float rendaBasePassiva = 100f;
             float producaoEfetiva = producaoPorSegundo;
+
+            //Aplica bônus de 10% da Área 3 (RH - Central de Ergonomia) se ativo
             if (centralErgonomiaAtiva)
             {
                 producaoEfetiva *= 1.10f;
             }
 
+            //Calcula o lucro líquido(Produção - Manutenção + Renda Base)
             float lucro = (producaoPorSegundo - manutencaoPorSegundo) + rendaBasePassiva;
             dinheiro += Mathf.Max(0f, lucro);
 
+            //Valida se o jogador atingiu a meta para venceer
             VerificarCondicaoVitoria();
         }
 
@@ -160,7 +183,7 @@ public class GerenciadorJogo : MonoBehaviour
 
             if (inimigosRestantes.Length == 0)
             {
-                // A horda terminou! Agora sim a ameaça diminui
+                // A horda terminou! Redução da ameaça
                 ReduzirAmeaca(15f);
                 hordaEmAndamento = false;
                 Debug.Log("<color=green>[FIM DA HORDA]</color> Todos os inimigos foram eliminados. Ameaça reduzida!");
@@ -181,6 +204,7 @@ public class GerenciadorJogo : MonoBehaviour
                     float fatorProducao = producaoPorSegundo * 0.0002f;
                     float subidaEfetiva = (incrementoBase + fatorProducao);
 
+                    //Mitigação de ameaça se o Simuladdor de Phishing (RH) estiver ativo
                     if (simuladorPhishingAtivo)
                     {
                         subidaEfetiva *= 0.80f;
@@ -204,8 +228,13 @@ public class GerenciadorJogo : MonoBehaviour
         }
     }
 
+    /// ==============================
+    /// [FIXO 3] Sistema de Sorteio e Disparo de Hordas
+    /// ==============================
+
     public static event System.Action OnAlertaAtaqueDisparado;
 
+    //Sorteia probabilidade for menor ou igual à ameaça, a invasão é deflagrada
     private void TentarDispararHordaGlobal()
     {
         float sorteio = Random.Range(0f, 100f);
@@ -213,13 +242,13 @@ public class GerenciadorJogo : MonoBehaviour
         if (sorteio <= ameacaCibernetica)
         {
             numeroOndaAtual++;
+            //Calcula a quantidade de inimigos proporcional à ameça
             int quantidadeInimigos = Mathf.Clamp(Mathf.FloorToInt(ameacaCibernetica / 15f), 2, 15);
             Debug.Log($"<color=red>[ALERTA DE ATAQUE]</color> Onda {numeroOndaAtual} deflagrada! Ameaça atual: {ameacaCibernetica:F1}% | Unidades: {quantidadeInimigos}");
 
             DispararHordaImediata(quantidadeInimigos);
 
-            // ATENÇÃO: A linha ReduzirAmeaca(15f) foi removida daqui e colocada no término da horda!
-
+            //Toca o alarme sonoro de invasão
             if (audioSourceAlarme != null && somAlerta != null)
             {
                 audioSourceAlarme.PlayOneShot(somAlerta);
@@ -230,6 +259,7 @@ public class GerenciadorJogo : MonoBehaviour
         }
     }
 
+    //Instancia os inimigos dinamicamente nos pontos de spawn designados
     private void DispararHordaImediata(int quantidadeInimigos)
     {
         if (prefabsInimigos == null || prefabsInimigos.Length == 0)
@@ -265,7 +295,7 @@ public class GerenciadorJogo : MonoBehaviour
             return;
         }
 
-        // Instancia os inimigos imediatamente
+        // Loop para instanciar cada malware e configurar seus alvos
         for (int i = 0; i < quantidadeInimigos; i++)
         {
             GameObject prefab = prefabsInimigos[Random.Range(0, prefabsInimigos.Length)];
@@ -277,7 +307,7 @@ public class GerenciadorJogo : MonoBehaviour
 
             GameObject inimigo = Instantiate(prefab, pos, Quaternion.identity);
 
-            // Configura os alvos do inimigo instanciado
+            // Atribui o núcleo como alvo principal para os diferentes tipos de malwares
             Inimigo compInimigo = inimigo.GetComponent<Inimigo>();
             if (compInimigo != null) compInimigo.alvo = nucleo.gameObject;
 
@@ -289,6 +319,10 @@ public class GerenciadorJogo : MonoBehaviour
         }
     }
 
+    /// ===========================
+    /// [FIXO 4] Metodos Auxiliares de Gestão, TI, RH e ESTADOS(Inicio)
+    /// ===========================
+ 
     public void PausarJogo()
     {
         if (estadoAtual == EstadoJogo.Pausado || estadoAtual == EstadoJogo.Menu ||
@@ -314,6 +348,7 @@ public class GerenciadorJogo : MonoBehaviour
         Debug.Log("[GerenciadorJogo] Jogo Retomado.");
     }
 
+    //Valida e desconta saldo financeiro do jogador ao comprar máquinas
     public bool GastarDinheiro(float valor)
     {
         if (valor <= 0f) return true;
@@ -329,6 +364,7 @@ public class GerenciadorJogo : MonoBehaviour
         return true;
     }
 
+    //Ativa bônus passivos e mecânicos adquiridos no Setor de TI
     public void AtivarEfeitoTI(DadosMelhoriaTI.TipoBonusTI tipoBonus, float valorBonus)
     {
         switch (tipoBonus)
@@ -352,6 +388,7 @@ public class GerenciadorJogo : MonoBehaviour
         }
     }
 
+    //Ativa bônus do Setor de Recursos Humanos
     public void AtivarEfeitoRH(DadosMelhoriaRH.TipoBonusRH tipoBonus)
     {
         switch (tipoBonus)
@@ -374,6 +411,7 @@ public class GerenciadorJogo : MonoBehaviour
         }
     }
 
+    //Métodos imline de modificação de recursos produtivos e ameaça
     public void AdicionarGeracaoEnergia(float valor)
     {
         geracaoEnergiaPorSegundo += Mathf.Max(0f, valor);
