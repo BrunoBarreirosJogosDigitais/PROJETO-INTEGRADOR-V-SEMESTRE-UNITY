@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32e31e086c911e4ba474a944f37a866, type: 3}
+  m_Name: Estacao_impressao-3D
+  m_EditorClassIdentifier: 
+  nomeMaquina: "Esta\xE7\xE3o de Impress\xE3o 3D Industrial"
+  descricao: "Unidade de manufatura aditiva automatizada para pe\xE7as de precis\xE3o
+    sob demanda, reduzindo o desperd\xEDcio de mat\xE9ria-prima"
+  preco: 500
+  producaoPorSegundo: 15
+  manutencaoPorSegundo: 2
+  aumentoAmeaca: 1

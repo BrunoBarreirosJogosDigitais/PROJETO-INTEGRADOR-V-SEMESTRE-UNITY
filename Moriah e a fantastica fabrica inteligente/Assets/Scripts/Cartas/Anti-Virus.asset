@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: Anti-Virus
   m_EditorClassIdentifier: 
   nomeCarta: Anti-Virus
-  descricao: "Dispara pulsos de varredura digital peri\xF3dicos para eliminar inimigos
-    \xE0 dist\xE2ncia."
-  imagemCarta: {fileID: 0}
+  descricao: 'Antivirus super legal '
   custoServidor: 35
   dano: 35
   vidaBloqueio: 100
