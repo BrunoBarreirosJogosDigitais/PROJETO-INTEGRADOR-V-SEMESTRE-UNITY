@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GeradorInimigos : MonoBehaviour
 {
-    [Header("Configuração de Spawns Múltiplos")]
+    [Header("Configuraï¿½ï¿½o de Spawns Mï¿½ltiplos")]
     public GameObject[] prefabsInimigos;
     public Transform[] pontosNascimento;
     public Transform nucleo;
@@ -18,7 +18,7 @@ public class GeradorInimigos : MonoBehaviour
         if (GerenciadorJogo.Instancia == null)
             return;
 
-        // Se o jogo estiver pausado ou no menu, não conta o tempo da horda
+        // Se o jogo estiver pausado ou no menu, nï¿½o conta o tempo da horda
         if (GerenciadorJogo.Instancia.estadoAtual == GerenciadorJogo.EstadoJogo.Pausado ||
             GerenciadorJogo.Instancia.estadoAtual == GerenciadorJogo.EstadoJogo.GameOver ||
             GerenciadorJogo.Instancia.estadoAtual == GerenciadorJogo.EstadoJogo.Vitoria ||
@@ -55,9 +55,9 @@ public class GeradorInimigos : MonoBehaviour
     {
         int quantidadeInimigos = Mathf.Clamp(Mathf.FloorToInt(ameaca / 15f), 2, 15);
 
-        Debug.Log($"<color=red>[ALERTA DE ATAQUE]</color> Horda cibernética deflagrada imediatamente! Ameaça atual: {ameaca:F1}% | Unidades: {quantidadeInimigos}");
+        Debug.Log($"<color=red>[ALERTA DE ATAQUE]</color> Horda cibernï¿½tica deflagrada imediatamente! Ameaï¿½a atual: {ameaca:F1}% | Unidades: {quantidadeInimigos}");
 
-        // Busca o núcleo (PlacaMae) nas cenas ativas
+        // Busca o nï¿½cleo (PlacaMae) nas cenas ativas
         if (nucleo == null)
         {
             GameObject placaObj = GameObject.Find("PlacaMae");
@@ -84,7 +84,7 @@ public class GeradorInimigos : MonoBehaviour
 
         if (nucleo == null || pontosNascimento.Length == 0)
         {
-            Debug.LogWarning("[GeradorInimigos] Núcleo ou Pontos de Spawn não encontrados na cena ativa.");
+            Debug.LogWarning("[GeradorInimigos] Nï¿½cleo ou Pontos de Spawn nï¿½o encontrados na cena ativa.");
             return;
         }
 
@@ -94,7 +94,7 @@ public class GeradorInimigos : MonoBehaviour
             CriarInimigo();
         }
 
-        // Reduz a ameaça após o ataque ser gerado
+        // Reduz a ameaï¿½a apï¿½s o ataque ser gerado
         GerenciadorJogo.Instancia.ReduzirAmeaca(15f);
     }
 

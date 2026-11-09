@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c32e31e086c911e4ba474a944f37a866, type: 3}
-  m_Name: Maquina Automatica
+  m_Name: Dados_Porta
   m_EditorClassIdentifier: 
-  nomeMaquina: Maquina Automatica
-  descricao: "Maquina Automatica, usado para diminuir os esfor\xE7os dos trabalhadores"
-  preco: 2500
-  producaoPorSegundo: 25
-  manutencaoPorSegundo: 50
-  aumentoAmeaca: 2
+  nomeMaquina: Porta para RH
+  descricao: "Desbloqueia o acesso para a \xE1rea de Recusos Humanos!"
+  preco: 2000
+  producaoPorSegundo: 0
+  manutencaoPorSegundo: 0
+  aumentoAmeaca: 0

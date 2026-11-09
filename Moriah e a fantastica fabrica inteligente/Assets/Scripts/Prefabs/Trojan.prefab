@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5963866838990294470}
   - component: {fileID: 433967551115106431}
   - component: {fileID: 8739934132939987563}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Trojan
   m_TagString: Inimigos
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.884468, y: 47.604473, z: -4.113288}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5951, y: 1.0634, z: 0.5317}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2503622434440612688}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 6402994968995389931}
   - component: {fileID: 7669812019199923784}
   - component: {fileID: 4307323622935953935}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Escudo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,8 +268,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 6a335f33d65c1f24b801e82fae8e4f60, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 0.08018869, g: 0.7454998, b: 1, a: 0.39215687}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
