@@ -92,7 +92,6 @@ public class DDosBots : MonoBehaviour
         }
     }
 
-    // Método obrigatório para aceitar o efeito de lentidão do Honeypot
     public void AplicarLentidao(float fatorLentidao, float duracao)
     {
         if (!estaLentificado)
