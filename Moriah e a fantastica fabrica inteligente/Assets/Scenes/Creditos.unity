@@ -735,7 +735,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t\t\tEquipe:\n\nBruno Barreiros Alves\nDavi\nCaique\nJo\xE3o\n\t\t\t\t\t\tOrientador:\nNelson"
+  m_Text: "\t\t\t\t\t\t\tEquipe:\n\nBruno Barreiros Alves\nDavi Ferreira Caridade\nCa\xEDque
+    Brito Almeida\nJo\xE3o Batista Teixeira\n\n\t\t\t\t\t\tOrientador:\n\nNelson
+    Valente"
 --- !u!222 &3423539263670346151
 CanvasRenderer:
   m_ObjectHideFlags: 0
