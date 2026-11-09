@@ -9,7 +9,7 @@ public class Inimigo : MonoBehaviour
     private float vidaAtual;
     public int danoAoNucleo = 15;
 
-    [Header("Filtros de Colisï¿½o")]
+    [Header("Filtros de Colisão")]
     public string nomeTagCirculoInvocacao = "SlotDefesa"; // Nome da Tag ou parte do nome do objeto a ignorar
 
     public GameObject alvo;
@@ -34,7 +34,7 @@ public class Inimigo : MonoBehaviour
             }
         }
 
-        // Configuraï¿½ï¿½o automï¿½tica para ignorar colisï¿½es fï¿½sicas com os cï¿½rculos de invocaï¿½ï¿½o da cena
+        // Configuração automática para ignorar colisões físicas com os círculos de invocação da cena
         IgnorarColisoesComCirculos();
     }
 
@@ -56,9 +56,9 @@ public class Inimigo : MonoBehaviour
         Vector3 direcao = (alvo.transform.position - transform.position).normalized;
         transform.position += direcao * speed * Time.deltaTime;
 
-        // VERIFICAï¿½ï¿½O POR DISTï¿½NCIA PARA DAR DANO MESMO EM SEGUNDO PLANO (MODO TYCOON 3D)
+        // VERIFICAÇÃO POR DISTÂNCIA PARA DAR DANO MESMO EM SEGUNDO PLANO (MODO TYCOON 3D)
         float distanciaAoNucleo = Vector3.Distance(transform.position, alvo.transform.position);
-        if (distanciaAoNucleo <= 0.8f) // Ajuste essa margem se necessï¿½rio
+        if (distanciaAoNucleo <= 0.8f) // Ajuste essa margem se necessário
         {
             if (GerenciadorJogo.Instancia != null)
             {
@@ -92,9 +92,9 @@ public class Inimigo : MonoBehaviour
     {
         estaLentificado = true;
         speed = velocidadeOriginal * (1f - fator);
-        Debug.Log($"[Inimigo] {gameObject.name} foi afetado por lentidï¿½o! Velocidade reduzida para: {speed}");
+        Debug.Log($"[Inimigo] {gameObject.name} foi afetado por lentidão! Velocidade reduzida para: {speed}");
 
-        // CORRIGIDO: Agora aguarda o tempo correto da duraï¿½ï¿½o em segundos (e nï¿½o o valor da velocidade)
+        // CORRIGIDO: Agora aguarda o tempo correto da duração em segundos (e não o valor da velocidade)
         yield return new WaitForSeconds(duracao);
 
         speed = velocidadeOriginal;
@@ -108,13 +108,13 @@ public class Inimigo : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // Mï¿½todo para ignorar colisï¿½o fï¿½sica com os cï¿½rculos de invocaï¿½ï¿½o / ï¿½reas de posicionamento
+    // Método para ignorar colisão física com os círculos de invocação / áreas de posicionamento
     void IgnorarColisoesComCirculos()
     {
         Collider2D meuColisor = GetComponent<Collider2D>();
         if (meuColisor == null) return;
 
-        // Procura todos os objetos que possam ser cï¿½rculos de invocaï¿½ï¿½o na cena
+        // Procura todos os objetos que possam ser círculos de invocação na cena
         GameObject[] circulos = GameObject.FindGameObjectsWithTag(nomeTagCirculoInvocacao);
         foreach (GameObject circulo in circulos)
         {
@@ -134,7 +134,7 @@ public class Inimigo : MonoBehaviour
         }
     }
 
-    // Impacto ï¿½nico e direto ao atingir o nï¿½cleo da Placa-Mï¿½e
+    // Impacto único e direto ao atingir o núcleo da Placa-Mãe
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name.StartsWith("PlacaMae"))
@@ -147,7 +147,7 @@ public class Inimigo : MonoBehaviour
         }
     }
 
-    // Dano contï¿½nuo por intervalo de tempo (por segundo) enquanto estiver encostado na torre defensiva
+    // Dano contínuo por intervalo de tempo (por segundo) enquanto estiver encostado na torre defensiva
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("CartaDefensiva"))
