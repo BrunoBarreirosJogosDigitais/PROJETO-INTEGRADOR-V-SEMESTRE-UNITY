@@ -11,7 +11,6 @@ public class TiroInimigo : MonoBehaviour
     public string nomeTagInimigos = "Inimigos";
 
     private Vector3 direcao;
-    private Transform alvoPlacaMae;
 
     public void Iniciar(Vector3 dir)
     {
@@ -21,35 +20,18 @@ public class TiroInimigo : MonoBehaviour
         float angulo = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angulo);
 
-        // Tenta achar a placa-mãe para validação por distância em segundo plano
-        GameObject placaObj = GameObject.Find("PlacaMae");
-        if (placaObj != null) alvoPlacaMae = placaObj.transform;
-
         Destroy(gameObject, tempoDeVida);
     }
 
     void Start()
     {
+        // Garante que o tiro vai ignorar fisicamente os slots de defesa e os inimigos ao ser disparado
         IgnorarColisoes();
     }
 
     void Update()
     {
         transform.Translate(direcao * velocidade * Time.deltaTime, Space.World);
-
-        // VERIFICAÇÃO POR DISTÂNCIA PARA O TIRO DAR DANO NO NÚCLEO MESMO EM SEGUNDO PLANO
-        if (alvoPlacaMae != null)
-        {
-            float distancia = Vector3.Distance(transform.position, alvoPlacaMae.position);
-            if (distancia <= 0.6f)
-            {
-                if (GerenciadorJogo.Instancia != null)
-                {
-                    GerenciadorJogo.Instancia.ReceberDanoPlaca(danoDoTiro);
-                }
-                Destroy(gameObject);
-            }
-        }
     }
 
     void IgnorarColisoes()
@@ -68,7 +50,7 @@ public class TiroInimigo : MonoBehaviour
             }
         }
 
-        // Ignora colisões com outros inimigos
+        // Ignora colisões com outros inimigos (DDoS Bots, Worms, etc.)
         GameObject[] inimigos = GameObject.FindGameObjectsWithTag(nomeTagInimigos);
         foreach (GameObject inimigo in inimigos)
         {

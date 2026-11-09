@@ -60,32 +60,16 @@ public class Trojan : MonoBehaviour
     {
         TestarDanoNoEscudo();
 
+        // Se o alvo atual sumiu (ex: o Honeypot foi destruído), busca a Placa-Mãe novamente
         if (alvo == null)
         {
-            GameObject placaObj = GameObject.Find("PlacaMae");
-            if (placaObj != null)
-            {
-                alvo = placaObj;
-            }
-            else
-            {
-                return;
-            }
+            AtualizarAlvoPrincipal();
+            if (alvo == null) return;
         }
 
+        // Movimento direto em direção à Placa-Mãe ignorando travamentos de terreno/colisões de rota
         Vector3 direcao = (alvo.transform.position - transform.position).normalized;
         transform.position += direcao * speed * Time.deltaTime;
-
-        // VERIFICAÇÃO POR DISTÂNCIA PARA DAR DANO MESMO EM SEGUNDO PLANO (MODO TYCOON 3D)
-        float distanciaAoNucleo = Vector3.Distance(transform.position, alvo.transform.position);
-        if (distanciaAoNucleo <= 0.8f) // Ajuste essa margem se necessário
-        {
-            if (GerenciadorJogo.Instancia != null)
-            {
-                GerenciadorJogo.Instancia.ReceberDanoPlaca(danoAoNucleo);
-            }
-            Destroy(gameObject);
-        }
     }
 
     void AtualizarAlvoPrincipal()

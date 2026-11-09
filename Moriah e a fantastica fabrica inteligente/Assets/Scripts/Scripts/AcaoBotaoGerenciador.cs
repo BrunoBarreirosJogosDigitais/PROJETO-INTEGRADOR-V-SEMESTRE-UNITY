@@ -7,7 +7,7 @@ public class AcaoBotaoGerenciador : MonoBehaviour
     public enum AcaoBotao 
     { 
         creditos, VoltarMenu, Jogar, Quit, AlternaAltoContraste, 
-        Protanopia, Deuteranopia, Tritanopia, DaltonismoNormal, Tutorial,VoltarTutorial
+        Protanopia, Deuteranopia, Tritanopia, DaltonismoNormal
     }
     public AcaoBotao acaoDesejada;
 
@@ -39,16 +39,6 @@ public class AcaoBotaoGerenciador : MonoBehaviour
                         GerenciadorJogo.Instancia.QuitGame();
                     break;
 
-                case AcaoBotao.Tutorial:
-                    if(GerenciadorJogo.Instancia != null)
-                        GerenciadorJogo.Instancia.AbrirTutorial();
-                    break;
-
-                case AcaoBotao.VoltarTutorial:
-                    if (GerenciadorJogo.Instancia != null)
-                        GerenciadorJogo.Instancia.VoltarAoMenu();
-                    break;
-
                 case AcaoBotao.AlternaAltoContraste:
                     if (GerenciadorAltoContraste.Instancia != null)
                         GerenciadorAltoContraste.Instancia.AlternarAltoContraste();
@@ -73,8 +63,6 @@ public class AcaoBotaoGerenciador : MonoBehaviour
                     if (GerenciadorDaltonismo.Instancia != null)
                         GerenciadorDaltonismo.Instancia.DefinirModo(ModoDaltonismo.Nenhum);
                     break;
-                
-
             }
         });
     }

@@ -9,9 +9,8 @@ public class DDosBots : MonoBehaviour
     public float velocidadeOriginal;
     public float vidaMaxima = 100f;
     private float vidaAtual;
-    public float distanciaParaParar = 5f;
+    public float distanciaParaParar = 5f; // Mantém a distância de parada original para atirar de longe
     public float alcanceDeDisparo = 6f;
-    public int danoAoNucleoPorContato = 25; // Dano caso encoste direto na placa
 
     [Header("Filtros de Colisão")]
     public string nomeTagSlotDefesa = "SlotDefesa";
@@ -37,7 +36,10 @@ public class DDosBots : MonoBehaviour
         }
 
         AtualizarAlvoPrincipal();
+
+        // Ignora colisões físicas com os slots de defesa do mapa
         IgnorarColisoesComSlots();
+
         StartCoroutine(LoopDeRajadas());
     }
 
@@ -49,19 +51,18 @@ public class DDosBots : MonoBehaviour
             if (alvo == null) return;
         }
 
+        //Vector3 direcao = alvo.transform.position - transform.position;
+        //direcao.z = 0f;
+        //
+        //// Respeita a distância de parada para posicionar o bot antes de abrir fogo
+        //if (direcao.magnitude > distanciaParaParar)
+        //{
+        //    transform.Translate(direcao.normalized * speed * Time.deltaTime, Space.World);
+        //}
+
+        // Movimento direto em direção à Placa-Mãe ignorando colisões de terreno
         Vector3 direcao = (alvo.transform.position - transform.position).normalized;
         transform.position += direcao * speed * Time.deltaTime;
-
-        // VERIFICAÇÃO POR DISTÂNCIA PARA DAR DANO AO NÚCLEO MESMO EM SEGUNDO PLANO (MODO TYCOON 3D)
-        float distanciaAoNucleo = Vector3.Distance(transform.position, alvo.transform.position);
-        if (distanciaAoNucleo <= 0.8f)
-        {
-            if (GerenciadorJogo.Instancia != null)
-            {
-                GerenciadorJogo.Instancia.ReceberDanoPlaca(danoAoNucleoPorContato);
-            }
-            Destroy(gameObject);
-        }
     }
 
     void AtualizarAlvoPrincipal()
@@ -92,6 +93,7 @@ public class DDosBots : MonoBehaviour
         }
     }
 
+    // Método obrigatório para aceitar o efeito de lentidão do Honeypot
     public void AplicarLentidao(float fatorLentidao, float duracao)
     {
         if (!estaLentificado)
@@ -185,10 +187,6 @@ public class DDosBots : MonoBehaviour
     {
         if (collision.gameObject.name.StartsWith("PlacaMae"))
         {
-            if (GerenciadorJogo.Instancia != null)
-            {
-                GerenciadorJogo.Instancia.ReceberDanoPlaca(danoAoNucleoPorContato);
-            }
             Destroy(gameObject);
         }
     }

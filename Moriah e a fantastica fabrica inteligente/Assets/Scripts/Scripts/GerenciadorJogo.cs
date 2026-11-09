@@ -3,14 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class GerenciadorJogo : MonoBehaviour
 {
-    /// 
-    /// [FIXO 1] Singleton e Gestão de Estados Globais
-    /// 
-
-    // Instância estática para o padrão Singleton garantindo acesso global único)
     public static GerenciadorJogo Instancia { get; private set; }
 
-    //Enum para controlar os estados globais do jogo na State Machine
     public enum EstadoJogo { Menu, Tycoon3D, TowerDefense2D, Pausado, GameOver, Vitoria }
 
     [Header("Estado Atual")]
@@ -52,23 +46,8 @@ public class GerenciadorJogo : MonoBehaviour
 
     [Header("Cenas")]
     public string cenaMenu = "Menu";
-    public string cenaTutorial = "Tutorial";
     public string cenaVitoria = "Vitoria";
     public string cenaGameOver = "GameOver";
-
-    [Header("Configuração de Hordas Global")]
-    public float intervaloChecagemHorda = 5f;
-    private float contadorHorda;
-    public GameObject[] prefabsInimigos;
-    public Transform[] pontosNascimento;
-    public Transform nucleo;
-    public Vector3 rangeSpawn = new Vector3(2f, 2f, 0f);
-    public int numeroOndaAtual = 0;
-    public AudioSource audioSourceAlarme;
-    public AudioClip somAlerta;
-
-    // Controle de horda ativa para a ameaça
-    private bool hordaEmAndamento = false;
 
     [Header("Teste - Drenar Vida da Placa")]
     public bool drenarVidaTeste = false;
@@ -77,37 +56,26 @@ public class GerenciadorJogo : MonoBehaviour
 
     private bool vitoriaConquistada;
 
-    //Método Awake executado antes de Start: Configura e SIgleton e persistência
     private void Awake()
     {
-        //[FIXO 1.2] Validação de Duplicidade e DontDestroyOnLoad
-        // Se já exiiste uma instância ativa e não é esta, destroi o duplicado
         if (Instancia != null && Instancia != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        // Persistencia entre as cenas e define a instancia global impedindo que o objeto seja
-        // destruído ao mudar de cena
+        // Persistencia entre as cenas
         Instancia = this;
         DontDestroyOnLoad(gameObject);
 
-        //Inicializa valores padrão de partida
         dinheiro = dinheiroInicial;
         pontosServidor = pontosServidorMaximos;
         vidaPlaca = vidaPlacaMaxima;
         estadoAtual = EstadoJogo.Menu;
     }
-    //=========================================
 
-
-    /// ============================================
-    /// BLOCO 2: LOOP ECONÔMICO E DE AMEÇA NO UPDATE
-    /// =============================================
     private void Update()
     {
-        //Atalho de teclado ESC para pausar/retomar o jogo
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (estadoAtual == EstadoJogo.Tycoon3D || estadoAtual == EstadoJogo.TowerDefense2D)
@@ -120,7 +88,6 @@ public class GerenciadorJogo : MonoBehaviour
             }
         }
 
-        //Se o jogo estiver pausado ou fora da partida, interrompe o Update
         if (estadoAtual == EstadoJogo.Pausado || estadoAtual == EstadoJogo.GameOver ||
             estadoAtual == EstadoJogo.Vitoria || estadoAtual == EstadoJogo.Menu)
             return;
@@ -152,7 +119,6 @@ public class GerenciadorJogo : MonoBehaviour
         }
 
         // O dinheiro passivo do protagonista irá se incrementar gradativamente
-        // [FIXO 2] Loop de Economia Passiva com Time.deltime e bônus do RH
         contadorEconomia += Time.deltaTime;
 
         if (contadorEconomia >= 1f)
@@ -161,169 +127,40 @@ public class GerenciadorJogo : MonoBehaviour
 
             float rendaBasePassiva = 100f;
             float producaoEfetiva = producaoPorSegundo;
-
-            //Aplica bônus de 10% da Área 3 (RH - Central de Ergonomia) se ativo
             if (centralErgonomiaAtiva)
             {
                 producaoEfetiva *= 1.10f;
             }
 
-            //Calcula o lucro líquido(Produção - Manutenção + Renda Base)
             float lucro = (producaoPorSegundo - manutencaoPorSegundo) + rendaBasePassiva;
             dinheiro += Mathf.Max(0f, lucro);
 
-            //Valida se o jogador atingiu a meta para venceer
             VerificarCondicaoVitoria();
         }
 
-        // Se a horda estiver em andamento, monitora se todos os inimigos foram destruídos para abaixar a ameaça
-        if (hordaEmAndamento)
+        // Se a produção por segundo for maior que zero, o contador de ameaça irá aumentar de forma contínua
+        if (producaoPorSegundo > 0f)
         {
-            // Procura por todos os objetos com a tag "Inimigos" na cena ativa
-            GameObject[] inimigosRestantes = GameObject.FindGameObjectsWithTag("Inimigos");
+            contadorAmeaca += Time.deltaTime;
 
-            if (inimigosRestantes.Length == 0)
+            if (contadorAmeaca >= 1f)
             {
-                // A horda terminou! Redução da ameaça
-                ReduzirAmeaca(15f);
-                hordaEmAndamento = false;
-                Debug.Log("<color=green>[FIM DA HORDA]</color> Todos os inimigos foram eliminados. Ameaça reduzida!");
-            }
-        }
-        else
-        {
-            // Se NÃO houver horda ativa, a ameaça sobe normalmente com a produção
-            if (producaoPorSegundo > 0f)
-            {
-                contadorAmeaca += Time.deltaTime;
+                contadorAmeaca = 0f;
 
-                if (contadorAmeaca >= 1f)
+                float incrementoBase = 0.15f;
+                float fatorProducao = producaoPorSegundo * 0.0002f;
+                float subidaEfetiva = (incrementoBase + fatorProducao);
+
+                if (simuladorPhishingAtivo)
                 {
-                    contadorAmeaca = 0f;
-
-                    float incrementoBase = 0.15f;
-                    float fatorProducao = producaoPorSegundo * 0.0002f;
-                    float subidaEfetiva = (incrementoBase + fatorProducao);
-
-                    //Mitigação de ameaça se o Simuladdor de Phishing (RH) estiver ativo
-                    if (simuladorPhishingAtivo)
-                    {
-                        subidaEfetiva *= 0.80f;
-                    }
-
-                    AumentarAmeaca(subidaEfetiva);
+                    subidaEfetiva *= 0.80f;
                 }
-            }
 
-            // Checagem periódica para disparar nova horda
-            if (producaoPorSegundo > 0f)
-            {
-                contadorHorda += Time.deltaTime;
-
-                if (contadorHorda >= intervaloChecagemHorda)
-                {
-                    contadorHorda = 0f;
-                    TentarDispararHordaGlobal();
-                }
+                AumentarAmeaca(subidaEfetiva);
             }
         }
     }
 
-    /// ==============================
-    /// [FIXO 3] Sistema de Sorteio e Disparo de Hordas
-    /// ==============================
-
-    public static event System.Action OnAlertaAtaqueDisparado;
-
-    //Sorteia probabilidade for menor ou igual à ameaça, a invasão é deflagrada
-    private void TentarDispararHordaGlobal()
-    {
-        float sorteio = Random.Range(0f, 100f);
-
-        if (sorteio <= ameacaCibernetica)
-        {
-            numeroOndaAtual++;
-            //Calcula a quantidade de inimigos proporcional à ameça
-            int quantidadeInimigos = Mathf.Clamp(Mathf.FloorToInt(ameacaCibernetica / 15f), 2, 15);
-            Debug.Log($"<color=red>[ALERTA DE ATAQUE]</color> Onda {numeroOndaAtual} deflagrada! Ameaça atual: {ameacaCibernetica:F1}% | Unidades: {quantidadeInimigos}");
-
-            DispararHordaImediata(quantidadeInimigos);
-
-            //Toca o alarme sonoro de invasão
-            if (audioSourceAlarme != null && somAlerta != null)
-            {
-                audioSourceAlarme.PlayOneShot(somAlerta);
-            }
-
-            hordaEmAndamento = true; // Trava para indicar que a horda começou
-            OnAlertaAtaqueDisparado?.Invoke();
-        }
-    }
-
-    //Instancia os inimigos dinamicamente nos pontos de spawn designados
-    private void DispararHordaImediata(int quantidadeInimigos)
-    {
-        if (prefabsInimigos == null || prefabsInimigos.Length == 0)
-        {
-            Debug.LogWarning("[GerenciadorJogo] Prefabs de inimigos não atribuídos no Inspector!");
-            return;
-        }
-
-        // Busca o núcleo (PlacaMae) nas cenas ativas se estiver nulo
-        if (nucleo == null)
-        {
-            GameObject placaObj = GameObject.Find("PlacaMae");
-            if (placaObj != null) nucleo = placaObj.transform;
-        }
-
-        // Busca os pontos de spawn pela Tag se necessário
-        if (pontosNascimento == null || pontosNascimento.Length == 0)
-        {
-            GameObject[] objsTag = GameObject.FindGameObjectsWithTag("PontoSpawn");
-            if (objsTag.Length > 0)
-            {
-                pontosNascimento = new Transform[objsTag.Length];
-                for (int i = 0; i < objsTag.Length; i++)
-                {
-                    pontosNascimento[i] = objsTag[i].transform;
-                }
-            }
-        }
-
-        if (nucleo == null || pontosNascimento == null || pontosNascimento.Length == 0)
-        {
-            Debug.LogWarning("[GerenciadorJogo] Núcleo ou Pontos de Spawn não encontrados na cena ativa para instanciar a horda.");
-            return;
-        }
-
-        // Loop para instanciar cada malware e configurar seus alvos
-        for (int i = 0; i < quantidadeInimigos; i++)
-        {
-            GameObject prefab = prefabsInimigos[Random.Range(0, prefabsInimigos.Length)];
-            Transform pEscolhido = pontosNascimento[Random.Range(0, pontosNascimento.Length)];
-
-            Vector3 posSpawn = pEscolhido != null ? pEscolhido.position : Vector3.zero;
-            Vector3 pos = posSpawn + Vector3.Lerp(-rangeSpawn, rangeSpawn, Random.value);
-            pos.z = 0f;
-
-            GameObject inimigo = Instantiate(prefab, pos, Quaternion.identity);
-
-            // Atribui o núcleo como alvo principal para os diferentes tipos de malwares
-            Inimigo compInimigo = inimigo.GetComponent<Inimigo>();
-            if (compInimigo != null) compInimigo.alvo = nucleo.gameObject;
-
-            Trojan compTrojan = inimigo.GetComponent<Trojan>();
-            if (compTrojan != null) compTrojan.DefinirAlvo(nucleo);
-
-            DDosBots compDdos = inimigo.GetComponent<DDosBots>();
-            if (compDdos != null) compDdos.DefinirAlvo(nucleo);
-        }
-    }
-
-    /// ===========================
-    /// [FIXO 4] Metodos Auxiliares de Gestão, TI, RH e ESTADOS(Inicio)
-    /// ===========================
- 
     public void PausarJogo()
     {
         if (estadoAtual == EstadoJogo.Pausado || estadoAtual == EstadoJogo.Menu ||
@@ -349,7 +186,6 @@ public class GerenciadorJogo : MonoBehaviour
         Debug.Log("[GerenciadorJogo] Jogo Retomado.");
     }
 
-    //Valida e desconta saldo financeiro do jogador ao comprar máquinas
     public bool GastarDinheiro(float valor)
     {
         if (valor <= 0f) return true;
@@ -365,7 +201,6 @@ public class GerenciadorJogo : MonoBehaviour
         return true;
     }
 
-    //Ativa bônus passivos e mecânicos adquiridos no Setor de TI
     public void AtivarEfeitoTI(DadosMelhoriaTI.TipoBonusTI tipoBonus, float valorBonus)
     {
         switch (tipoBonus)
@@ -389,7 +224,6 @@ public class GerenciadorJogo : MonoBehaviour
         }
     }
 
-    //Ativa bônus do Setor de Recursos Humanos
     public void AtivarEfeitoRH(DadosMelhoriaRH.TipoBonusRH tipoBonus)
     {
         switch (tipoBonus)
@@ -412,7 +246,6 @@ public class GerenciadorJogo : MonoBehaviour
         }
     }
 
-    //Métodos imline de modificação de recursos produtivos e ameaça
     public void AdicionarGeracaoEnergia(float valor)
     {
         geracaoEnergiaPorSegundo += Mathf.Max(0f, valor);
@@ -526,7 +359,6 @@ public class GerenciadorJogo : MonoBehaviour
         ameacaCibernetica = 0f;
         vitoriaConquistada = false;
         contadorDrenoVida = 0f;
-        hordaEmAndamento = false;
 
         estadoAtual = EstadoJogo.Tycoon3D;
 
@@ -545,12 +377,6 @@ public class GerenciadorJogo : MonoBehaviour
         Time.timeScale = 1f;
         estadoAtual = EstadoJogo.Menu;
         SceneManager.LoadScene(cenaMenu);
-    }
-
-    public void AbrirTutorial()
-    {
-        SceneManager.LoadScene(cenaTutorial);
-        Debug.Log("Abrindo tela de tutorial");
     }
 
     public void QuitGame()
