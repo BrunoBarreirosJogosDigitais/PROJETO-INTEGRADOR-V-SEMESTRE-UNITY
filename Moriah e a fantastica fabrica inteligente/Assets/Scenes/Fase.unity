@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973e5365d03886246a2db7d2d73b25f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alvo: {fileID: 342437268}
+  alvo: {fileID: 478858685}
   distancia: {x: 0, y: 8, z: -8}
   velocidadeSuavizacao: 8
 --- !u!114 &223283835
@@ -1551,7 +1551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &342437268
 Transform:
   m_ObjectHideFlags: 0
@@ -2538,6 +2538,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 575a7e1010023cf48a3eae4b0654e250, type: 3}
+--- !u!4 &478858685 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2868248183571514665, guid: 575a7e1010023cf48a3eae4b0654e250, type: 3}
+  m_PrefabInstance: {fileID: 478858684}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &503574276
 GameObject:
   m_ObjectHideFlags: 0
