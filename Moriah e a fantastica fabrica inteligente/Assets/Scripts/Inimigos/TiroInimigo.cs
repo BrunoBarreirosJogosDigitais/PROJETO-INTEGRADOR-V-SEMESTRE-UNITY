@@ -30,7 +30,6 @@ public class TiroInimigo : MonoBehaviour
 
     void Start()
     {
-        // Garante que o tiro vai ignorar fisicamente os slots de defesa e os inimigos ao ser disparado
         IgnorarColisoes();
     }
 
