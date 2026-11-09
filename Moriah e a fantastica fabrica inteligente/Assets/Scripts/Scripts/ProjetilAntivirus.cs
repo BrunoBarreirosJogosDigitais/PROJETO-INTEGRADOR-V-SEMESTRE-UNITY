@@ -10,6 +10,7 @@ public class ProjetilAntivirus : MonoBehaviour
     [Header("Filtros de Colisão")]
     public string nomeTagSlotDefesa = "SlotDefesa";
     public string tagCartaDefensiva = "CartaDefensiva";
+    public string tagPlacaMae = "PlacaMae";
 
     public void ConfigurarAlvo(Transform novoAlvo, float danoRecebido)
     {
@@ -64,6 +65,16 @@ public class ProjetilAntivirus : MonoBehaviour
             if (colisorCarta != null)
             {
                 Physics2D.IgnoreCollision(meuColisor, colisorCarta, true);
+            }
+        }
+
+        GameObject[] placas = GameObject.FindGameObjectsWithTag(tagPlacaMae);
+        foreach (GameObject placa in placas)
+        {
+            Collider2D colisorPlaca = placa.GetComponent<Collider2D>();
+            if (colisorPlaca != null)
+            {
+                Physics2D.IgnoreCollision(meuColisor, colisorPlaca, true);
             }
         }
     }
