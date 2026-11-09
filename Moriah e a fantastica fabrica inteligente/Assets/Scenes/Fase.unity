@@ -6021,380 +6021,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365838345}
   m_CullTransparentMesh: 1
---- !u!1001 &1379914098
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 15105488071105310, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: local
-      value: Setor de RH
-      objectReference: {fileID: 0}
-    - target: {fileID: 15105488071105310, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: valor
-      value: 4000
-      objectReference: {fileID: 0}
-    - target: {fileID: 15105488071105310, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: nomeItem
-      value: "M\xF3dulo de Criptografia Qu\xE2ntica"
-      objectReference: {fileID: 0}
-    - target: {fileID: 15105488071105310, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: descricao
-      value: "Servidores de alta seguran\xE7a avan\xE7ada que protege os algoritmos
-        da Moriah contra roubos de propriedade intelectual."
-      objectReference: {fileID: 0}
-    - target: {fileID: 15105488071105310, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: imagemItem
-      value: 
-      objectReference: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
-    - target: {fileID: 15105488071105310, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: gerenciadorPainel
-      value: 
-      objectReference: {fileID: 1674185073}
-    - target: {fileID: 146701629894539793, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: local
-      value: Setor de RH
-      objectReference: {fileID: 0}
-    - target: {fileID: 146701629894539793, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: valor
-      value: 4000
-      objectReference: {fileID: 0}
-    - target: {fileID: 146701629894539793, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: nomeItem
-      value: "M\xF3dulo de Criptografia Qu\xE2ntica"
-      objectReference: {fileID: 0}
-    - target: {fileID: 146701629894539793, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: descricao
-      value: "Servidores de alta seguran\xE7a avan\xE7ada que protege os algoritmos
-        da Moriah contra roubos de propriedade intelectual."
-      objectReference: {fileID: 0}
-    - target: {fileID: 146701629894539793, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: imagemItem
-      value: 
-      objectReference: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
-    - target: {fileID: 146701629894539793, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: gerenciadorPainel
-      value: 
-      objectReference: {fileID: 1674185073}
-    - target: {fileID: 195136013801770870, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: local
-      value: Setor de RH
-      objectReference: {fileID: 0}
-    - target: {fileID: 195136013801770870, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: valor
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 195136013801770870, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: nomeItem
-      value: Edge Server
-      objectReference: {fileID: 0}
-    - target: {fileID: 195136013801770870, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: descricao
-      value: "Unidade compacta de processamento de dados que reduz a lat\xEAncia
-        da f\xE1brica e melhora o fluxo de informa\xE7\xF5es digitais"
-      objectReference: {fileID: 0}
-    - target: {fileID: 195136013801770870, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: imagemItem
-      value: 
-      objectReference: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
-    - target: {fileID: 195136013801770870, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: gerenciadorPainel
-      value: 
-      objectReference: {fileID: 1674185073}
-    - target: {fileID: 1697689497575266436, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: prefabMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 2511784150640724352, guid: 949a2f10d028daa498ae413eaa9e57e9, type: 3}
-    - target: {fileID: 1784637577073167428, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: local
-      value: Setor de RH
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784637577073167428, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: valor
-      value: 4000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784637577073167428, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: nomeItem
-      value: "M\xF3dulo de Criptografia Qu\xE2ntica"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784637577073167428, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: descricao
-      value: "Servidores de alta seguran\xE7a avan\xE7ada que protege os algoritmos
-        da Moriah contra roubos de propriedade intelectual."
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784637577073167428, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: imagemItem
-      value: 
-      objectReference: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
-    - target: {fileID: 1784637577073167428, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: gerenciadorPainel
-      value: 
-      objectReference: {fileID: 1674185073}
-    - target: {fileID: 1833230856700036041, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: dadosMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-    - target: {fileID: 1833230856700036041, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: prefabMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 2511784150640724352, guid: 949a2f10d028daa498ae413eaa9e57e9, type: 3}
-    - target: {fileID: 2592853167861995856, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_Name
-      value: Supercomputador de Processamento Neural
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995769287702335568, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_Name
-      value: Edge Server
-      objectReference: {fileID: 0}
-    - target: {fileID: 3134739349700160787, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: dadosMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-    - target: {fileID: 3134739349700160787, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: prefabMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 2511784150640724352, guid: 949a2f10d028daa498ae413eaa9e57e9, type: 3}
-    - target: {fileID: 4210672659275894495, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: local
-      value: Setor de RH
-      objectReference: {fileID: 0}
-    - target: {fileID: 4210672659275894495, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: valor
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4210672659275894495, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: nomeItem
-      value: Edge Server
-      objectReference: {fileID: 0}
-    - target: {fileID: 4210672659275894495, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: descricao
-      value: "Unidade compacta de processamento de dados que reduz a lat\xEAncia
-        da f\xE1brica e melhora o fluxo de informa\xE7\xF5es digitais"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4210672659275894495, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: imagemItem
-      value: 
-      objectReference: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
-    - target: {fileID: 4210672659275894495, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: gerenciadorPainel
-      value: 
-      objectReference: {fileID: 1674185073}
-    - target: {fileID: 5235905585446426227, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: local
-      value: Setor de RH
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235905585446426227, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: valor
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235905585446426227, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: nomeItem
-      value: Supercomputador de Processamento Neural
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235905585446426227, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: descricao
-      value: "O cora\xE7\xE3o digital do setor de TI. Utiliza intelig\xEAncia artificial
-        para prever gargalos de produ\xE7\xE3o antes que eles aconte\xE7am."
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235905585446426227, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: imagemItem
-      value: 
-      objectReference: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
-    - target: {fileID: 5235905585446426227, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: gerenciadorPainel
-      value: 
-      objectReference: {fileID: 1674185073}
-    - target: {fileID: 5285816798265568606, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_Name
-      value: Supercomputador de Processamento Neural
-      objectReference: {fileID: 0}
-    - target: {fileID: 5404338500181237233, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_Name
-      value: "M\xF3dulo de Criptografia Qu\xE2ntica"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5501723689038062387, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: dadosMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-    - target: {fileID: 5501723689038062387, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: prefabMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 2511784150640724352, guid: 949a2f10d028daa498ae413eaa9e57e9, type: 3}
-    - target: {fileID: 5510763388350631553, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: dadosMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-    - target: {fileID: 5510763388350631553, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: prefabMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 919132149155446097, guid: 1911efe67bc5cf54391ecc7c48051849, type: 3}
-    - target: {fileID: 5654821563706531642, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: local
-      value: Setor de RH
-      objectReference: {fileID: 0}
-    - target: {fileID: 5654821563706531642, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: valor
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 5654821563706531642, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: nomeItem
-      value: Supercomputador de Processamento Neural
-      objectReference: {fileID: 0}
-    - target: {fileID: 5654821563706531642, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: descricao
-      value: "O cora\xE7\xE3o digital do setor de TI. Utiliza intelig\xEAncia artificial
-        para prever gargalos de produ\xE7\xE3o antes que eles aconte\xE7am."
-      objectReference: {fileID: 0}
-    - target: {fileID: 5654821563706531642, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: imagemItem
-      value: 
-      objectReference: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
-    - target: {fileID: 5654821563706531642, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: gerenciadorPainel
-      value: 
-      objectReference: {fileID: 1674185073}
-    - target: {fileID: 5902478091590595942, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_Name
-      value: "M\xF3dulo de Criptografia Qu\xE2ntica"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6137964634289147027, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_Name
-      value: "M\xF3dulo de Criptografia Qu\xE2ntica"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6729630690379235034, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_Name
-      value: Edge Server
-      objectReference: {fileID: 0}
-    - target: {fileID: 6823738719071962795, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_Name
-      value: Edge Server
-      objectReference: {fileID: 0}
-    - target: {fileID: 7289172567945854141, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_Name
-      value: Supercomputador de Processamento Neural
-      objectReference: {fileID: 0}
-    - target: {fileID: 7341037530966695029, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: local
-      value: Setor de RH
-      objectReference: {fileID: 0}
-    - target: {fileID: 7341037530966695029, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: valor
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 7341037530966695029, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: nomeItem
-      value: Supercomputador de Processamento Neural
-      objectReference: {fileID: 0}
-    - target: {fileID: 7341037530966695029, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: descricao
-      value: "O cora\xE7\xE3o digital do setor de TI. Utiliza intelig\xEAncia artificial
-        para prever gargalos de produ\xE7\xE3o antes que eles aconte\xE7am."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7341037530966695029, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: imagemItem
-      value: 
-      objectReference: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
-    - target: {fileID: 7341037530966695029, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: gerenciadorPainel
-      value: 
-      objectReference: {fileID: 1674185073}
-    - target: {fileID: 7395464370904383265, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: dadosMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-    - target: {fileID: 7395464370904383265, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: prefabMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 2511784150640724352, guid: 949a2f10d028daa498ae413eaa9e57e9, type: 3}
-    - target: {fileID: 7588239708631885254, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: local
-      value: Setor de RH
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588239708631885254, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: valor
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588239708631885254, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: descricao
-      value: "Unidade compacta de processamento de dados que reduz a lat\xEAncia
-        da f\xE1brica e melhora o fluxo de informa\xE7\xF5es digitais"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588239708631885254, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: imagemItem
-      value: 
-      objectReference: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
-    - target: {fileID: 7588239708631885254, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: gerenciadorPainel
-      value: 
-      objectReference: {fileID: 1674185073}
-    - target: {fileID: 7604888152512570449, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: dadosMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-    - target: {fileID: 7604888152512570449, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: prefabMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 2511784150640724352, guid: 949a2f10d028daa498ae413eaa9e57e9, type: 3}
-    - target: {fileID: 8480779245749418027, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_Name
-      value: Area2 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496517293000808131, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.106649
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496517293000808131, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 17.78441
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496517293000808131, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 273.94318
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496517293000808131, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496517293000808131, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496517293000808131, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496517293000808131, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496517293000808131, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496517293000808131, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496517293000808131, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8703902015844364239, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: prefabMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 2511784150640724352, guid: 949a2f10d028daa498ae413eaa9e57e9, type: 3}
-    - target: {fileID: 8942440720066122248, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
-      propertyPath: prefabMelhoriaParaEsteLocal
-      value: 
-      objectReference: {fileID: 2511784150640724352, guid: 949a2f10d028daa498ae413eaa9e57e9, type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 221820da2c7f7434ea30545b3b490a48, type: 3}
 --- !u!1 &1399909083
 GameObject:
   m_ObjectHideFlags: 0
@@ -6850,7 +6476,7 @@ PrefabInstance:
     - target: {fileID: 3158499165407213761, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: prefabTIParaEsteLocal
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 056c6a498351f0746a1df4d4537afeb8, type: 3}
+      objectReference: {fileID: 2140208319145705117, guid: 044cea5b0bd37b442b041cdd77c7cd2a, type: 3}
     - target: {fileID: 3276859238673387019, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: m_Name
       value: Central de Ergonomia e Bem-Estar Inteligente
@@ -6910,7 +6536,7 @@ PrefabInstance:
     - target: {fileID: 4094310313796981200, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: prefabTIParaEsteLocal
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 056c6a498351f0746a1df4d4537afeb8, type: 3}
+      objectReference: {fileID: 2140208319145705117, guid: 044cea5b0bd37b442b041cdd77c7cd2a, type: 3}
     - target: {fileID: 4344235631755053982, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: local
       value: Setor de TI
@@ -6976,7 +6602,7 @@ PrefabInstance:
     - target: {fileID: 5210969950252285897, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: prefabTIParaEsteLocal
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 056c6a498351f0746a1df4d4537afeb8, type: 3}
+      objectReference: {fileID: 2140208319145705117, guid: 044cea5b0bd37b442b041cdd77c7cd2a, type: 3}
     - target: {fileID: 5242402421689464218, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: local
       value: Setor de TI
@@ -7034,7 +6660,7 @@ PrefabInstance:
     - target: {fileID: 5848630193850265846, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: prefabTIParaEsteLocal
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 056c6a498351f0746a1df4d4537afeb8, type: 3}
+      objectReference: {fileID: 2140208319145705117, guid: 044cea5b0bd37b442b041cdd77c7cd2a, type: 3}
     - target: {fileID: 5906749514982213527, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: dadosTIParaEsteLocal
       value: 
@@ -7112,7 +6738,7 @@ PrefabInstance:
     - target: {fileID: 7283978916621180078, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: prefabTIParaEsteLocal
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 056c6a498351f0746a1df4d4537afeb8, type: 3}
+      objectReference: {fileID: 2140208319145705117, guid: 044cea5b0bd37b442b041cdd77c7cd2a, type: 3}
     - target: {fileID: 7317064924431145221, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: m_Name
       value: Central de Ergonomia e Bem-Estar Inteligente
@@ -7120,7 +6746,7 @@ PrefabInstance:
     - target: {fileID: 7340749648615817822, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: prefabTIParaEsteLocal
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 056c6a498351f0746a1df4d4537afeb8, type: 3}
+      objectReference: {fileID: 2140208319145705117, guid: 044cea5b0bd37b442b041cdd77c7cd2a, type: 3}
     - target: {fileID: 7369847698866291165, guid: 9e5395ef0bce3c64e9df711c8035e50e, type: 3}
       propertyPath: local
       value: Setor de TI
@@ -10675,6 +10301,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &15105489379314284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137964635594743265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: "M\xF3dulo de Criptografia Qu\xE2ntica"
+  local: Setor de RH
+  valor: 4000
+  descricao: "Servidores de alta seguran\xE7a avan\xE7ada que protege os algoritmos
+    da Moriah contra roubos de propriedade intelectual."
+  imagemItem: {fileID: -124067974, guid: 61d8310021f40fc47bdc96f6c728cc1e, type: 3}
+  gerenciadorPainel: {fileID: 1674185073}
 --- !u!1 &44351646941082409
 GameObject:
   m_ObjectHideFlags: 0
@@ -10719,6 +10364,51 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.25, y: 1, z: 1.18}
   m_Center: {x: 0, y: -0.00000047683716, z: 0.0000019073486}
+--- !u!23 &61062692202671979
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285816797492591660}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7e22d8168237f934c95852a26d2ae592, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &69506352072081748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10774,6 +10464,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44351646941082409}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &146701629124143971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902478092365440020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: "M\xF3dulo de Criptografia Qu\xE2ntica"
+  local: Setor de RH
+  valor: 4000
+  descricao: "Servidores de alta seguran\xE7a avan\xE7ada que protege os algoritmos
+    da Moriah contra roubos de propriedade intelectual."
+  imagemItem: {fileID: -124067974, guid: 61d8310021f40fc47bdc96f6c728cc1e, type: 3}
+  gerenciadorPainel: {fileID: 1674185073}
 --- !u!54 &158462708446695346
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10833,6 +10542,25 @@ MonoBehaviour:
   maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
   prefabMaquinaParaEsteLocal: {fileID: 7275791044915046440, guid: 96204ac15b1554541aa411e5d8cce210, type: 3}
+--- !u!114 &195136014643469828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729630691218239400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: Edge Server
+  local: Setor de RH
+  valor: 1500
+  descricao: "Unidade compacta de processamento de dados que reduz a lat\xEAncia
+    da f\xE1brica e melhora o fluxo de informa\xE7\xF5es digitais"
+  imagemItem: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
+  gerenciadorPainel: {fileID: 1674185073}
 --- !u!224 &243703201694881524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10890,6 +10618,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.25, y: 1, z: 1.18}
   m_Center: {x: 0, y: -0.00000047683716, z: 0.0000019073486}
+--- !u!1 &275838467869100364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7399802412536758027}
+  m_Layer: 0
+  m_Name: Pontos_de_Instancia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &295519498477654617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10907,7 +10651,7 @@ MonoBehaviour:
   valor: 500
   descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
     de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1200169412, guid: b2fc4f2981260214bacaa81c885f9599, type: 3}
+  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!4 &320149506872325404
 Transform:
@@ -10957,7 +10701,7 @@ MonoBehaviour:
   valor: 500
   descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
     de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1200169412, guid: b2fc4f2981260214bacaa81c885f9599, type: 3}
+  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!222 &374482168505249095
 CanvasRenderer:
@@ -11017,6 +10761,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567254055706165927}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &461735316361149583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5883312114870780376}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3748533982411418801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &470263987291015059
 Transform:
   m_ObjectHideFlags: 0
@@ -11048,6 +10807,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &502227770683183675
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995769286330024226}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!23 &522904793251683078
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11160,6 +10946,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &564884201256294925
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592853166552172578}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &567254055706165927
 GameObject:
   m_ObjectHideFlags: 0
@@ -11299,7 +11112,7 @@ MonoBehaviour:
   valor: 500
   descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
     de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1200169412, guid: b2fc4f2981260214bacaa81c885f9599, type: 3}
+  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!65 &709750979116880311
 BoxCollider:
@@ -11329,6 +11142,88 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3899325964916929913}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.84, y: 1, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &732043216128341180
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289172568715619791}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7e22d8168237f934c95852a26d2ae592, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &733920225591621257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8427092651680183310}
+  m_Layer: 0
+  m_Name: Pontos_de_Instancia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &737264708444932689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6823738719844095961}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -11444,6 +11339,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5099369194035755299}
   m_CullTransparentMesh: 1
+--- !u!54 &875831433721981801
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6823738719844095961}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!65 &878417438200560974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11778,6 +11700,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1049495219950559786
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995769286330024226}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.84, y: 1, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &1075680158817846406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11893,6 +11836,33 @@ MonoBehaviour:
     autonomamente.\r\n"
   imagemItem: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
+--- !u!54 &1121096897651589062
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137964635594743265}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!114 &1132663490851584940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11928,6 +11898,27 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2673163931595972347}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.84, y: 1, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &1220003987408424008
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404338501560487043}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -12000,6 +11991,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8065484326512613171}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1379824323010173047
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6823738719844095961}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.25, y: 1, z: 1.18}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!65 &1489223756213904975
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12111,6 +12123,27 @@ MonoBehaviour:
   maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
   prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 515719e20e0da6f4a81f03754b455e34, type: 3}
+--- !u!65 &1591458864566486101
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902478092365440020}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.84, y: 1, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &1601684223329378426
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12190,6 +12223,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1697689496266295798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285816797492591660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722e194d7c5ab64ebeb9b561732dfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoDeInstanciacao: {fileID: 8427092651680183310}
+  melhoriaInstalada: {fileID: 0}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 919132149155446097, guid: 078b36a54e2c11847a19bdcdede85312, type: 3}
 --- !u!4 &1739203276067203783
 Transform:
   m_ObjectHideFlags: 0
@@ -12213,6 +12262,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4492702000858697061}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1784637576238161206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404338501560487043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: "M\xF3dulo de Criptografia Qu\xE2ntica"
+  local: Setor de RH
+  valor: 4000
+  descricao: "Servidores de alta seguran\xE7a avan\xE7ada que protege os algoritmos
+    da Moriah contra roubos de propriedade intelectual."
+  imagemItem: {fileID: -124067974, guid: 61d8310021f40fc47bdc96f6c728cc1e, type: 3}
+  gerenciadorPainel: {fileID: 1674185073}
 --- !u!54 &1810954139046032374
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12263,6 +12331,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1818837677557762545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5317880305794217073}
+  m_Layer: 0
+  m_Name: Pontos_de_Instancia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1833230855390876347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592853166552172578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722e194d7c5ab64ebeb9b561732dfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoDeInstanciacao: {fileID: 5317880305794217073}
+  melhoriaInstalada: {fileID: 0}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 919132149155446097, guid: 078b36a54e2c11847a19bdcdede85312, type: 3}
 --- !u!54 &1848277292653199989
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12448,6 +12548,43 @@ MonoBehaviour:
   maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
   prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 566224fd43f52ce42b7db72ec4303f21, type: 3}
+--- !u!65 &2197915969897048158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592853166552172578}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.84, y: 1, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2206474784506015321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7089264746102864381}
+  m_Layer: 0
+  m_Name: Pontos_de_Instancia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!65 &2210367843629882376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12469,6 +12606,177 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.25, y: 1, z: 1.18}
   m_Center: {x: 0.00000023841858, y: -0.00000047683716, z: 0.0000019073486}
+--- !u!54 &2222364092027963272
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285816797492591660}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!23 &2230279922248665023
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6823738719844095961}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7e22d8168237f934c95852a26d2ae592, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2234023021296578626
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592853166552172578}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2252745706648390892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729630691218239400}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -47.63, y: -17.55441, z: 46.556824}
+  m_LocalScale: {x: 6.7373395, y: 0.14756, z: 8.2254715}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2315573301413108074}
+  m_Father: {fileID: 8496517294379829169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2272373054994378632
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902478092365440020}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7e22d8168237f934c95852a26d2ae592, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &2293439428905645603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6321353779053221589}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6493094830161215478}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2315573301413108074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3302015495857230646}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2252745706648390892}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2328729468560281438
 GameObject:
   m_ObjectHideFlags: 0
@@ -12614,6 +12922,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2592853166552172578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8719622575621909860}
+  - component: {fileID: 2234023021296578626}
+  - component: {fileID: 5021285301996650877}
+  - component: {fileID: 2197915969897048158}
+  - component: {fileID: 1833230855390876347}
+  - component: {fileID: 5654821562932366920}
+  - component: {fileID: 8255763965014123319}
+  - component: {fileID: 564884201256294925}
+  m_Layer: 0
+  m_Name: Supercomputador de Processamento Neural
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &2660773121169428185
 GameObject:
   m_ObjectHideFlags: 0
@@ -12630,6 +12961,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &2669155154316528403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285816797492591660}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.45335, y: -17.55441, z: 35}
+  m_LocalScale: {x: 6.7373395, y: 0.14756, z: 8.2254715}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8427092651680183310}
+  m_Father: {fileID: 8496517294379829169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2673163931595972347
 GameObject:
   m_ObjectHideFlags: 0
@@ -12733,6 +13080,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!65 &2758037347998772833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289172568715619791}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.84, y: 1, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2759755315366601701
 GameObject:
   m_ObjectHideFlags: 0
@@ -12809,6 +13177,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.25, y: 1, z: 1.18}
   m_Center: {x: 0.00000023841858, y: -0.00000047683716, z: 0}
+--- !u!54 &2778427461187648581
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404338501560487043}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2821556232444943398
 GameObject:
   m_ObjectHideFlags: 0
@@ -13007,6 +13402,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &2991621429251475340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137964635594743265}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.25, y: 1, z: 1.18}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
+--- !u!1 &2995769286330024226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9123488853381111578}
+  - component: {fileID: 8753786428176153405}
+  - component: {fileID: 4467641991397834924}
+  - component: {fileID: 1049495219950559786}
+  - component: {fileID: 8942440720908174202}
+  - component: {fileID: 4210672657968471981}
+  - component: {fileID: 5354751193898543158}
+  - component: {fileID: 502227770683183675}
+  m_Layer: 0
+  m_Name: Edge Server
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &3066928244090941391
 GameObject:
   m_ObjectHideFlags: 0
@@ -13075,6 +13514,43 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3130652735694605731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285816797492591660}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.84, y: 1, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3134739348326382689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404338501560487043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722e194d7c5ab64ebeb9b561732dfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoDeInstanciacao: {fileID: 461735316361149583}
+  melhoriaInstalada: {fileID: 0}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 919132149155446097, guid: a6e75b9ed7efabc4ea9e5527d0eb1cc3, type: 3}
 --- !u!65 &3139914504351465797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13190,8 +13666,55 @@ MonoBehaviour:
   descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
     ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
     o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -1054215213, guid: 21e0d954865282b4b88e39513d850aa9, type: 3}
+  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
+--- !u!1 &3302015495857230646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2315573301413108074}
+  m_Layer: 0
+  m_Name: Pontos_de_Instancia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3334295011738362938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7882478249874243907}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4718547214902607603}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &3352761800098291128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6823738719844095961}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.45335, y: -17.55441, z: 23.5}
+  m_LocalScale: {x: 6.7373395, y: 0.14756, z: 8.2254715}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7399802412536758027}
+  m_Father: {fileID: 8496517294379829169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3411628029307644912
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13314,6 +13837,51 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.84, y: 1, z: 0.85}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &3541038495347253861
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729630691218239400}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7e22d8168237f934c95852a26d2ae592, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &3572240346358503632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13418,6 +13986,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &3615284678303676709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137964635594743265}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -47.63, y: -17.55441, z: 35}
+  m_LocalScale: {x: 6.7373395, y: 0.14756, z: 8.2254715}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7089264746102864381}
+  m_Father: {fileID: 8496517294379829169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &3628381476653393420
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13533,6 +14117,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!4 &3748533982411418801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404338501560487043}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.45335, y: -17.55441, z: 46.556824}
+  m_LocalScale: {x: 6.7373395, y: 0.14756, z: 8.2254715}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 461735316361149583}
+  m_Father: {fileID: 8496517294379829169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &3763553642110468344
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13901,6 +14501,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.84, y: 1, z: 0.85}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4210672657968471981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995769286330024226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: Edge Server
+  local: Setor de RH
+  valor: 1500
+  descricao: "Unidade compacta de processamento de dados que reduz a lat\xEAncia
+    da f\xE1brica e melhora o fluxo de informa\xE7\xF5es digitais"
+  imagemItem: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
+  gerenciadorPainel: {fileID: 1674185073}
 --- !u!33 &4216608555689314044
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14066,8 +14685,53 @@ MonoBehaviour:
   valor: 500
   descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
     de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1200169412, guid: b2fc4f2981260214bacaa81c885f9599, type: 3}
+  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
+--- !u!23 &4393112671601389721
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137964635594743265}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7e22d8168237f934c95852a26d2ae592, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &4403949839142309044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14155,6 +14819,51 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.84, y: 1, z: 0.85}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &4467641991397834924
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995769286330024226}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7e22d8168237f934c95852a26d2ae592, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &4471399081260160900
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14440,6 +15149,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.25, y: 1, z: 1.18}
   m_Center: {x: 0, y: -0.00000047683716, z: 0.0000019073486}
+--- !u!4 &4718547214902607603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289172568715619791}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -57.73, y: -17.55441, z: 46.556824}
+  m_LocalScale: {x: 6.7373395, y: 0.14756, z: 8.2254715}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3334295011738362938}
+  m_Father: {fileID: 8496517294379829169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &4727196657137445065
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14743,6 +15468,51 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.84, y: 1, z: 0.85}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &5021285301996650877
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592853166552172578}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7e22d8168237f934c95852a26d2ae592, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!23 &5034779069091808706
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14826,6 +15596,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6970170301635109592}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5078811887030176249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729630691218239400}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.84, y: 1, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5099369194035755299
 GameObject:
   m_ObjectHideFlags: 0
@@ -14994,6 +15785,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &5235905586221762305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285816797492591660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: Supercomputador de Processamento Neural
+  local: Setor de RH
+  valor: 1500
+  descricao: "O cora\xE7\xE3o digital do setor de TI. Utiliza intelig\xEAncia artificial
+    para prever gargalos de produ\xE7\xE3o antes que eles aconte\xE7am."
+  imagemItem: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
+  gerenciadorPainel: {fileID: 1674185073}
 --- !u!114 &5259449064976056052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15033,6 +15843,89 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &5285816797492591660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2669155154316528403}
+  - component: {fileID: 6591559637725521999}
+  - component: {fileID: 61062692202671979}
+  - component: {fileID: 3130652735694605731}
+  - component: {fileID: 1697689496266295798}
+  - component: {fileID: 5235905586221762305}
+  - component: {fileID: 9141040738399146123}
+  - component: {fileID: 2222364092027963272}
+  m_Layer: 0
+  m_Name: Supercomputador de Processamento Neural
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &5315044797270586809
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404338501560487043}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7e22d8168237f934c95852a26d2ae592, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &5317880305794217073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818837677557762545}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8719622575621909860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5343462814121787843
 GameObject:
   m_ObjectHideFlags: 0
@@ -15094,6 +15987,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5354751193898543158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995769286330024226}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.25, y: 1, z: 1.18}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
+--- !u!65 &5355015981948802796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289172568715619791}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.25, y: 1, z: 1.18}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!114 &5356608799681423313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15189,6 +16124,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &5404338501560487043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3748533982411418801}
+  - component: {fileID: 8926533811883842143}
+  - component: {fileID: 5315044797270586809}
+  - component: {fileID: 1220003987408424008}
+  - component: {fileID: 3134739348326382689}
+  - component: {fileID: 1784637576238161206}
+  - component: {fileID: 8019159054867531409}
+  - component: {fileID: 2778427461187648581}
+  m_Layer: 0
+  m_Name: "M\xF3dulo de Criptografia Qu\xE2ntica"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &5415564656631147333
 GameObject:
   m_ObjectHideFlags: 0
@@ -15227,6 +16185,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4958331234380889471}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5501723689873896001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6823738719844095961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722e194d7c5ab64ebeb9b561732dfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoDeInstanciacao: {fileID: 7399802412536758027}
+  melhoriaInstalada: {fileID: 0}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 2511784150640724352, guid: e388fa33036028342be0761ec5a06063, type: 3}
+--- !u!114 &5510763389122633715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902478092365440020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722e194d7c5ab64ebeb9b561732dfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoDeInstanciacao: {fileID: 2293439428905645603}
+  melhoriaInstalada: {fileID: 0}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 919132149155446097, guid: a6e75b9ed7efabc4ea9e5527d0eb1cc3, type: 3}
 --- !u!114 &5621220583142833170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15306,6 +16296,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5654821562932366920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592853166552172578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: Supercomputador de Processamento Neural
+  local: Setor de RH
+  valor: 1500
+  descricao: "O cora\xE7\xE3o digital do setor de TI. Utiliza intelig\xEAncia artificial
+    para prever gargalos de produ\xE7\xE3o antes que eles aconte\xE7am."
+  imagemItem: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
+  gerenciadorPainel: {fileID: 1674185073}
 --- !u!65 &5670338722888221727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15384,6 +16393,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!65 &5700756008087874563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137964635594743265}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.84, y: 1, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &5703821517980033334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15422,7 +16452,7 @@ MonoBehaviour:
   valor: 500
   descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
     de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1200169412, guid: b2fc4f2981260214bacaa81c885f9599, type: 3}
+  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!114 &5720051536508602164
 MonoBehaviour:
@@ -15441,7 +16471,7 @@ MonoBehaviour:
   valor: 500
   descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
     de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1200169412, guid: b2fc4f2981260214bacaa81c885f9599, type: 3}
+  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!1 &5776518068226053759
 GameObject:
@@ -15466,6 +16496,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!33 &5797966880784517203
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137964635594743265}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &5824337580728703448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15529,6 +16567,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &5883312114870780376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461735316361149583}
+  m_Layer: 0
+  m_Name: Pontos_de_Instancia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!65 &5892765295494452682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15550,6 +16604,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.84, y: 1, z: 0.85}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &5900316274563141390
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902478092365440020}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &5902478092365440020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6493094830161215478}
+  - component: {fileID: 5900316274563141390}
+  - component: {fileID: 2272373054994378632}
+  - component: {fileID: 1591458864566486101}
+  - component: {fileID: 5510763389122633715}
+  - component: {fileID: 146701629124143971}
+  - component: {fileID: 8422425970878452898}
+  - component: {fileID: 8377743735844065619}
+  m_Layer: 0
+  m_Name: "M\xF3dulo de Criptografia Qu\xE2ntica"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &5912971421148228569
 Transform:
   m_ObjectHideFlags: 0
@@ -15584,7 +16669,7 @@ MonoBehaviour:
   descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
     ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
     o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -1054215213, guid: 21e0d954865282b4b88e39513d850aa9, type: 3}
+  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!1 &5957880969562021953
 GameObject:
@@ -15775,6 +16860,29 @@ MonoBehaviour:
     pacotes."
   imagemItem: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
+--- !u!1 &6137964635594743265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3615284678303676709}
+  - component: {fileID: 5797966880784517203}
+  - component: {fileID: 4393112671601389721}
+  - component: {fileID: 5700756008087874563}
+  - component: {fileID: 8703902017150156477}
+  - component: {fileID: 15105489379314284}
+  - component: {fileID: 2991621429251475340}
+  - component: {fileID: 1121096897651589062}
+  m_Layer: 0
+  m_Name: "M\xF3dulo de Criptografia Qu\xE2ntica"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &6180908946802183115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15898,6 +17006,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &6321353779053221589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2293439428905645603}
+  m_Layer: 0
+  m_Name: Pontos_de_Instancia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!65 &6345960209485406325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16017,6 +17141,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497165571826854326}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &6413119622680161834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729630691218239400}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.25, y: 1, z: 1.18}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!65 &6465344483251455478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16038,6 +17183,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.84, y: 1, z: 0.85}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &6493094830161215478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902478092365440020}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -57.73, y: -17.55441, z: 23.5}
+  m_LocalScale: {x: 6.7373395, y: 0.14756, z: 8.2254715}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2293439428905645603}
+  m_Father: {fileID: 8496517294379829169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &6496326159192655464
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16124,6 +17285,14 @@ MonoBehaviour:
     autonomamente.\r\n"
   imagemItem: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
+--- !u!33 &6591559637725521999
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285816797492591660}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &6637192065463229408
 Transform:
   m_ObjectHideFlags: 0
@@ -16187,7 +17356,7 @@ MonoBehaviour:
   valor: 500
   descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
     de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1200169412, guid: b2fc4f2981260214bacaa81c885f9599, type: 3}
+  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!65 &6680060640121136714
 BoxCollider:
@@ -16249,6 +17418,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6637192065463229408}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6711209932451812703
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289172568715619791}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &6729630691218239400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2252745706648390892}
+  - component: {fileID: 8227699068466311542}
+  - component: {fileID: 3541038495347253861}
+  - component: {fileID: 5078811887030176249}
+  - component: {fileID: 7395464371745320531}
+  - component: {fileID: 195136014643469828}
+  - component: {fileID: 6413119622680161834}
+  - component: {fileID: 7623275106716254867}
+  m_Layer: 0
+  m_Name: Edge Server
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &6733123901267059401
 Transform:
   m_ObjectHideFlags: 0
@@ -16283,7 +17483,7 @@ MonoBehaviour:
   descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
     ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
     o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -1054215213, guid: 21e0d954865282b4b88e39513d850aa9, type: 3}
+  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!4 &6758469113421512026
 Transform:
@@ -16370,6 +17570,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.25, y: 1, z: 1.18}
   m_Center: {x: 0.00000023841858, y: -0.00000047683716, z: 0.0000019073486}
+--- !u!1 &6823738719844095961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3352761800098291128}
+  - component: {fileID: 8453188514897865476}
+  - component: {fileID: 2230279922248665023}
+  - component: {fileID: 737264708444932689}
+  - component: {fileID: 5501723689873896001}
+  - component: {fileID: 7588239709944132788}
+  - component: {fileID: 1379824323010173047}
+  - component: {fileID: 875831433721981801}
+  m_Layer: 0
+  m_Name: Edge Server
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &6841677228600827587
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16415,6 +17638,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &6876367272129732484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936187267433987926}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9123488853381111578}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &6903364157966205603
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16565,6 +17803,21 @@ MonoBehaviour:
     pacotes."
   imagemItem: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
+--- !u!4 &7089264746102864381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2206474784506015321}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3615284678303676709}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &7098605627736513804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16736,6 +17989,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5648069290138248562}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &7289172568715619791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4718547214902607603}
+  - component: {fileID: 6711209932451812703}
+  - component: {fileID: 732043216128341180}
+  - component: {fileID: 2758037347998772833}
+  - component: {fileID: 7604888151138071843}
+  - component: {fileID: 7341037530196430087}
+  - component: {fileID: 5355015981948802796}
+  - component: {fileID: 7598295250950590040}
+  m_Layer: 0
+  m_Name: Supercomputador de Processamento Neural
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!33 &7289362093562505783
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16760,6 +18036,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7341037530196430087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289172568715619791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: Supercomputador de Processamento Neural
+  local: Setor de RH
+  valor: 1500
+  descricao: "O cora\xE7\xE3o digital do setor de TI. Utiliza intelig\xEAncia artificial
+    para prever gargalos de produ\xE7\xE3o antes que eles aconte\xE7am."
+  imagemItem: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
+  gerenciadorPainel: {fileID: 1674185073}
 --- !u!114 &7347129002795238347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16831,8 +18126,24 @@ MonoBehaviour:
   valor: 500
   descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
     de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1200169412, guid: b2fc4f2981260214bacaa81c885f9599, type: 3}
+  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
+--- !u!114 &7395464371745320531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729630691218239400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722e194d7c5ab64ebeb9b561732dfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoDeInstanciacao: {fileID: 2315573301413108074}
+  melhoriaInstalada: {fileID: 0}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 2511784150640724352, guid: e388fa33036028342be0761ec5a06063, type: 3}
 --- !u!23 &7396861120840845838
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16878,6 +18189,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &7399802412536758027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275838467869100364}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3352761800098291128}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7418536310958249627
 GameObject:
   m_ObjectHideFlags: 0
@@ -17107,6 +18433,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 745732471446390300}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7588239709944132788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6823738719844095961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: Edge Server
+  local: Setor de RH
+  valor: 1500
+  descricao: "Unidade compacta de processamento de dados que reduz a lat\xEAncia
+    da f\xE1brica e melhora o fluxo de informa\xE7\xF5es digitais"
+  imagemItem: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
+  gerenciadorPainel: {fileID: 1674185073}
+--- !u!54 &7598295250950590040
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289172568715619791}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &7604888151138071843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289172568715619791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722e194d7c5ab64ebeb9b561732dfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoDeInstanciacao: {fileID: 3334295011738362938}
+  melhoriaInstalada: {fileID: 0}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 919132149155446097, guid: 078b36a54e2c11847a19bdcdede85312, type: 3}
+--- !u!54 &7623275106716254867
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729630691218239400}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!54 &7654368572060014377
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17260,7 +18675,7 @@ MonoBehaviour:
   descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
     ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
     o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -1054215213, guid: 21e0d954865282b4b88e39513d850aa9, type: 3}
+  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!4 &7877620908242686206
 Transform:
@@ -17278,6 +18693,22 @@ Transform:
   - {fileID: 8553247403883777233}
   m_Father: {fileID: 608039491951602623}
   m_LocalEulerAnglesHint: {x: 0, y: -89.126, z: 0}
+--- !u!1 &7882478249874243907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3334295011738362938}
+  m_Layer: 0
+  m_Name: Pontos_de_Instancia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &7893073455026853237
 Transform:
   m_ObjectHideFlags: 0
@@ -17312,7 +18743,7 @@ MonoBehaviour:
   descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
     ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
     o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -1054215213, guid: 21e0d954865282b4b88e39513d850aa9, type: 3}
+  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!1 &7912021232680580140
 GameObject:
@@ -17383,6 +18814,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8019159054867531409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404338501560487043}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.25, y: 1, z: 1.18}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!65 &8019969258073118192
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17535,6 +18987,14 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.25, y: 1, z: 1.18}
   m_Center: {x: 0, y: -0.00000047683716, z: 0.0000019073486}
+--- !u!33 &8227699068466311542
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729630691218239400}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &8238109765655476509
 Transform:
   m_ObjectHideFlags: 0
@@ -17550,6 +19010,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2769817907248453651}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8255763965014123319
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592853166552172578}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.25, y: 1, z: 1.18}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &8265769472095270976
 GameObject:
   m_ObjectHideFlags: 0
@@ -17655,6 +19136,69 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &8377743735844065619
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902478092365440020}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &8422425970878452898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902478092365440020}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.25, y: 1, z: 1.18}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
+--- !u!4 &8427092651680183310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733920225591621257}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2669155154316528403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8427565824771203736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17673,7 +19217,7 @@ MonoBehaviour:
   descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
     ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
     o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -1054215213, guid: 21e0d954865282b4b88e39513d850aa9, type: 3}
+  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!1 &8427993727347458563
 GameObject:
@@ -17719,6 +19263,14 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.84, y: 1, z: 0.85}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &8453188514897865476
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6823738719844095961}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &8461016875009021399
 Transform:
   m_ObjectHideFlags: 0
@@ -17742,6 +19294,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8427993727347458563}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &8480779244439988569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8496517294379829169}
+  m_Layer: 0
+  m_Name: Area2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &8483083458034266193
 Transform:
   m_ObjectHideFlags: 0
@@ -17756,6 +19324,30 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8173766810120170677}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &8496517294379829169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8480779244439988569}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.106649, y: 17.78441, z: 273.94318}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3352761800098291128}
+  - {fileID: 6493094830161215478}
+  - {fileID: 8719622575621909860}
+  - {fileID: 2252745706648390892}
+  - {fileID: 3615284678303676709}
+  - {fileID: 4718547214902607603}
+  - {fileID: 9123488853381111578}
+  - {fileID: 3748533982411418801}
+  - {fileID: 2669155154316528403}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &8553247403883777233
 Transform:
@@ -17849,6 +19441,22 @@ MonoBehaviour:
   maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
   prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 566224fd43f52ce42b7db72ec4303f21, type: 3}
+--- !u!114 &8703902017150156477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137964635594743265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722e194d7c5ab64ebeb9b561732dfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoDeInstanciacao: {fileID: 7089264746102864381}
+  melhoriaInstalada: {fileID: 0}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 919132149155446097, guid: a6e75b9ed7efabc4ea9e5527d0eb1cc3, type: 3}
 --- !u!1 &8712713247860732049
 GameObject:
   m_ObjectHideFlags: 0
@@ -17865,6 +19473,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &8719622575621909860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592853166552172578}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -47.63, y: -17.55441, z: 23.5}
+  m_LocalScale: {x: 6.7373395, y: 0.14756, z: 8.2254715}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5317880305794217073}
+  m_Father: {fileID: 8496517294379829169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &8725863939456198447
 Transform:
   m_ObjectHideFlags: 0
@@ -17896,6 +19520,14 @@ Transform:
   - {fileID: 5371121566860286553}
   m_Father: {fileID: 608039491951602623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8753786428176153405
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995769286330024226}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &8786713163024080014
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17990,6 +19622,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.25, y: 1, z: 1.18}
   m_Center: {x: 0.00000023841858, y: -0.00000047683716, z: 0}
+--- !u!33 &8926533811883842143
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404338501560487043}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &8936187267433987926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6876367272129732484}
+  m_Layer: 0
+  m_Name: Pontos_de_Instancia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &8942440720908174202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995769286330024226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722e194d7c5ab64ebeb9b561732dfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoDeInstanciacao: {fileID: 6876367272129732484}
+  melhoriaInstalada: {fileID: 0}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 2511784150640724352, guid: e388fa33036028342be0761ec5a06063, type: 3}
 --- !u!4 &8949044542573365616
 Transform:
   m_ObjectHideFlags: 0
@@ -18194,6 +19866,22 @@ Transform:
   - {fileID: 2084175860962314788}
   m_Father: {fileID: 608039491951602623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &9123488853381111578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995769286330024226}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -57.73, y: -17.55441, z: 35}
+  m_LocalScale: {x: 6.7373395, y: 0.14756, z: 8.2254715}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6876367272129732484}
+  m_Father: {fileID: 8496517294379829169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &9133667776026105616
 Transform:
   m_ObjectHideFlags: 0
@@ -18209,6 +19897,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7214731684164808530}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &9141040738399146123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285816797492591660}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.25, y: 1, z: 1.18}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!114 &9216891303316338774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18227,7 +19936,7 @@ MonoBehaviour:
   descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
     ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
     o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -1054215213, guid: 21e0d954865282b4b88e39513d850aa9, type: 3}
+  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
   gerenciadorPainel: {fileID: 1674185073}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -18249,7 +19958,7 @@ SceneRoots:
   - {fileID: 1068267707}
   - {fileID: 1222819195}
   - {fileID: 608039491951602623}
-  - {fileID: 1379914098}
+  - {fileID: 8496517294379829169}
   - {fileID: 1510348542}
   - {fileID: 1634049239}
   - {fileID: 899555163}
