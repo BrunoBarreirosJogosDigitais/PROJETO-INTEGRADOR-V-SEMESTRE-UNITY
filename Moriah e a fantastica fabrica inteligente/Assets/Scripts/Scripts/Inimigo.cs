@@ -43,7 +43,7 @@ public class Inimigo : MonoBehaviour
         if (alvo == null)
         {
             GameObject placaObj = GameObject.Find("PlacaMae");
-            if(placaObj != null)
+            if (placaObj != null)
             {
                 alvo = placaObj;
             }
@@ -53,12 +53,19 @@ public class Inimigo : MonoBehaviour
             }
         }
 
-        //Vector3 pos = alvo.transform.position - this.transform.position;
-        //Vector3 velocidade = pos.normalized * speed;
-        //this.transform.Translate(velocidade * Time.deltaTime, Space.World);
-
         Vector3 direcao = (alvo.transform.position - transform.position).normalized;
         transform.position += direcao * speed * Time.deltaTime;
+
+        // VERIFICAÇÃO POR DISTÂNCIA PARA DAR DANO MESMO EM SEGUNDO PLANO (MODO TYCOON 3D)
+        float distanciaAoNucleo = Vector3.Distance(transform.position, alvo.transform.position);
+        if (distanciaAoNucleo <= 0.8f) // Ajuste essa margem se necessário
+        {
+            if (GerenciadorJogo.Instancia != null)
+            {
+                GerenciadorJogo.Instancia.ReceberDanoPlaca(danoAoNucleo);
+            }
+            Destroy(gameObject);
+        }
 
     }
 

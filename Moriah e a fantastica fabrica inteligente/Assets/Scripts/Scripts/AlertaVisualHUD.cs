@@ -10,12 +10,12 @@ public class AlertaVisualHUD : MonoBehaviour
 
     private void OnEnable()
     {
-        //GerenciadorJogo.OnAlertaAtaqueDisparado += AcionarAlertaVisual;
+        GerenciadorJogo.OnAlertaAtaqueDisparado += AcionarAlertaVisual;
     }
 
     private void OnDisable()
     {
-        //GerenciadorJogo.OnAlertaAtaqueDisparado -= AcionarAlertaVisual;
+        GerenciadorJogo.OnAlertaAtaqueDisparado -= AcionarAlertaVisual;
     }
 
     void Start()

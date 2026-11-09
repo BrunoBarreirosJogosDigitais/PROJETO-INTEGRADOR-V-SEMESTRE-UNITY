@@ -25,7 +25,7 @@ public class GeradorInimigos : MonoBehaviour
             GerenciadorJogo.Instancia.estadoAtual == GerenciadorJogo.EstadoJogo.Menu)
             return;
 
-        // Como o TerminalTI está carregado o tempo todo, o tempo roda aqui em segundo plano
+        // O tempo roda constantemente em segundo plano, independentemente de estar no 3D ou no terminal
         if (GerenciadorJogo.Instancia.producaoPorSegundo > 0f)
         {
             contador += Time.deltaTime;
@@ -55,9 +55,9 @@ public class GeradorInimigos : MonoBehaviour
     {
         int quantidadeInimigos = Mathf.Clamp(Mathf.FloorToInt(ameaca / 15f), 2, 15);
 
-        Debug.Log($"<color=red>[ALERTA DE ATAQUE]</color> Horda cibernética deflagrada! Ameaça atual: {ameaca:F1}% | Unidades: {quantidadeInimigos}");
+        Debug.Log($"<color=red>[ALERTA DE ATAQUE]</color> Horda cibernética deflagrada imediatamente! Ameaça atual: {ameaca:F1}% | Unidades: {quantidadeInimigos}");
 
-        // Busca o núcleo (PlacaMae) nas cenas ativas se estiver nulo
+        // Busca o núcleo (PlacaMae) nas cenas ativas
         if (nucleo == null)
         {
             GameObject placaObj = GameObject.Find("PlacaMae");
@@ -84,10 +84,11 @@ public class GeradorInimigos : MonoBehaviour
 
         if (nucleo == null || pontosNascimento.Length == 0)
         {
-            Debug.LogWarning("[GeradorInimigos] Núcleo ou Pontos de Spawn não encontrados.");
+            Debug.LogWarning("[GeradorInimigos] Núcleo ou Pontos de Spawn não encontrados na cena ativa.");
             return;
         }
 
+        // Instancia os inimigos imediatamente na grade de defesa
         for (int i = 0; i < quantidadeInimigos; i++)
         {
             CriarInimigo();
