@@ -1897,6 +1897,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 4.91
       objectReference: {fileID: 0}
+    - target: {fileID: 3775100922326028551, guid: c2bb2ded320f8f1429504ea15f4d0c8c, type: 3}
+      propertyPath: informacoesDaPorta
+      value: 
+      objectReference: {fileID: 1983674206}
     - target: {fileID: 4259290782830768083, guid: c2bb2ded320f8f1429504ea15f4d0c8c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.6108265
@@ -5153,6 +5157,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4448699034906638236, guid: d731ffd8f18bd0c4dbcc9d3e0e979340, type: 3}
+      propertyPath: informacoesDaPorta
+      value: 
+      objectReference: {fileID: 1471285407}
     - target: {fileID: 6448356040890959166, guid: d731ffd8f18bd0c4dbcc9d3e0e979340, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.63
@@ -6537,6 +6545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1471285406}
   - component: {fileID: 1471285405}
+  - component: {fileID: 1471285407}
   m_Layer: 2
   m_Name: "\xC1rea de Proximidade"
   m_TagString: Untagged
@@ -6580,6 +6589,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1471285407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471285404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: Porta para RH
+  local: "\xC1rea de RH"
+  valor: 2000
+  descricao: "Desbloqueia o acesso \xE0 \xE1rea de Recursos Humanos!\n"
+  imagemItem: {fileID: 0}
+  gerenciadorPainel: {fileID: 1674185073}
 --- !u!1 &1505361332
 GameObject:
   m_ObjectHideFlags: 0
@@ -9441,6 +9468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1983674204}
   - component: {fileID: 1983674205}
+  - component: {fileID: 1983674206}
   m_Layer: 2
   m_Name: "\xC1rea de Proximidade (1)"
   m_TagString: Untagged
@@ -9484,6 +9512,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.54355913, y: 1, z: 20.907993}
   m_Center: {x: -0.22822125, y: 0, z: -1.9478791}
+--- !u!114 &1983674206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983674203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeItem: Porta para TI
+  local: "\xC1rea de TI"
+  valor: 3000
+  descricao: "Desbloqueia o acesso \xE0 \xE1rea de Tecnologia da Informa\xE7\xE3o!"
+  imagemItem: {fileID: 0}
+  gerenciadorPainel: {fileID: 1674185073}
 --- !u!1001 &1984696744
 PrefabInstance:
   m_ObjectHideFlags: 0

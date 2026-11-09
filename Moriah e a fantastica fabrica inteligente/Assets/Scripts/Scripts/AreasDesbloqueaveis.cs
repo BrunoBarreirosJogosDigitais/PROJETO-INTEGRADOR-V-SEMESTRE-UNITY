@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class AreasDesbloqueaveis : MonoBehaviour
 {
-    [Header("Desbloqueio de Áreas")]
+    [Header("Desbloqueio de ï¿½reas")]
     //private GerenciadorJogo jogo;
     public GameObject porta;
     public float valorParaDesbloqueio;
 
     [Header("Estado")]
     public bool areaDesbloqueada = false;
+
+    [Header("Painel de Proximidade")]
+    public InformacoesObjeto informacoesDaPorta;
 
     void Start()
     {
@@ -23,7 +26,7 @@ public class AreasDesbloqueaveis : MonoBehaviour
         if (GerenciadorJogo.Instancia == null) return;
         if (GerenciadorJogo.Instancia.estadoAtual != GerenciadorJogo.EstadoJogo.Tycoon3D) return;
 
-        //Se a área já foi desbloqueada, não faz nada
+        //Se a ï¿½rea jï¿½ foi desbloqueada, nï¿½o faz nada
         if (areaDesbloqueada) return;
 
         bool compraRealizada = GerenciadorJogo.Instancia.GastarDinheiro(valorParaDesbloqueio);
@@ -32,16 +35,24 @@ public class AreasDesbloqueaveis : MonoBehaviour
         {
             areaDesbloqueada = true;
 
+            if (informacoesDaPorta != null)
+            {
+                if(informacoesDaPorta.gerenciadorPainel != null)
+                    informacoesDaPorta.gerenciadorPainel.EsconderInformacoes(informacoesDaPorta);
+
+                informacoesDaPorta.gameObject.SetActive(false);
+            }
+
             if(porta != null)
             {
                 porta.SetActive(false); //Libera a passagem
             }
 
-            Debug.Log("Área desbloqueada com sucesso!");
+            Debug.Log("ï¿½rea desbloqueada com sucesso!");
         }
         else
         {
-            Debug.Log("Fundos insuficientes para desbloquear está área da fábrica");
+            Debug.Log("Fundos insuficientes para desbloquear estï¿½ ï¿½rea da fï¿½brica");
         }
     }
 
