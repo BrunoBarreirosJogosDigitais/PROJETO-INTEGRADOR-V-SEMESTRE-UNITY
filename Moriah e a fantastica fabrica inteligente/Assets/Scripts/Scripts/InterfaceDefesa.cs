@@ -44,6 +44,11 @@ public class InterfaceDefesa : MonoBehaviour
                 jogo.vidaPlaca + "/" +
                 jogo.vidaPlacaMaxima;
 
+        if(textoOnda != null)
+        {
+            textoOnda.text = "Onda: " + jogo.numeroOndaAtual;
+        }
+
         if (jogo.vidaPlaca <= 0 && painelDerrota != null && !painelDerrota.activeSelf)
             painelDerrota.SetActive(true);
     }

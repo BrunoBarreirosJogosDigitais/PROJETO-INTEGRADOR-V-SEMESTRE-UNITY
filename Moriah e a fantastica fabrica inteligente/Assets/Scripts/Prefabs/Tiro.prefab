@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1831618858737470463}
   - component: {fileID: 6861528285273134742}
   - component: {fileID: 6234389027627081663}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tiro
   m_TagString: Inimigos
   m_Icon: {fileID: 0}
