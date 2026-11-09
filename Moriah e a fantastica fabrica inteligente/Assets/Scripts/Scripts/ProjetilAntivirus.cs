@@ -3,11 +3,11 @@ using UnityEngine;
 public class ProjetilAntivirus : MonoBehaviour
 {
     public float velocidadeProjetil = 8f;
-    public float tempoDeVida = 5f; // Destrói o projétil se passar muito tempo sem acertar nada
+    public float tempoDeVida = 5f; // Destrï¿½i o projï¿½til se passar muito tempo sem acertar nada
     private Transform alvo;
     private float dano;
 
-    [Header("Filtros de Colisão")]
+    [Header("Filtros de Colisï¿½o")]
     public string nomeTagSlotDefesa = "SlotDefesa";
     public string tagCartaDefensiva = "CartaDefensiva";
     public string tagPlacaMae = "PlacaMae";
@@ -17,13 +17,13 @@ public class ProjetilAntivirus : MonoBehaviour
         alvo = novoAlvo;
         dano = danoRecebido;
 
-        // Destrói o projétil após um tempo limite para evitar vazamento de memória
+        // Destrï¿½i o projï¿½til apï¿½s um tempo limite para evitar vazamento de memï¿½ria
         Destroy(gameObject, tempoDeVida);
     }
 
     void Start()
     {
-        // Garante que o projétil ignore fisicamente os slots de defesa e outras cartas ao ser disparado
+        // Garante que o projï¿½til ignore fisicamente os slots de defesa e outras cartas ao ser disparado
         IgnorarColisoes();
     }
 
@@ -43,7 +43,7 @@ public class ProjetilAntivirus : MonoBehaviour
         Collider2D meuColisor = GetComponent<Collider2D>();
         if (meuColisor == null) return;
 
-        // Ignora colisões com os slots de defesa
+        // Ignora colisï¿½es com os slots de defesa
         GameObject[] slots = GameObject.FindGameObjectsWithTag(nomeTagSlotDefesa);
         foreach (GameObject slot in slots)
         {
@@ -54,11 +54,11 @@ public class ProjetilAntivirus : MonoBehaviour
             }
         }
 
-        // Ignora colisões com outras cartas defensivas no caminho
+        // Ignora colisï¿½es com outras cartas defensivas no caminho
         GameObject[] cartas = GameObject.FindGameObjectsWithTag(tagCartaDefensiva);
         foreach (GameObject carta in cartas)
         {
-            // Não ignora a si mesmo caso esteja no mesmo objeto (por segurança)
+            // Nï¿½o ignora a si mesmo caso esteja no mesmo objeto (por seguranï¿½a)
             if (carta == gameObject) continue;
 
             Collider2D colisorCarta = carta.GetComponent<Collider2D>();
@@ -79,7 +79,7 @@ public class ProjetilAntivirus : MonoBehaviour
         }
     }
 
-    // Usando OnCollisionEnter2D para colisão física normal
+    // Usando OnCollisionEnter2D para colisï¿½o fï¿½sica normal
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Inimigos"))
