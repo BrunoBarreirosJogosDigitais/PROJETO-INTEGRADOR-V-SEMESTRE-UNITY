@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5963866838990294470}
   - component: {fileID: 433967551115106431}
   - component: {fileID: 343151220190883306}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Worm
   m_TagString: Inimigos
   m_Icon: {fileID: 0}
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e02113ae0e754ba49931ad6415867332, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -134,7 +134,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.77879, y: 0.37537575}
   m_EdgeRadius: 0
 --- !u!50 &433967551115106431
 Rigidbody2D:

@@ -1513,37 +1513,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632433890}
   m_CullTransparentMesh: 1
---- !u!1 &637058186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 637058187}
-  m_Layer: 0
-  m_Name: GeradorInimigos_Esquerda
-  m_TagString: PontoSpawn
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &637058187
+--- !u!4 &637058187 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 80883032073856306, guid: 070d53a5ec512c049b60824090c3b68e, type: 3}
+  m_PrefabInstance: {fileID: 2005294615544790261}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637058186}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.9, y: -5.1, z: 0.46656835}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &650163532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,37 +1676,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729041539}
   m_CullTransparentMesh: 1
---- !u!1 &742304042
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 742304044}
-  m_Layer: 0
-  m_Name: GeradorInimigos_Baixo
-  m_TagString: PontoSpawn
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &742304044
+--- !u!4 &742304044 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3136464994906934678, guid: 85d77d7e0b7454c4cb92ece30a59b058, type: 3}
+  m_PrefabInstance: {fileID: 1419351675564631041}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 742304042}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4, y: -19.8, z: 0.46656835}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &780221096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3239,7 +3187,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 9091874763089778162, guid: 9869d16e20aa8bb44a295469d6c89c4a, type: 3}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1173955488
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3263,7 +3211,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4007,17 +3955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
 --- !u!1 &1401949269
 GameObject:
   m_ObjectHideFlags: 0
@@ -4148,37 +4085,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6970112436113216446, guid: a22aeb616f4b2074fa797b092a990351, type: 3}
   m_PrefabInstance: {fileID: 5611744851460607408}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1429744769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1429744771}
-  m_Layer: 0
-  m_Name: GeradorInimigos_Direita
-  m_TagString: PontoSpawn
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1429744771
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429744769}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.2, y: -5.1, z: 0.46656835}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1445391315
 GameObject:
   m_ObjectHideFlags: 0
@@ -6336,7 +6242,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001746297}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a82a58192d0f6d44be877bf380b5e23, type: 3}
   m_Name: 
@@ -7326,9 +7232,9 @@ SceneRoots:
   - {fileID: 8605041073274257028}
   - {fileID: 206699506}
   - {fileID: 6108232606262888558}
-  - {fileID: 1429744771}
-  - {fileID: 637058187}
-  - {fileID: 5930890054405184116}
-  - {fileID: 742304044}
+  - {fileID: 5611744851460607408}
+  - {fileID: 2005294615544790261}
+  - {fileID: 8051313265738039388}
+  - {fileID: 1419351675564631041}
   - {fileID: 2001746299}
   - {fileID: 1387572463}
