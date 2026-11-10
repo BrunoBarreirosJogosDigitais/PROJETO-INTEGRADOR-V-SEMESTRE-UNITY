@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2202599439789750613}
   m_Layer: 0
-  m_Name: Edge_Server
+  m_Name: Edge_Server2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,9 +1,11 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
     [Header("Atributos do Inimigo")]
-    public float speed;
+    public float speed = 1.5f; // Valor padrão para evitar velocidade zerada
     public float velocidadeOriginal;
     public float vidaMaxima = 50f;
     private float vidaAtual;
@@ -25,14 +27,10 @@ public class Inimigo : MonoBehaviour
             gameObject.tag = "Inimigos";
         }
 
-        if (alvo == null)
-        {
-            GameObject placaObj = GameObject.Find("PlacaMae");
-            if (placaObj != null)
-            {
-                alvo = placaObj;
-            }
-        }
+        // FORÇA A LIMPEZA E BUSCA AUTOMÁTICA AO NASCER
+        // Isso impede que o prefab guarde uma referência antiga ou quebrada
+        alvo = null;
+        AtualizarAlvoPrincipal();
 
         // Configuração automática para ignorar colisões físicas com os círculos de invocação da cena
         IgnorarColisoesComCirculos();
@@ -42,23 +40,27 @@ public class Inimigo : MonoBehaviour
     {
         if (alvo == null)
         {
-            GameObject placaObj = GameObject.Find("PlacaMae");
-            if (placaObj != null)
-            {
-                alvo = placaObj;
-            }
-            else
+            AtualizarAlvoPrincipal();
+            if (alvo == null)
             {
                 return;
             }
         }
 
-        Vector3 direcao = (alvo.transform.position - transform.position).normalized;
+        // Trava o eixo Z para evitar que o inimigo desvie em profundidade (ambiente 2D/3D misto)
+        Vector3 posicaoAlvo = alvo.transform.position;
+        posicaoAlvo.z = transform.position.z;
+
+        Vector3 direcao = (posicaoAlvo - transform.position).normalized;
         transform.position += direcao * speed * Time.deltaTime;
 
-        // VERIFICAÇÃO POR DISTÂNCIA PARA DAR DANO MESMO EM SEGUNDO PLANO (MODO TYCOON 3D)
-        float distanciaAoNucleo = Vector3.Distance(transform.position, alvo.transform.position);
-        if (distanciaAoNucleo <= 0.8f) // Ajuste essa margem se necessário
+        // VERIFICAÇÃO POR DISTÂNCIA PARA DAR DANO (ignorando a profundidade Z)
+        float distanciaAoNucleo = Vector3.Distance(
+            new Vector3(transform.position.x, transform.position.y, 0),
+            new Vector3(alvo.transform.position.x, alvo.transform.position.y, 0)
+        );
+
+        if (distanciaAoNucleo <= 0.8f)
         {
             if (GerenciadorJogo.Instancia != null)
             {
@@ -66,7 +68,15 @@ public class Inimigo : MonoBehaviour
             }
             Destroy(gameObject);
         }
+    }
 
+    void AtualizarAlvoPrincipal()
+    {
+        GameObject placaObj = GameObject.Find("PlacaMae");
+        if (placaObj != null)
+        {
+            alvo = placaObj;
+        }
     }
 
     public void ReceberDano(float quantidadeDano)
@@ -88,13 +98,12 @@ public class Inimigo : MonoBehaviour
         }
     }
 
-    private System.Collections.IEnumerator RotinaLentidao(float fator, float duracao)
+    private IEnumerator RotinaLentidao(float fator, float duracao)
     {
         estaLentificado = true;
         speed = velocidadeOriginal * (1f - fator);
         Debug.Log($"[Inimigo] {gameObject.name} foi afetado por lentidão! Velocidade reduzida para: {speed}");
 
-        // CORRIGIDO: Agora aguarda o tempo correto da duração em segundos (e não o valor da velocidade)
         yield return new WaitForSeconds(duracao);
 
         speed = velocidadeOriginal;
@@ -114,7 +123,6 @@ public class Inimigo : MonoBehaviour
         Collider2D meuColisor = GetComponent<Collider2D>();
         if (meuColisor == null) return;
 
-        // Procura todos os objetos que possam ser círculos de invocação na cena
         GameObject[] circulos = GameObject.FindGameObjectsWithTag(nomeTagCirculoInvocacao);
         foreach (GameObject circulo in circulos)
         {
@@ -128,7 +136,7 @@ public class Inimigo : MonoBehaviour
 
     public void DefinirAlvo(Transform novoAlvo)
     {
-        if(novoAlvo != null)
+        if (novoAlvo != null)
         {
             alvo = novoAlvo.gameObject;
         }
@@ -147,7 +155,7 @@ public class Inimigo : MonoBehaviour
         }
     }
 
-    // Dano contínuo por intervalo de tempo (por segundo) enquanto estiver encostado na torre defensiva
+    // Dano contínuo por intervalo de tempo enquanto estiver encostado na torre defensiva
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("CartaDefensiva"))

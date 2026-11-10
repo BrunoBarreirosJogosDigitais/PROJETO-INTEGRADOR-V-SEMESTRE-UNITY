@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c32e31e086c911e4ba474a944f37a866, type: 3}
-  m_Name: Esteira
+  m_Name: "Bra\xE7os_roboticos_industriais"
   m_EditorClassIdentifier: 
-  nomeMaquina: Esteira
-  descricao: "Usado para ajudar na velocidade de produ\xE7\xE3o"
-  preco: 250
-  producaoPorSegundo: 5
-  manutencaoPorSegundo: 2
-  aumentoAmeaca: 0.5
+  nomeMaquina: "Bra\xE7os Rob\xF3tico Colaborativo  "
+  descricao: "Rob\xF4 inteligente de alta precis\xE3o que atua lado a lado com os
+    operadores humanos, otimizando a montagem e acelerando pacotes\r\n\r\n\n"
+  preco: 1200
+  producaoPorSegundo: 40
+  manutencaoPorSegundo: 5
+  aumentoAmeaca: 5

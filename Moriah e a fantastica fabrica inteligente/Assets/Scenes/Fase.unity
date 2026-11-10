@@ -907,7 +907,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223283829}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 973e5365d03886246a2db7d2d73b25f8, type: 3}
   m_Name: 
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973e5365d03886246a2db7d2d73b25f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alvo: {fileID: 342437268}
+  alvo: {fileID: 970880735}
   distancia: {x: 0, y: 8, z: -8}
   velocidadeSuavizacao: 8
 --- !u!1 &238328961
@@ -1343,185 +1343,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &342437267
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 342437268}
-  - component: {fileID: 342437271}
-  - component: {fileID: 342437270}
-  - component: {fileID: 342437269}
-  - component: {fileID: 342437274}
-  - component: {fileID: 342437273}
-  - component: {fileID: 342437272}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &342437268
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342437267}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1.23, z: 235.81999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 968140808494014069}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &342437269
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342437267}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &342437270
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342437267}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &342437271
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342437267}
-  m_Mesh: {fileID: 0}
---- !u!114 &342437272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342437267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77aa5f50960d8ee4a86c40545aac91bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 9
-  gravidade: -20
-  alturaPulo: 1.2
-  cameraPrincipal: {fileID: 223283832}
-  animator: {fileID: 0}
---- !u!143 &342437273
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342437267}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &342437274
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342437267}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &362609207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,6 +3077,11 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: 428722450fafd3547bac45b1d0256d0a, type: 2}
   nomeParametro: MusicVolume
   volumePadrao: 1
+--- !u!4 &970880735 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2868248183571514665, guid: 575a7e1010023cf48a3eae4b0654e250, type: 3}
+  m_PrefabInstance: {fileID: 478858684}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &997535847
 GameObject:
   m_ObjectHideFlags: 0
@@ -7582,7 +7408,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 8725863939456198447}
   maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 6372040926639731296, guid: 9ba2fa72715716842ae1a3bf0c4e9139, type: 3}
+  prefabMaquinaParaEsteLocal: {fileID: 7275791044915046440, guid: 96204ac15b1554541aa411e5d8cce210, type: 3}
 --- !u!1 &72195364457190833
 GameObject:
   m_ObjectHideFlags: 0
@@ -8212,7 +8038,7 @@ Transform:
   m_GameObject: {fileID: 6297395869773425279}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.05, z: 0}
+  m_LocalPosition: {x: 0, y: 10.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8446,8 +8272,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 546734241142650898}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8477856290974211355, guid: ee43392b4823a2e409e801e548efa2a6, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
 --- !u!114 &161603037574612274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8462,8 +8288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 8992268001380415684}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8477856290974211355, guid: ee43392b4823a2e409e801e548efa2a6, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
 --- !u!1 &162918784002176908
 GameObject:
   m_ObjectHideFlags: 0
@@ -10229,8 +10055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 4223666003676621838}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3480766007475585227, guid: cae06022a9fa2ad4a901060c9f9952cf, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  prefabTIParaEsteLocal: {fileID: 8247361820733386512, guid: de6b833f0b440cd468bc70e13be33cf2, type: 3}
 --- !u!4 &428702574242483309
 Transform:
   m_ObjectHideFlags: 0
@@ -11167,7 +10993,7 @@ Transform:
   m_GameObject: {fileID: 5343462814121787843}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalPosition: {x: -0.03, y: 2.5, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12481,7 +12307,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 5352061480485769358}
   constructoInstalado: {fileID: 0}
   dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 7745770977302430484, guid: 1980ca1256cee714ea994826d1e3a1cd, type: 3}
+  prefabTIParaEsteLocal: {fileID: 2627058004856666617, guid: 59eeb2661acf9b34980f40f435cb2442, type: 3}
 --- !u!23 &732043216128341180
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12625,8 +12451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 8238109765655476509}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8477856290974211355, guid: ee43392b4823a2e409e801e548efa2a6, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
 --- !u!33 &754154338170254171
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14506,94 +14332,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1783311041590300607}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &968140808494014068
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 342437268}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.0999999
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      propertyPath: m_Name
-      value: Moriah
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2573669793452590871}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7544266391317518430}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4128006671162005053}
-  m_SourcePrefab: {fileID: 100100000, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
---- !u!4 &968140808494014069 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-  m_PrefabInstance: {fileID: 968140808494014068}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &968140808494014070 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bd6bcb1212be20449b75ad83aa85638, type: 3}
-  m_PrefabInstance: {fileID: 968140808494014068}
-  m_PrefabAsset: {fileID: 0}
 --- !u!33 &969103187439782793
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15043,8 +14781,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 5202094156784056848}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3480766007475585227, guid: cae06022a9fa2ad4a901060c9f9952cf, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  prefabTIParaEsteLocal: {fileID: 1180674294314445275, guid: 04b7108ce1ed6b343bc384b310387785, type: 3}
 --- !u!1 &1018628143111727607
 GameObject:
   m_ObjectHideFlags: 0
@@ -19374,9 +19112,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 1739203276067203783}
-  maquinaInstalada: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 515719e20e0da6f4a81f03754b455e34, type: 3}
+  maquinaInstalada: {fileID: 0}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 7275791044915046440, guid: 96204ac15b1554541aa411e5d8cce210, type: 3}
 --- !u!1 &1556262836077925873
 GameObject:
   m_ObjectHideFlags: 0
@@ -19976,8 +19714,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 2821191299341660982}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3480766007475585227, guid: cae06022a9fa2ad4a901060c9f9952cf, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  prefabTIParaEsteLocal: {fileID: 8247361820733386512, guid: de6b833f0b440cd468bc70e13be33cf2, type: 3}
 --- !u!1 &1635844893764303421
 GameObject:
   m_ObjectHideFlags: 0
@@ -20413,7 +20151,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 8427092651680183310}
   melhoriaInstalada: {fileID: 0}
   dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 1180674294314445275, guid: 04b7108ce1ed6b343bc384b310387785, type: 3}
+  prefabMelhoriaParaEsteLocal: {fileID: 3480766007475585227, guid: cae06022a9fa2ad4a901060c9f9952cf, type: 3}
 --- !u!1 &1699339068923344699
 GameObject:
   m_ObjectHideFlags: 0
@@ -21759,8 +21497,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 5317880305794217073}
   melhoriaInstalada: {fileID: 0}
-  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 1180674294314445275, guid: 04b7108ce1ed6b343bc384b310387785, type: 3}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: d511b5dda803ce54a91293e2547210f8, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 7745770977302430484, guid: 1980ca1256cee714ea994826d1e3a1cd, type: 3}
 --- !u!4 &1838124526059188737
 Transform:
   m_ObjectHideFlags: 0
@@ -22629,8 +22367,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 397796430050104794}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 6372040926639731296, guid: 9ba2fa72715716842ae1a3bf0c4e9139, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
 --- !u!1 &2002445021325931588
 GameObject:
   m_ObjectHideFlags: 0
@@ -23370,9 +23108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 7478599038949730222}
-  maquinaInstalada: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
+  maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 515719e20e0da6f4a81f03754b455e34, type: 3}
+  prefabMaquinaParaEsteLocal: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
 --- !u!4 &2098711091189652969
 Transform:
   m_ObjectHideFlags: 0
@@ -23588,7 +23326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 2084175860962314788}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
   prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
 --- !u!23 &2123321600026325181
 MeshRenderer:
@@ -26133,9 +25871,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 983579466696922423}
-  maquinaInstalada: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
+  maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 515719e20e0da6f4a81f03754b455e34, type: 3}
+  prefabMaquinaParaEsteLocal: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
 --- !u!4 &2454203354067254888
 Transform:
   m_ObjectHideFlags: 0
@@ -26889,28 +26627,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &2573669793452590871
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968140808494014070}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5cada056f99663a4090b1b93ef171817, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!23 &2574045228227781548
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26971,8 +26687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 8365661715650904480}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 7745770977302430484, guid: 1980ca1256cee714ea994826d1e3a1cd, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  prefabTIParaEsteLocal: {fileID: 8247361820733386512, guid: de6b833f0b440cd468bc70e13be33cf2, type: 3}
 --- !u!23 &2576042639743028637
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27510,7 +27226,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 320149506872325404}
   maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 6372040926639731296, guid: 9ba2fa72715716842ae1a3bf0c4e9139, type: 3}
+  prefabMaquinaParaEsteLocal: {fileID: 7275791044915046440, guid: 96204ac15b1554541aa411e5d8cce210, type: 3}
 --- !u!1 &2677673252633804384
 GameObject:
   m_ObjectHideFlags: 0
@@ -28188,7 +27904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 1025940449635118580}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
   prefabMaquinaParaEsteLocal: {fileID: 8477856290974211355, guid: ee43392b4823a2e409e801e548efa2a6, type: 3}
 --- !u!54 &2770610766610912908
 Rigidbody:
@@ -30910,7 +30626,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 461735316361149583}
   melhoriaInstalada: {fileID: 0}
   dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 6553910154432894017, guid: bbe9f42c1de50c047bfc33f2e5f43141, type: 3}
+  prefabMelhoriaParaEsteLocal: {fileID: 3480766007475585227, guid: cae06022a9fa2ad4a901060c9f9952cf, type: 3}
 --- !u!65 &3139914504351465797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31064,8 +30780,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 6352372739534442951}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3896117169235327083, guid: 1d7320aca3ba9a342996b3bdd7a99526, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  prefabTIParaEsteLocal: {fileID: 1180674294314445275, guid: 04b7108ce1ed6b343bc384b310387785, type: 3}
 --- !u!114 &3163261348828627767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34822,8 +34538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 8749789308577920980}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 7745770977302430484, guid: 1980ca1256cee714ea994826d1e3a1cd, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  prefabTIParaEsteLocal: {fileID: 1180674294314445275, guid: 04b7108ce1ed6b343bc384b310387785, type: 3}
 --- !u!4 &3543062479575705338
 Transform:
   m_ObjectHideFlags: 0
@@ -35012,8 +34728,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 5371121566860286553}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 6372040926639731296, guid: 9ba2fa72715716842ae1a3bf0c4e9139, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: cbac92acb2c02584d92f5fa7ed3d4ce5, type: 3}
 --- !u!4 &3572640569068121871
 Transform:
   m_ObjectHideFlags: 0
@@ -35089,8 +34805,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 8461016875009021399}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
 --- !u!23 &3613633197118951328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36467,7 +36183,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 5851045122544574388}
   constructoInstalado: {fileID: 0}
   dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3480766007475585227, guid: cae06022a9fa2ad4a901060c9f9952cf, type: 3}
+  prefabTIParaEsteLocal: {fileID: 2627058004856666617, guid: 59eeb2661acf9b34980f40f435cb2442, type: 3}
 --- !u!33 &3765413690047945662
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -36535,9 +36251,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 8483083458034266193}
-  maquinaInstalada: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 515719e20e0da6f4a81f03754b455e34, type: 3}
+  maquinaInstalada: {fileID: 0}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
 --- !u!23 &3777940428768063681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38650,7 +38366,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 2872000617307139941}
   constructoInstalado: {fileID: 0}
   dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3896117169235327083, guid: 1d7320aca3ba9a342996b3bdd7a99526, type: 3}
+  prefabTIParaEsteLocal: {fileID: 2627058004856666617, guid: 59eeb2661acf9b34980f40f435cb2442, type: 3}
 --- !u!23 &4106566333057473862
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39002,18 +38718,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4128006671162005053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968140808494014070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &4129706676046399127
 Transform:
   m_ObjectHideFlags: 0
@@ -39334,8 +39038,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 7575550446996843966}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 6372040926639731296, guid: 9ba2fa72715716842ae1a3bf0c4e9139, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
 --- !u!4 &4165937243635609019
 Transform:
   m_ObjectHideFlags: 0
@@ -41205,7 +40909,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 7536802481923718224}
   maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
+  prefabMaquinaParaEsteLocal: {fileID: 7275791044915046440, guid: 96204ac15b1554541aa411e5d8cce210, type: 3}
 --- !u!1 &4387841428708403352
 GameObject:
   m_ObjectHideFlags: 0
@@ -42988,8 +42692,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 470263987291015059}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 6372040926639731296, guid: 9ba2fa72715716842ae1a3bf0c4e9139, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
 --- !u!33 &4628426956218145844
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -43204,9 +42908,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 9133667776026105616}
-  maquinaInstalada: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 515719e20e0da6f4a81f03754b455e34, type: 3}
+  maquinaInstalada: {fileID: 0}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
 --- !u!4 &4661693706674959523
 Transform:
   m_ObjectHideFlags: 0
@@ -43784,9 +43488,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 134124145769052215}
-  maquinaInstalada: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 515719e20e0da6f4a81f03754b455e34, type: 3}
+  maquinaInstalada: {fileID: 0}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: cbac92acb2c02584d92f5fa7ed3d4ce5, type: 3}
 --- !u!4 &4764698828150250961
 Transform:
   m_ObjectHideFlags: 0
@@ -46721,8 +46425,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 7991797272878715546}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3896117169235327083, guid: 1d7320aca3ba9a342996b3bdd7a99526, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  prefabTIParaEsteLocal: {fileID: 8247361820733386512, guid: de6b833f0b440cd468bc70e13be33cf2, type: 3}
 --- !u!54 &5216390014931081924
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47185,8 +46889,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 5070920546871974959}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8477856290974211355, guid: ee43392b4823a2e409e801e548efa2a6, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
 --- !u!23 &5259799743131212882
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48064,7 +47768,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 6053006495516886768}
   constructoInstalado: {fileID: 0}
   dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 7745770977302430484, guid: 1980ca1256cee714ea994826d1e3a1cd, type: 3}
+  prefabTIParaEsteLocal: {fileID: 2627058004856666617, guid: 59eeb2661acf9b34980f40f435cb2442, type: 3}
 --- !u!4 &5362688551247624125
 Transform:
   m_ObjectHideFlags: 0
@@ -48118,7 +47822,7 @@ Transform:
   m_GameObject: {fileID: 2328729468560281438}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.9, z: 0}
+  m_LocalPosition: {x: 0, y: 10.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48388,8 +48092,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 5452415486575919068}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 6372040926639731296, guid: 9ba2fa72715716842ae1a3bf0c4e9139, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
 --- !u!4 &5399059165848090015
 Transform:
   m_ObjectHideFlags: 0
@@ -49100,7 +48804,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 7399802412536758027}
   melhoriaInstalada: {fileID: 0}
   dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 2400114024250934176, guid: 319d74e458d884140818bf5868ec8443, type: 3}
+  prefabMelhoriaParaEsteLocal: {fileID: 3480766007475585227, guid: cae06022a9fa2ad4a901060c9f9952cf, type: 3}
 --- !u!1 &5503028250130014472
 GameObject:
   m_ObjectHideFlags: 0
@@ -49174,8 +48878,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 2293439428905645603}
   melhoriaInstalada: {fileID: 0}
-  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 6553910154432894017, guid: bbe9f42c1de50c047bfc33f2e5f43141, type: 3}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: fa83003ba7cad364a90a182cecad92c3, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 7826288170908925068, guid: a5476f36548622d449446d281b379797, type: 3}
 --- !u!33 &5515031087601798344
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -50120,8 +49824,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 1882074558594654079}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
 --- !u!1 &5633613699303931417
 GameObject:
   m_ObjectHideFlags: 0
@@ -51673,8 +51377,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 2971713200244133657}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3896117169235327083, guid: 1d7320aca3ba9a342996b3bdd7a99526, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  prefabTIParaEsteLocal: {fileID: 1180674294314445275, guid: 04b7108ce1ed6b343bc384b310387785, type: 3}
 --- !u!4 &5851045122544574388
 Transform:
   m_ObjectHideFlags: 0
@@ -52100,8 +51804,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 4512651274756124888}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3480766007475585227, guid: cae06022a9fa2ad4a901060c9f9952cf, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  prefabTIParaEsteLocal: {fileID: 1180674294314445275, guid: 04b7108ce1ed6b343bc384b310387785, type: 3}
 --- !u!4 &5907174665751654290
 Transform:
   m_ObjectHideFlags: 0
@@ -54201,8 +53905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 7242718520657188094}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 157137a3b2a4a8c45a82e62f7a411f09, type: 3}
 --- !u!1 &6181313469657608501
 GameObject:
   m_ObjectHideFlags: 0
@@ -56478,8 +56182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 5798851539941447449}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 7745770977302430484, guid: 1980ca1256cee714ea994826d1e3a1cd, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  prefabTIParaEsteLocal: {fileID: 1180674294314445275, guid: 04b7108ce1ed6b343bc384b310387785, type: 3}
 --- !u!114 &6484416988542025496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62649,7 +62353,7 @@ Transform:
   m_GameObject: {fileID: 2959792853029783541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 2.8, z: -0.02}
+  m_LocalPosition: {x: 0.01, y: 8, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62821,7 +62525,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 3734227143236240646}
   constructoInstalado: {fileID: 0}
   dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3896117169235327083, guid: 1d7320aca3ba9a342996b3bdd7a99526, type: 3}
+  prefabTIParaEsteLocal: {fileID: 2627058004856666617, guid: 59eeb2661acf9b34980f40f435cb2442, type: 3}
 --- !u!23 &7286022403097162503
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63407,8 +63111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 5385448094372215869}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3896117169235327083, guid: 1d7320aca3ba9a342996b3bdd7a99526, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  prefabTIParaEsteLocal: {fileID: 8247361820733386512, guid: de6b833f0b440cd468bc70e13be33cf2, type: 3}
 --- !u!114 &7341037530196430087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63461,7 +63165,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 4165937243635609019}
   maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 6372040926639731296, guid: 9ba2fa72715716842ae1a3bf0c4e9139, type: 3}
+  prefabMaquinaParaEsteLocal: {fileID: 7275791044915046440, guid: 96204ac15b1554541aa411e5d8cce210, type: 3}
 --- !u!1 &7350942949752793382
 GameObject:
   m_ObjectHideFlags: 0
@@ -63849,8 +63553,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 2315573301413108074}
   melhoriaInstalada: {fileID: 0}
-  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 2400114024250934176, guid: 319d74e458d884140818bf5868ec8443, type: 3}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: d511b5dda803ce54a91293e2547210f8, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 7745770977302430484, guid: 1980ca1256cee714ea994826d1e3a1cd, type: 3}
 --- !u!23 &7396861120840845838
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64602,9 +64306,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 8553247403883777233}
-  maquinaInstalada: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 515719e20e0da6f4a81f03754b455e34, type: 3}
+  maquinaInstalada: {fileID: 0}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 7275791044915046440, guid: 96204ac15b1554541aa411e5d8cce210, type: 3}
 --- !u!4 &7471435946560074911
 Transform:
   m_ObjectHideFlags: 0
@@ -65235,31 +64939,6 @@ Transform:
   - {fileID: 6869444303393126230}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &7544266391317518430
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968140808494014070}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 0.095508344
-  m_Radius: 0.02488529
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &7553066405959493562
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65711,8 +65390,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 3334295011738362938}
   melhoriaInstalada: {fileID: 0}
-  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 1180674294314445275, guid: 04b7108ce1ed6b343bc384b310387785, type: 3}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: fa83003ba7cad364a90a182cecad92c3, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 7826288170908925068, guid: a5476f36548622d449446d281b379797, type: 3}
 --- !u!4 &7606268297023383268
 Transform:
   m_ObjectHideFlags: 0
@@ -66695,7 +66374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 7371400598920343841}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
   prefabMaquinaParaEsteLocal: {fileID: 8477856290974211355, guid: ee43392b4823a2e409e801e548efa2a6, type: 3}
 --- !u!4 &7704833786790227057
 Transform:
@@ -67222,8 +66901,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 4764698828150250961}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8477856290974211355, guid: ee43392b4823a2e409e801e548efa2a6, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
 --- !u!33 &7773174601679374964
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -72006,8 +71685,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 1758560062744265941}
   constructoInstalado: {fileID: 0}
-  dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 7745770977302430484, guid: 1980ca1256cee714ea994826d1e3a1cd, type: 3}
+  dadosTIParaEsteLocal: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  prefabTIParaEsteLocal: {fileID: 8247361820733386512, guid: de6b833f0b440cd468bc70e13be33cf2, type: 3}
 --- !u!1 &8331110036308404789
 GameObject:
   m_ObjectHideFlags: 0
@@ -74221,8 +73900,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 3633250682409686051}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
 --- !u!4 &8601451343187288365
 Transform:
   m_ObjectHideFlags: 0
@@ -74648,7 +74327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 6706694348761601127}
   maquinaInstalada: {fileID: 0}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
   prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
 --- !u!1 &8664553175116261828
 GameObject:
@@ -74729,7 +74408,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 4344811016289918519}
   maquinaInstalada: {fileID: 0}
   dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 8522242471099221312, guid: 0e97f9fe75144a94cb88a18538969c37, type: 3}
+  prefabMaquinaParaEsteLocal: {fileID: 7275791044915046440, guid: 96204ac15b1554541aa411e5d8cce210, type: 3}
 --- !u!33 &8682903407786617087
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -74810,8 +74489,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 7089264746102864381}
   melhoriaInstalada: {fileID: 0}
-  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 6553910154432894017, guid: bbe9f42c1de50c047bfc33f2e5f43141, type: 3}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: d511b5dda803ce54a91293e2547210f8, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 7745770977302430484, guid: 1980ca1256cee714ea994826d1e3a1cd, type: 3}
 --- !u!1 &8712713247860732049
 GameObject:
   m_ObjectHideFlags: 0
@@ -76072,9 +75751,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 8846189155852491006}
-  maquinaInstalada: {fileID: 3517806411180073065, guid: a0e784ce6ca01a548bdae5465f43f595, type: 3}
-  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
-  prefabMaquinaParaEsteLocal: {fileID: 919132149155446097, guid: 515719e20e0da6f4a81f03754b455e34, type: 3}
+  maquinaInstalada: {fileID: 0}
+  dadosMaquinaParaEsteLocal: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  prefabMaquinaParaEsteLocal: {fileID: 7275791044915046440, guid: 96204ac15b1554541aa411e5d8cce210, type: 3}
 --- !u!1 &8877439509290395644
 GameObject:
   m_ObjectHideFlags: 0
@@ -76528,8 +76207,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoDeInstanciacao: {fileID: 6876367272129732484}
   melhoriaInstalada: {fileID: 0}
-  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
-  prefabMelhoriaParaEsteLocal: {fileID: 2400114024250934176, guid: 319d74e458d884140818bf5868ec8443, type: 3}
+  dadosMelhoriaParaEsteLocal: {fileID: 11400000, guid: fa83003ba7cad364a90a182cecad92c3, type: 2}
+  prefabMelhoriaParaEsteLocal: {fileID: 7826288170908925068, guid: a5476f36548622d449446d281b379797, type: 3}
 --- !u!4 &8945833660579333222
 Transform:
   m_ObjectHideFlags: 0
@@ -77402,7 +77081,7 @@ MonoBehaviour:
   pontoDeInstanciacao: {fileID: 4131958955670517018}
   constructoInstalado: {fileID: 0}
   dadosTIParaEsteLocal: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
-  prefabTIParaEsteLocal: {fileID: 3480766007475585227, guid: cae06022a9fa2ad4a901060c9f9952cf, type: 3}
+  prefabTIParaEsteLocal: {fileID: 2627058004856666617, guid: 59eeb2661acf9b34980f40f435cb2442, type: 3}
 --- !u!23 &9060246664291375779
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78137,7 +77816,7 @@ Transform:
   m_GameObject: {fileID: 4088633966149966738}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.05, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78828,7 +78507,6 @@ SceneRoots:
   - {fileID: 1790151995}
   - {fileID: 82592294}
   - {fileID: 478858684}
-  - {fileID: 342437268}
   - {fileID: 919414686}
   - {fileID: 9684440}
   - {fileID: 1979221162}

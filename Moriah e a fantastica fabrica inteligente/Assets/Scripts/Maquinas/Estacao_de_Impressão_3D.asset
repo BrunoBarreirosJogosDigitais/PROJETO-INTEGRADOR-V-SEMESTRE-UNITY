@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c32e31e086c911e4ba474a944f37a866, type: 3}
-  m_Name: "Rob\xF4 Industrial"
+  m_Name: "Estacao_de_Impress\xE3o_3D"
   m_EditorClassIdentifier: 
-  nomeMaquina: " Rob\xF4 Industrial "
-  descricao: " Rob\xF4 Industrial, usado para aumentar a produ\xE7\xE3o.\n"
-  preco: 750
+  nomeMaquina: "Esta\xE7\xE3o de Impress\xE3o 3D Industrial"
+  descricao: "Unidade de manufatura aditiva automatizada para pe\xE7as de precis\xE3o
+    sob demanda, reduzindo o desperd\xEDcio de mat\xE9ria-prima\r\n\r\n"
+  preco: 500
   producaoPorSegundo: 15
-  manutencaoPorSegundo: 5
-  aumentoAmeaca: 0
+  manutencaoPorSegundo: 2
+  aumentoAmeaca: 3

@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c32e31e086c911e4ba474a944f37a866, type: 3}
-  m_Name: Maquina Automatica
+  m_Name: Nucleo_automatizado_de_eco_processadores
   m_EditorClassIdentifier: 
-  nomeMaquina: Maquina Automatica
-  descricao: "Maquina Automatica, usado para diminuir os esfor\xE7os dos trabalhadores"
-  preco: 2500
-  producaoPorSegundo: 25
+  nomeMaquina: "N\xFAcleo Automatizado de Eco-Processadores  "
+  descricao: "Linha de produ\xE7\xE3o de ponta que fabrica processadores ecol\xF3gicos
+    energeticamente sustent\xE1veis para maximizar o lucro\r\n\r\n"
+  preco: 8000
+  producaoPorSegundo: 300
   manutencaoPorSegundo: 50
-  aumentoAmeaca: 2
+  aumentoAmeaca: 5
