@@ -2683,11 +2683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &772490687
 GameObject:
@@ -3173,11 +3170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &1068267705
 GameObject:
@@ -3395,11 +3389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &1161542600
 GameObject:
@@ -4033,11 +4024,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &1365838345
 GameObject:
@@ -4719,11 +4707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &1583785881
 GameObject:
@@ -5368,11 +5353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &1726999288
 GameObject:
@@ -6923,12 +6905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "M\xF3dulo de Criptografia Qu\xE2ntica"
-  local: Setor de RH
-  valor: 4000
-  descricao: "Servidores de alta seguran\xE7a avan\xE7ada que protege os algoritmos
-    da Moriah contra roubos de propriedade intelectual."
-  imagemItem: {fileID: -124067974, guid: 61d8310021f40fc47bdc96f6c728cc1e, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: d511b5dda803ce54a91293e2547210f8, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &16479992555219979
 GameObject:
@@ -8094,12 +8072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "M\xF3dulo de Criptografia Qu\xE2ntica"
-  local: Setor de RH
-  valor: 4000
-  descricao: "Servidores de alta seguran\xE7a avan\xE7ada que protege os algoritmos
-    da Moriah contra roubos de propriedade intelectual."
-  imagemItem: {fileID: -124067974, guid: 61d8310021f40fc47bdc96f6c728cc1e, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fa83003ba7cad364a90a182cecad92c3, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &149481080786276422
 MeshFilter:
@@ -8485,12 +8459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Edge Server
-  local: Setor de RH
-  valor: 1500
-  descricao: "Unidade compacta de processamento de dados que reduz a lat\xEAncia
-    da f\xE1brica e melhora o fluxo de informa\xE7\xF5es digitais"
-  imagemItem: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: d511b5dda803ce54a91293e2547210f8, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!65 &195512762354754068
 BoxCollider:
@@ -9192,12 +9162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Esta\xE7\xE3o de Impress\xE3o 3D Industria"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 500
-  descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
-    de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &297753490700370784
 GameObject:
@@ -9461,12 +9427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Esta\xE7\xE3o de Impress\xE3o 3D Industria"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 500
-  descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
-    de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  imagemItemPadrao: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!4 &327143577539178126
 Transform:
@@ -9937,13 +9899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Central de Ergonomia e Bem-Estar Inteligente
-  local: Setor de TI
-  valor: 3000
-  descricao: "\xC1rea de descanso equipada com sensores de fadiga e biometria para
-    garantir que os funcion\xE1rios operem no pico de produtividade sem desgaste
-    f\xEDsico."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  imagemItemPadrao: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &415564849751018228
 MeshRenderer:
@@ -12084,12 +12041,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Esta\xE7\xE3o de Impress\xE3o 3D Industria"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 500
-  descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
-    de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  imagemItemPadrao: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &702928071702494351
 GameObject:
@@ -15493,13 +15446,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "C\xE9lula de Manufatura Inteligente IoT"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 3500
-  descricao: "Conjunto de m\xE1quinas totalmente conectadas via Internet das Coisas
-    (IoT), que monitoram o pr\xF3prio desgaste e ajustam o ritmo de produ\xE7\xE3o
-    autonomamente.\r\n"
-  imagemItem: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  imagemItemPadrao: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &1110597923722100121
 GameObject:
@@ -15698,13 +15646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "C\xE9lula de Manufatura Inteligente IoT"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 3500
-  descricao: "Conjunto de m\xE1quinas totalmente conectadas via Internet das Coisas
-    (IoT), que monitoram o pr\xF3prio desgaste e ajustam o ritmo de produ\xE7\xE3o
-    autonomamente.\r\n"
-  imagemItem: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  imagemItemPadrao: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &1133077346990699389
 GameObject:
@@ -18851,11 +18794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: -1054215213, guid: 21e0d954865282b4b88e39513d850aa9, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &1540789141319348203
 MeshRenderer:
@@ -21007,12 +20947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "M\xF3dulo de Criptografia Qu\xE2ntica"
-  local: Setor de RH
-  valor: 4000
-  descricao: "Servidores de alta seguran\xE7a avan\xE7ada que protege os algoritmos
-    da Moriah contra roubos de propriedade intelectual."
-  imagemItem: {fileID: -124067974, guid: 61d8310021f40fc47bdc96f6c728cc1e, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  imagemItemPadrao: {fileID: -112289899, guid: 7536d854ab9d0fb4e92b24ee1490e150, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &1790965965667559151
 MeshFilter:
@@ -21842,13 +21778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "C\xE9lula de Manufatura Inteligente IoT"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 3500
-  descricao: "Conjunto de m\xE1quinas totalmente conectadas via Internet das Coisas
-    (IoT), que monitoram o pr\xF3prio desgaste e ajustam o ritmo de produ\xE7\xE3o
-    autonomamente.\r\n"
-  imagemItem: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &1921382602160567835
 MeshFilter:
@@ -22883,11 +22814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: -1893340568, guid: 4f96d7bdc41bcfb4fa138585e7a556bc, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 0}
 --- !u!23 &2091450511213880638
 MeshRenderer:
@@ -26247,12 +26175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Simular Phishing
-  local: Setor de TI
-  valor: 1200
-  descricao: "Quiosque interativo onde os operadores realizam treinamentos pr\xE1ticos
-    de reconhecimento de golpes e engenharia social."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  imagemItemPadrao: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &2539006973702191756
 MeshFilter:
@@ -31344,13 +31268,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "C\xE9lula de Manufatura Inteligente IoT"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 3500
-  descricao: "Conjunto de m\xE1quinas totalmente conectadas via Internet das Coisas
-    (IoT), que monitoram o pr\xF3prio desgaste e ajustam o ritmo de produ\xE7\xE3o
-    autonomamente.\r\n"
-  imagemItem: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &3231068450828965670
 MeshRenderer:
@@ -32160,13 +32079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "N\xFAcleo Automatizado de Eco-Processadores"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 8000
-  descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
-    ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
-    o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &3302015495857230646
 GameObject:
@@ -36237,11 +36151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &3823088270495191650
 MeshRenderer:
@@ -39101,12 +39012,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Edge Server
-  local: Setor de RH
-  valor: 1500
-  descricao: "Unidade compacta de processamento de dados que reduz a lat\xEAncia
-    da f\xE1brica e melhora o fluxo de informa\xE7\xF5es digitais"
-  imagemItem: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fa83003ba7cad364a90a182cecad92c3, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &4214576842864865165
 MeshFilter:
@@ -40611,12 +40518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Esta\xE7\xE3o de Impress\xE3o 3D Industria"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 500
-  descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
-    de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  imagemItemPadrao: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &4393112671601389721
 MeshRenderer:
@@ -41099,12 +41002,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Academia Corporativa de Inova\xE7\xE3o \xC1gil"
-  local: Setor de TI
-  valor: 7500
-  descricao: "Audit\xF3rio moderno voltado para o alinhamento cultural da empresa
-    e capacita\xE7\xE3o avan\xE7ada em processos da Ind\xFAstrias 4.0."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  imagemItemPadrao: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &4457192387154347456
 GameObject:
@@ -42492,13 +42391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7os Rob\xF3tico Colaborativo"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 1200
-  descricao: "Rob\xF4 inteligente de alta precis\xE3o que trabalha lado a lado com
-    os operadores humanos , otimizando a linha de montagem e acelera\xE7\xE3o de
-    pacotes."
-  imagemItem: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  imagemItemPadrao: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!54 &4652553261491399973
 Rigidbody:
@@ -43478,13 +43372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "C\xE9lula de Manufatura Inteligente IoT"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 3500
-  descricao: "Conjunto de m\xE1quinas totalmente conectadas via Internet das Coisas
-    (IoT), que monitoram o pr\xF3prio desgaste e ajustam o ritmo de produ\xE7\xE3o
-    autonomamente.\r\n"
-  imagemItem: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  imagemItemPadrao: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!65 &4833415851996897024
 BoxCollider:
@@ -45532,11 +45421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: -112289899, guid: 7536d854ab9d0fb4e92b24ee1490e150, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!4 &5170747827899065045
 Transform:
@@ -46220,12 +46106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Supercomputador de Processamento Neural
-  local: Setor de RH
-  valor: 1500
-  descricao: "O cora\xE7\xE3o digital do setor de TI. Utiliza intelig\xEAncia artificial
-    para prever gargalos de produ\xE7\xE3o antes que eles aconte\xE7am."
-  imagemItem: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  imagemItemPadrao: {fileID: -112289899, guid: 7536d854ab9d0fb4e92b24ee1490e150, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &5236891374513119327
 MeshFilter:
@@ -46308,12 +46190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Academia Corporativa de Inova\xE7\xE3o \xC1gil"
-  local: Setor de TI
-  valor: 7500
-  descricao: "Audit\xF3rio moderno voltado para o alinhamento cultural da empresa
-    e capacita\xE7\xE3o avan\xE7ada em processos da Ind\xFAstrias 4.0."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  imagemItemPadrao: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &5246694575116662435
 MeshRenderer:
@@ -47321,13 +47199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7os Rob\xF3tico Colaborativo"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 1200
-  descricao: "Rob\xF4 inteligente de alta precis\xE3o que trabalha lado a lado com
-    os operadores humanos , otimizando a linha de montagem e acelera\xE7\xE3o de
-    pacotes."
-  imagemItem: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  imagemItemPadrao: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &5358585954700826331
 MeshFilter:
@@ -49355,12 +49228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Simular Phishing
-  local: Setor de TI
-  valor: 1200
-  descricao: "Quiosque interativo onde os operadores realizam treinamentos pr\xE1ticos
-    de reconhecimento de golpes e engenharia social."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  imagemItemPadrao: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &5637597739531090748
 MeshFilter:
@@ -49517,12 +49386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Supercomputador de Processamento Neural
-  local: Setor de RH
-  valor: 1500
-  descricao: "O cora\xE7\xE3o digital do setor de TI. Utiliza intelig\xEAncia artificial
-    para prever gargalos de produ\xE7\xE3o antes que eles aconte\xE7am."
-  imagemItem: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: d511b5dda803ce54a91293e2547210f8, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &5655946503580516938
 GameObject:
@@ -49742,12 +49607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Esta\xE7\xE3o de Impress\xE3o 3D Industria"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 500
-  descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
-    de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!65 &5706115341079189759
 BoxCollider:
@@ -49879,12 +49740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Esta\xE7\xE3o de Impress\xE3o 3D Industria"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 500
-  descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
-    de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!4 &5724755310152922078
 Transform:
@@ -50685,13 +50542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7os Rob\xF3tico Colaborativo"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 1200
-  descricao: "Rob\xF4 inteligente de alta precis\xE3o que trabalha lado a lado com
-    os operadores humanos , otimizando a linha de montagem e acelera\xE7\xE3o de
-    pacotes."
-  imagemItem: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  imagemItemPadrao: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &5827382971277297670
 MeshRenderer:
@@ -51665,13 +51517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "N\xFAcleo Automatizado de Eco-Processadores"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 8000
-  descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
-    ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
-    o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  imagemItemPadrao: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &5957880969562021953
 GameObject:
@@ -53010,13 +52857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7os Rob\xF3tico Colaborativo"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 1200
-  descricao: "Rob\xF4 inteligente de alta precis\xE3o que trabalha lado a lado com
-    os operadores humanos , otimizando a linha de montagem e acelera\xE7\xE3o de
-    pacotes."
-  imagemItem: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &6123812419158655899
 MeshFilter:
@@ -55838,11 +55680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &6518361684430310546
 MeshFilter:
@@ -56130,13 +55969,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "C\xE9lula de Manufatura Inteligente IoT"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 3500
-  descricao: "Conjunto de m\xE1quinas totalmente conectadas via Internet das Coisas
-    (IoT), que monitoram o pr\xF3prio desgaste e ajustam o ritmo de produ\xE7\xE3o
-    autonomamente.\r\n"
-  imagemItem: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  imagemItemPadrao: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!4 &6569887995362934155
 Transform:
@@ -56659,12 +56493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Academia Corporativa de Inova\xE7\xE3o \xC1gil"
-  local: Setor de TI
-  valor: 7500
-  descricao: "Audit\xF3rio moderno voltado para o alinhamento cultural da empresa
-    e capacita\xE7\xE3o avan\xE7ada em processos da Ind\xFAstrias 4.0."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!65 &6656991940972728427
 BoxCollider:
@@ -56729,12 +56559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Esta\xE7\xE3o de Impress\xE3o 3D Industria"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 500
-  descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
-    de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  imagemItemPadrao: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &6661924142779890708
 GameObject:
@@ -56975,12 +56801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Simular Phishing
-  local: Setor de TI
-  valor: 1200
-  descricao: "Quiosque interativo onde os operadores realizam treinamentos pr\xE1ticos
-    de reconhecimento de golpes e engenharia social."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  imagemItemPadrao: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!4 &6705012376314040092
 Transform:
@@ -57191,13 +57013,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "N\xFAcleo Automatizado de Eco-Processadores"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 8000
-  descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
-    ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
-    o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!65 &6749406358340144233
 BoxCollider:
@@ -57454,11 +57271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: Setor de TI
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: -2120241730, guid: a5e2ddd590d652a43be994edde65f40a, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!4 &6796730889051238299
 Transform:
@@ -58211,11 +58025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: -112289899, guid: 7536d854ab9d0fb4e92b24ee1490e150, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &6862719831414002986
 MeshFilter:
@@ -59522,13 +59333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7os Rob\xF3tico Colaborativo"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 1200
-  descricao: "Rob\xF4 inteligente de alta precis\xE3o que trabalha lado a lado com
-    os operadores humanos , otimizando a linha de montagem e acelera\xE7\xE3o de
-    pacotes."
-  imagemItem: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  imagemItemPadrao: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &6984399079816796746
 GameObject:
@@ -60246,13 +60052,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7os Rob\xF3tico Colaborativo"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 1200
-  descricao: "Rob\xF4 inteligente de alta precis\xE3o que trabalha lado a lado com
-    os operadores humanos , otimizando a linha de montagem e acelera\xE7\xE3o de
-    pacotes."
-  imagemItem: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  imagemItemPadrao: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &7088808806355644517
 MeshRenderer:
@@ -61553,11 +61354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7o Rob\xF3tico"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 5000
-  descricao: "M\xE1quina utilizada para automatizar a produ\xE7\xE3o."
-  imagemItem: {fileID: 2133928436, guid: 2283275f77f10664b9f7061a2231711d, type: 3}
+  dadosObjeto: {fileID: 0}
+  imagemItemPadrao: {fileID: 0}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &7226304077380382881
 MeshFilter:
@@ -62481,12 +62279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Supercomputador de Processamento Neural
-  local: Setor de RH
-  valor: 1500
-  descricao: "O cora\xE7\xE3o digital do setor de TI. Utiliza intelig\xEAncia artificial
-    para prever gargalos de produ\xE7\xE3o antes que eles aconte\xE7am."
-  imagemItem: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fa83003ba7cad364a90a182cecad92c3, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &7343232199558875966
 GameObject:
@@ -62572,13 +62366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Central de Ergonomia e Bem-Estar Inteligente
-  local: Setor de TI
-  valor: 3000
-  descricao: "\xC1rea de descanso equipada com sensores de fadiga e biometria para
-    garantir que os funcion\xE1rios operem no pico de produtividade sem desgaste
-    f\xEDsico."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  imagemItemPadrao: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &7370940192530437989
 MeshRenderer:
@@ -62652,12 +62441,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Esta\xE7\xE3o de Impress\xE3o 3D Industria"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 500
-  descricao: "Unidade de manufatura aditiva automatizada capaz de fabricar pe\xE7as
-    de precis\xE3o sob demanda, reduzindo drasticamente o desperd\xEDcio de mat\xE9ria-prima."
-  imagemItem: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  imagemItemPadrao: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!33 &7372685055231229620
 MeshFilter:
@@ -63527,13 +63312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7os Rob\xF3tico Colaborativo"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 1200
-  descricao: "Rob\xF4 inteligente de alta precis\xE3o que trabalha lado a lado com
-    os operadores humanos , otimizando a linha de montagem e acelera\xE7\xE3o de
-    pacotes."
-  imagemItem: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &7462437684571406495
 MeshRenderer:
@@ -63718,12 +63498,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Simular Phishing
-  local: Setor de TI
-  valor: 1200
-  descricao: "Quiosque interativo onde os operadores realizam treinamentos pr\xE1ticos
-    de reconhecimento de golpes e engenharia social."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  imagemItemPadrao: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &7477323950744865119
 GameObject:
@@ -64652,12 +64428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Edge Server
-  local: Setor de RH
-  valor: 1500
-  descricao: "Unidade compacta de processamento de dados que reduz a lat\xEAncia
-    da f\xE1brica e melhora o fluxo de informa\xE7\xF5es digitais"
-  imagemItem: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 2185ab0cc5edb974888a73ee2cc81580, type: 2}
+  imagemItemPadrao: {fileID: -112289899, guid: 7536d854ab9d0fb4e92b24ee1490e150, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!54 &7598295250950590040
 Rigidbody:
@@ -66553,13 +66325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "N\xFAcleo Automatizado de Eco-Processadores"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 8000
-  descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
-    ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
-    o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  imagemItemPadrao: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!65 &7818249914242438528
 BoxCollider:
@@ -67110,13 +66877,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "N\xFAcleo Automatizado de Eco-Processadores"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 8000
-  descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
-    ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
-    o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  imagemItemPadrao: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!65 &7908600645228213811
 BoxCollider:
@@ -68039,13 +67801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "C\xE9lula de Manufatura Inteligente IoT"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 3500
-  descricao: "Conjunto de m\xE1quinas totalmente conectadas via Internet das Coisas
-    (IoT), que monitoram o pr\xF3prio desgaste e ajustam o ritmo de produ\xE7\xE3o
-    autonomamente.\r\n"
-  imagemItem: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  imagemItemPadrao: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!4 &8053324595189128325
 Transform:
@@ -68074,13 +67831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Central de Ergonomia e Bem-Estar Inteligente
-  local: Setor de TI
-  valor: 3000
-  descricao: "\xC1rea de descanso equipada com sensores de fadiga e biometria para
-    garantir que os funcion\xE1rios operem no pico de produtividade sem desgaste
-    f\xEDsico."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  imagemItemPadrao: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &8065267355404944188
 GameObject:
@@ -68167,12 +67919,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Academia Corporativa de Inova\xE7\xE3o \xC1gil"
-  local: Setor de TI
-  valor: 7500
-  descricao: "Audit\xF3rio moderno voltado para o alinhamento cultural da empresa
-    e capacita\xE7\xE3o avan\xE7ada em processos da Ind\xFAstrias 4.0."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  imagemItemPadrao: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &8069442732215575792
 GameObject:
@@ -69052,13 +68800,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Central de Ergonomia e Bem-Estar Inteligente
-  local: Setor de TI
-  valor: 3000
-  descricao: "\xC1rea de descanso equipada com sensores de fadiga e biometria para
-    garantir que os funcion\xE1rios operem no pico de produtividade sem desgaste
-    f\xEDsico."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 817c7a35f2d0bfa4da8e7dad7de4ffc0, type: 2}
+  imagemItemPadrao: {fileID: 225888149, guid: 9eb57dc8c00ddb14fa67be83cfe9264e, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &8157881871179816045
 MeshRenderer:
@@ -71852,13 +71595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "N\xFAcleo Automatizado de Eco-Processadores"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 8000
-  descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
-    ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
-    o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 021427f75bd92ee4a8cf37f764fd5c99, type: 2}
+  imagemItemPadrao: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &8427993727347458563
 GameObject:
@@ -74559,12 +74297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: Simular Phishing
-  local: Setor de TI
-  valor: 1200
-  descricao: "Quiosque interativo onde os operadores realizam treinamentos pr\xE1ticos
-    de reconhecimento de golpes e engenharia social."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 25a4d3c88da8e624980a481a44af8548, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &8828035528119912882
 GameObject:
@@ -75592,13 +75326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Bra\xE7os Rob\xF3tico Colaborativo"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 1200
-  descricao: "Rob\xF4 inteligente de alta precis\xE3o que trabalha lado a lado com
-    os operadores humanos , otimizando a linha de montagem e acelera\xE7\xE3o de
-    pacotes."
-  imagemItem: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: de1e8b93f71d40441a66f0d6e5fb2f06, type: 2}
+  imagemItemPadrao: {fileID: 1970378997, guid: 65b5c49a8db1c594c939e66959ddd448, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!114 &8979514591585239650
 MonoBehaviour:
@@ -75612,13 +75341,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "C\xE9lula de Manufatura Inteligente IoT"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 3500
-  descricao: "Conjunto de m\xE1quinas totalmente conectadas via Internet das Coisas
-    (IoT), que monitoram o pr\xF3prio desgaste e ajustam o ritmo de produ\xE7\xE3o
-    autonomamente.\r\n"
-  imagemItem: {fileID: 2093240972, guid: b729fbd6ee6aff94f9d2e62df845a93d, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: 8c5b8be655d7dc74ab30d64e5d1386d7, type: 2}
+  imagemItemPadrao: {fileID: 1031334461, guid: c9b3a1f5e0e7feb4fa66ac1e197fd605, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!1 &8982059017587698501
 GameObject:
@@ -76399,12 +76123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "Academia Corporativa de Inova\xE7\xE3o \xC1gil"
-  local: Setor de TI
-  valor: 7500
-  descricao: "Audit\xF3rio moderno voltado para o alinhamento cultural da empresa
-    e capacita\xE7\xE3o avan\xE7ada em processos da Ind\xFAstrias 4.0."
-  imagemItem: {fileID: 0}
+  dadosObjeto: {fileID: 11400000, guid: 003501c073c29bf4a8f5f3317af4561e, type: 2}
+  imagemItemPadrao: {fileID: 2086591752, guid: 0846cccfa9103e0498e8202a58449210, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!23 &9084688944274924406
 MeshRenderer:
@@ -77560,13 +77280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc34c29749775464f8f53eff9622f38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeItem: "N\xFAcleo Automatizado de Eco-Processadores"
-  local: "Setor de Produ\xE7\xE3o"
-  valor: 8000
-  descricao: "A linha de produ\xE7\xE3o de ponta da Moriah Tech. Produz os processadores
-    ecol\xF3gicos de alta efici\xEAncia energeticamente sustent\xE1veis que atraem
-    o lucro m\xE1ximo e a inveja da Megacorp."
-  imagemItem: {fileID: -720891457, guid: 0964b41fff074b0409cff9e3428e2ef4, type: 3}
+  dadosObjeto: {fileID: 11400000, guid: fbcaa3be4886dcb408dff96f23055f18, type: 2}
+  imagemItemPadrao: {fileID: -2120241730, guid: e327c61b94ebbd641b677bb8c2c1b885, type: 3}
   gerenciadorPainel: {fileID: 7569129951226632826}
 --- !u!4 &9221087222540794418
 Transform:
