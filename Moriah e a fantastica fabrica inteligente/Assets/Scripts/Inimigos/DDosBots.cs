@@ -36,7 +36,10 @@ public class DDosBots : MonoBehaviour
             gameObject.tag = "Inimigos";
         }
 
+        // FORÇA A LIMPEZA E BUSCA AUTOMÁTICA AO NASCER
+        alvo = null;
         AtualizarAlvoPrincipal();
+
         IgnorarColisoesComSlots();
         StartCoroutine(LoopDeRajadas());
     }
@@ -49,11 +52,19 @@ public class DDosBots : MonoBehaviour
             if (alvo == null) return;
         }
 
-        Vector3 direcao = (alvo.transform.position - transform.position).normalized;
+        // Trava o eixo Z para evitar desvio em profundidade
+        Vector3 posicaoAlvo = alvo.transform.position;
+        posicaoAlvo.z = transform.position.z;
+
+        Vector3 direcao = (posicaoAlvo - transform.position).normalized;
         transform.position += direcao * speed * Time.deltaTime;
 
-        // VERIFICAÇÃO POR DISTÂNCIA PARA DAR DANO AO NÚCLEO MESMO EM SEGUNDO PLANO (MODO TYCOON 3D)
-        float distanciaAoNucleo = Vector3.Distance(transform.position, alvo.transform.position);
+        // VERIFICAÇÃO POR DISTÂNCIA IGNORANDO O Z
+        float distanciaAoNucleo = Vector3.Distance(
+            new Vector3(transform.position.x, transform.position.y, 0),
+            new Vector3(alvo.transform.position.x, alvo.transform.position.y, 0)
+        );
+
         if (distanciaAoNucleo <= 0.8f)
         {
             if (GerenciadorJogo.Instancia != null)
@@ -159,7 +170,7 @@ public class DDosBots : MonoBehaviour
         TiroInimigo tiroScript = tiro.GetComponent<TiroInimigo>();
         if (tiroScript != null)
         {
-            tiroScript.danoDoTiro = 25; // Alinhado com o SDD para DDoS Bots
+            tiroScript.danoDoTiro = 25;
         }
 
         tiroScript?.Iniciar(direcao);

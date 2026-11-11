@@ -7,7 +7,7 @@ public class Trojan : MonoBehaviour
     [Header("Movimento")]
     public float speed = 1.5f;
     public float velocidadeOriginal;
-    public float suavizacao = 5f; // quanto maior, mais rápido ele muda de direção.
+    public float suavizacao = 5f;
 
     [Header("Atributos de Vida e Dano")]
     public float vidaMaxima = 180f;
@@ -26,7 +26,7 @@ public class Trojan : MonoBehaviour
     public float forcaDoDesvio = 2f;
 
     [Header("Teste")]
-    public bool simularDanoNoEscudo; // ISSO IS SOMENTE PRA TESTAR
+    public bool simularDanoNoEscudo;
     public float intervaloDanoSimulado = 1f;
 
     private GameObject alvo;
@@ -44,6 +44,8 @@ public class Trojan : MonoBehaviour
             gameObject.tag = "Inimigos";
         }
 
+        // FORÇA A LIMPEZA E BUSCA AUTOMÁTICA AO NASCER
+        alvo = null;
         AtualizarAlvoPrincipal();
 
         if (escudo == null)
@@ -52,7 +54,6 @@ public class Trojan : MonoBehaviour
         if (alvo != null)
             direcaoAtual = ((Vector2)alvo.transform.position - (Vector2)transform.position).normalized;
 
-        // Ignora colisões físicas com os slots de defesa do mapa
         IgnorarColisoesComSlots();
     }
 
@@ -62,23 +63,27 @@ public class Trojan : MonoBehaviour
 
         if (alvo == null)
         {
-            GameObject placaObj = GameObject.Find("PlacaMae");
-            if (placaObj != null)
-            {
-                alvo = placaObj;
-            }
-            else
+            AtualizarAlvoPrincipal();
+            if (alvo == null)
             {
                 return;
             }
         }
 
-        Vector3 direcao = (alvo.transform.position - transform.position).normalized;
+        // Trava o eixo Z para evitar desvio em profundidade
+        Vector3 posicaoAlvo = alvo.transform.position;
+        posicaoAlvo.z = transform.position.z;
+
+        Vector3 direcao = (posicaoAlvo - transform.position).normalized;
         transform.position += direcao * speed * Time.deltaTime;
 
-        // VERIFICAÇÃO POR DISTÂNCIA PARA DAR DANO MESMO EM SEGUNDO PLANO (MODO TYCOON 3D)
-        float distanciaAoNucleo = Vector3.Distance(transform.position, alvo.transform.position);
-        if (distanciaAoNucleo <= 0.8f) // Ajuste essa margem se necessário
+        // VERIFICAÇÃO POR DISTÂNCIA IGNORANDO O Z
+        float distanciaAoNucleo = Vector3.Distance(
+            new Vector3(transform.position.x, transform.position.y, 0),
+            new Vector3(alvo.transform.position.x, alvo.transform.position.y, 0)
+        );
+
+        if (distanciaAoNucleo <= 0.8f)
         {
             if (GerenciadorJogo.Instancia != null)
             {
@@ -115,21 +120,19 @@ public class Trojan : MonoBehaviour
 
         foreach (Collider2D c in proximos)
         {
-            if (c.transform.IsChildOf(transform)) continue; // ignora a si mesmo e seus filhos (escudo)
-            if (!EhObstaculo(c.gameObject)) continue; // ignora se não for um obstáculo
+            if (c.transform.IsChildOf(transform)) continue;
+            if (!EhObstaculo(c.gameObject)) continue;
 
             Vector2 paraObstaculo = (Vector2)c.transform.position - pos;
             float distancia = paraObstaculo.magnitude;
             if (distancia < 0.001f) continue;
 
-            // Ignora as torres que ficaram para tras
             if (Vector2.Dot(paraObstaculo.normalized, paraAlvo) < 0f) continue;
 
             float peso = 1f - Mathf.Clamp01(distancia / raioDeDeteccao);
 
             Vector2 afastar = -paraObstaculo.normalized;
 
-            // Calcula a direção lateral para desviar do obstáculo
             float lado = paraAlvo.x * paraObstaculo.y - paraAlvo.y * paraObstaculo.x;
             Vector2 perpDireita = new Vector2(paraAlvo.y, -paraAlvo.x);
             Vector2 lateral = lado > 0f ? perpDireita : -perpDireita;
@@ -169,7 +172,6 @@ public class Trojan : MonoBehaviour
         }
     }
 
-    // Método obrigatório para aceitar a lentidão do Honeypot
     public void AplicarLentidao(float fatorLentidao, float duracao)
     {
         if (!estaLentificado)
@@ -225,7 +227,6 @@ public class Trojan : MonoBehaviour
         }
     }
 
-    // Tratamento de colisão física normal para a Placa-Mãe
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name.StartsWith("PlacaMae"))
